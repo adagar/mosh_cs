@@ -1,0 +1,84 @@
+1
+00:00:04,590 --> 00:00:06,370
+Hola, mi nombre es Mark Hamadan.
+
+2
+00:00:06,420 --> 00:00:12,090
+Y en caso de que no haya visto mis otros cursos Aqu hay una breve introduccin sobre m y mi historia.
+
+3
+00:00:12,090 --> 00:00:17,470
+Comenc a programar a la edad de siete aos con un Commodore 64 y me enamor por completo.
+
+4
+00:00:17,520 --> 00:00:24,510
+Mi sueo en aquel entonces era convertirme en un ingeniero de software y crear un juego de tenis en 3D para m.
+
+5
+00:00:24,720 --> 00:00:27,190
+Entonces ese sueo afect el resto de mi vida.
+
+6
+00:00:27,480 --> 00:00:33,030
+Contino la educacin en la universidad y estudio Bachelor of Science en ingeniera de software y el
+
+7
+00:00:33,090 --> 00:00:34,980
+sistema de red Master of Science.
+
+8
+00:00:35,220 --> 00:00:38,330
+Ahora la realidad es que nunca me convert en desarrollador de juegos.
+
+9
+00:00:38,340 --> 00:00:43,680
+De hecho, no s nada sobre los juegos a finales de los 90, cuando era una gran cosa.
+
+10
+00:00:43,680 --> 00:00:46,050
+Muchas empresas necesitaban un sitio web.
+
+11
+00:00:46,290 --> 00:00:53,580
+Entonces comenc a trabajar profesionalmente desde el ao 2000 y en este momento en el ao 2015 tengo 15 aos
+
+12
+00:00:53,580 --> 00:00:55,980
+de experiencia profesional en esa industria.
+
+13
+00:00:56,170 --> 00:01:02,290
+En caso de que te ests preguntando cul es mi vida fuera de la programacin, me encanta jugar con un piano de jazz.
+
+14
+00:01:02,430 --> 00:01:05,510
+Amo cocinar y amo el baile latino.
+
+15
+00:01:05,520 --> 00:01:10,480
+He estado bailando durante algunos aos y me encantan los esponsales de salsa y Cha-Cha.
+
+16
+00:01:10,530 --> 00:01:15,210
+Entonces, si ests viendo esto desde Sudamrica o Espaa, todos lo fueron.
+
+17
+00:01:15,630 --> 00:01:17,860
+Eso es prcticamente todo el espaol que conozco.
+
+18
+00:01:18,250 --> 00:01:24,270
+Si quieres encontrarme en las redes sociales, tengo un bloque en el programa con Losh dot com.
+
+19
+00:01:24,300 --> 00:01:28,180
+Tambin tengo una pgina de Facebook y un canal de YouTube con el mismo nombre.
+
+20
+00:01:28,440 --> 00:01:34,470
+Puede encontrarme en Twitter con Marsh Ramadani y mi correo electrnico es un programa con Marsh at g mail dot com.
+
+21
+00:01:35,220 --> 00:01:38,770
+Espero que disfrutes este curso y siempre te vea en la prxima conferencia.
+
