@@ -1,0 +1,308 @@
+1
+00:00:03,970 --> 00:00:09,000
+OK in this video we're going to have a quick introduction to strings so you can quickly get started
+
+2
+00:00:09,000 --> 00:00:09,530
+.
+
+3
+00:00:09,660 --> 00:00:14,880
+And later in the course we have a separate section where we cover more details about strings.
+
+4
+00:00:14,940 --> 00:00:18,030
+So in this lecture I'm going to cover what is a string.
+
+5
+00:00:18,030 --> 00:00:20,750
+Different ways to create strings and sure.
+
+6
+00:00:20,760 --> 00:00:26,980
+And finally I'm going to talk about escape characters and verbatim strings which are pretty handy.
+
+7
+00:00:27,600 --> 00:00:33,840
+So if string is a sequence of characters and as you can see in this example in C-sharp which surround
+
+8
+00:00:33,840 --> 00:00:41,520
+strings with double quote as opposed to characters which are surrounded by single quotes there are different
+
+9
+00:00:41,520 --> 00:00:47,490
+ways to create strings and share a very common way is to use a string literal.
+
+10
+00:00:47,610 --> 00:00:50,430
+So just like declaring a viable we started with a type.
+
+11
+00:00:50,430 --> 00:00:53,380
+And in this case string then an identifier.
+
+12
+00:00:53,520 --> 00:00:56,790
+And finally we assign it to a string literal.
+
+13
+00:00:57,910 --> 00:01:02,190
+You can also concatenate strings using the plus operator.
+
+14
+00:01:02,280 --> 00:01:08,490
+So in this example I'm adding first name plus a string literal which represents an empty character.
+
+15
+00:01:08,550 --> 00:01:10,420
+And finally the last name.
+
+16
+00:01:11,010 --> 00:01:15,540
+Sometimes using string concatenation this way can create a bit of noise in your code.
+
+17
+00:01:15,900 --> 00:01:21,240
+You might have different string variables that you're concatenating and it's hard to visualize what
+
+18
+00:01:21,240 --> 00:01:22,540
+the output looks like.
+
+19
+00:01:22,800 --> 00:01:26,520
+If that's the case you can use string format.
+
+20
+00:01:26,520 --> 00:01:33,450
+So in C-sharp this drinky word maps to the String class in the Dot Net Framework and you learn that
+
+21
+00:01:33,450 --> 00:01:39,810
+classes can have fields and methods and we can declare these members as the static which means we can
+
+22
+00:01:39,810 --> 00:01:44,220
+access them directly on the class without the need to create an object.
+
+23
+00:01:44,250 --> 00:01:50,760
+So in the example you see here recalling the formatting method on the string class format is a static
+
+24
+00:01:50,760 --> 00:01:51,490
+method.
+
+25
+00:01:51,690 --> 00:01:55,300
+So we can directly access it using string dot format.
+
+26
+00:01:55,410 --> 00:01:58,170
+This method takes a couple of parameters.
+
+27
+00:01:58,230 --> 00:02:04,810
+The first one is a format string which we use to define a template for a string inside this template
+
+28
+00:02:04,820 --> 00:02:04,840
+.
+
+29
+00:02:04,860 --> 00:02:11,820
+We have placeholders placeholders are indicated by curly braces and they're Ziering next.
+
+30
+00:02:11,820 --> 00:02:17,580
+So here placeholders zero will be replaced by first name and placeholder one will be replaced by last
+
+31
+00:02:17,610 --> 00:02:19,230
+thing.
+
+32
+00:02:19,260 --> 00:02:25,230
+So as you see in this example it's much easier to visualize the output as opposed to concatenating multiple
+
+33
+00:02:25,230 --> 00:02:27,170
+strings together.
+
+34
+00:02:27,390 --> 00:02:30,020
+Sometimes you might have an array of objects.
+
+35
+00:02:30,600 --> 00:02:36,510
+You can create a string from combining all elements of that array using a separator.
+
+36
+00:02:36,510 --> 00:02:40,670
+So in this example we have an integer array with values 1 2 3.
+
+37
+00:02:41,010 --> 00:02:47,720
+And in the second line we are calling the join method of the String class which is a static method and
+
+38
+00:02:47,720 --> 00:02:49,680
+we supply two arguments.
+
+39
+00:02:49,800 --> 00:02:53,660
+The first argument which is a string is a separator.
+
+40
+00:02:53,730 --> 00:02:58,060
+In this case I would like to combine the three numbers using a coma.
+
+41
+00:02:58,110 --> 00:03:04,150
+The second argument to this method is the array whose elements we would like to combine.
+
+42
+00:03:04,620 --> 00:03:10,880
+Now that we have a string we can access each of its individual characters using an index.
+
+43
+00:03:10,890 --> 00:03:16,950
+So in this case name of zero represents the first character in our string.
+
+44
+00:03:16,950 --> 00:03:22,560
+One thing you need to know about strings and C-Sharp is that strings are immutable which means once
+
+45
+00:03:22,560 --> 00:03:25,350
+you create them you cannot change them.
+
+46
+00:03:25,410 --> 00:03:31,620
+So back to our example here we can certainly read the value of the first character in our string but
+
+47
+00:03:31,620 --> 00:03:32,840
+we cannot change it.
+
+48
+00:03:33,150 --> 00:03:37,790
+So the third line here which is indicated by read is not going to be compiled.
+
+49
+00:03:37,980 --> 00:03:43,070
+There are methods in the String class that allows us to manipulate strings and modify their values.
+
+50
+00:03:43,380 --> 00:03:49,410
+But all these methods return a new string so the original string is not changed and that's what they
+
+51
+00:03:49,410 --> 00:03:52,720
+mean by immutable.
+
+52
+00:03:52,830 --> 00:03:57,970
+There are a few special characters in C sure that sometimes have different meanings.
+
+53
+00:03:58,020 --> 00:04:04,080
+For example if you want to have a new line in your string you need to use backslash then when the compiler
+
+54
+00:04:04,080 --> 00:04:10,680
+sees that it automatically as a new line if you don't add the backslash the compiler sees it and just
+
+55
+00:04:10,740 --> 00:04:17,130
+as the letter N same for tap if you want to have a type you use backslash T.
+
+56
+00:04:17,400 --> 00:04:20,190
+Now that brings us to an interesting situation.
+
+57
+00:04:20,280 --> 00:04:26,830
+What if you want to use the backslash letter itself because when the compiler sees backslash it thinks
+
+58
+00:04:26,950 --> 00:04:30,650
+we are using a special character so it's not quite sure.
+
+59
+00:04:30,690 --> 00:04:32,250
+It might get confused.
+
+60
+00:04:32,490 --> 00:04:37,860
+So if we want to tell the compiler that do like to use the backslash letter we need to represent that
+
+61
+00:04:37,950 --> 00:04:43,710
+byte double backslash same for a single quotation mark and double quotation marks.
+
+62
+00:04:43,770 --> 00:04:45,970
+We need to prefix them with a backslash.
+
+63
+00:04:46,200 --> 00:04:49,180
+And that's what we call by as scaping characters in C-sharp.
+
+64
+00:04:49,410 --> 00:04:51,810
+But these are special characters.
+
+65
+00:04:51,930 --> 00:04:55,320
+The list of special characters in fact is even more than that.
+
+66
+00:04:55,470 --> 00:05:00,760
+But personally I have not found any of those special characters that you find in search of documentation
+
+67
+00:05:00,760 --> 00:05:00,780
+.
+
+68
+00:05:00,780 --> 00:05:07,420
+Pragmatic those you see in this table are the ones I have found very common.
+
+69
+00:05:08,070 --> 00:05:14,400
+OK now because of these special characters there are cases where creating a string can be a little bit
+
+70
+00:05:14,400 --> 00:05:15,270
+messy.
+
+71
+00:05:15,480 --> 00:05:21,740
+For example look at this path variable here know that all these double backslashes we have it looks
+
+72
+00:05:21,780 --> 00:05:24,000
+a little bit messy doesn't it.
+
+73
+00:05:24,000 --> 00:05:29,940
+The good thing is in short we have a kind of string which we call verbatim string and with a verbatim
+
+74
+00:05:29,940 --> 00:05:38,340
+string we don't have to use all these double backslashes we can simply prefix our string at sign and
+
+75
+00:05:38,430 --> 00:05:44,360
+as a result we can get rid of all this double backslashes and just use a single backslash.
+
+76
+00:05:45,030 --> 00:05:45,600
+OK.
+
+77
+00:05:45,600 --> 00:05:48,480
+Now just flip over to Visual Studio and do some coding
+

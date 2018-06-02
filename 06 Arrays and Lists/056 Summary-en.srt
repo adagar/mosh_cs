@@ -1,0 +1,36 @@
+1
+00:00:04,620 --> 00:00:10,860
+OK this section you'll learn more about C-Sharp race you'll learn that in our array's a fixed size which
+
+2
+00:00:10,860 --> 00:00:14,230
+means once you allocate them you cannot change their size.
+
+3
+00:00:14,550 --> 00:00:19,140
+So if you want to work with a dynamic array you need to use a list now these days.
+
+4
+00:00:19,290 --> 00:00:25,650
+Ninety nine point nine percent of the time we use lists not a race but you might be working with a third
+
+5
+00:00:25,650 --> 00:00:28,530
+party library or a legacy code base.
+
+6
+00:00:28,650 --> 00:00:30,350
+And you we still have to use arrays.
+
+7
+00:00:30,540 --> 00:00:34,320
+So remember the syntax I'd prefer for use lists.
+
+8
+00:00:34,320 --> 00:00:35,290
+I hope you enjoyed the section.
+
+9
+00:00:35,310 --> 00:00:36,240
+And thank you for watching
+

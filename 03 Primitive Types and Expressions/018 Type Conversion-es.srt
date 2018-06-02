@@ -1,0 +1,256 @@
+1
+00:00:03,760 --> 00:00:10,170
+Y este video voy a hablar sobre varios tipos de conversin de tipo en Souchong, tenemos
+
+2
+00:00:10,170 --> 00:00:16,930
+conversin de tipo explcita de conversin de tipo implcita que tambin se llama conversin y tambin
+
+3
+00:00:16,930 --> 00:00:19,390
+tenemos conversin entre tipos no compatibles.
+
+4
+00:00:19,440 --> 00:00:22,350
+Aqu hay un ejemplo de conversin de tipo implcito.
+
+5
+00:00:22,590 --> 00:00:28,230
+Un mordisco como usted sabe toma solo un bocado de memoria y un entero toma cuatro bytes.
+
+6
+00:00:28,260 --> 00:00:31,910
+Entonces, podemos copiar fcilmente un byte en un entero.
+
+7
+00:00:32,070 --> 00:00:35,510
+Lo que sucede en el tiempo de ejecucin es echemos un vistazo a esta diapositiva.
+
+8
+00:00:35,520 --> 00:00:39,780
+Entonces aqu est la representacin binaria de nuestra variable b aqu.
+
+9
+00:00:39,780 --> 00:00:45,310
+Entonces uno se representa como siete bits de 0 y 1 bit de uno.
+
+10
+00:00:45,690 --> 00:00:52,440
+Cuando copiamos un by a un entero lo que hace el tiempo de ejecucin es que prefija ese valor con un montn
+
+11
+00:00:52,740 --> 00:00:54,820
+de ceros para llenar los cuatro bytes.
+
+12
+00:00:54,900 --> 00:00:56,690
+Entonces no hay prdida de datos.
+
+13
+00:00:57,110 --> 00:01:03,180
+En situaciones como esa, cuando el compilador est 100 por ciento seguro de que los tipos son compatibles y
+
+14
+00:01:03,180 --> 00:01:04,350
+no se perdern datos.
+
+15
+00:01:04,350 --> 00:01:08,580
+Los valores pueden convertirse a un tipo diferente implcitamente.
+
+16
+00:01:08,580 --> 00:01:11,460
+Aqu hay otro ejemplo de conversin de tipo implcito.
+
+17
+00:01:11,460 --> 00:01:16,160
+Entonces tenemos un nmero entero establecido en 1 y lo copiamos en un flotador.
+
+18
+00:01:16,530 --> 00:01:19,340
+De nuevo, en este ejemplo, no habr prdida de datos.
+
+19
+00:01:19,840 --> 00:01:21,910
+Bien, echemos un vistazo a este.
+
+20
+00:01:22,290 --> 00:01:29,550
+Aqu hemos declarado un entero y estamos intentando copiar eso en un byte y un entero de cuatro bytes.
+
+21
+00:01:29,970 --> 00:01:36,240
+Entonces, cuando convertimos eso en un byte, tres bytes de cuatro bytes desaparecern y existe la posibilidad
+
+22
+00:01:36,240 --> 00:01:37,630
+de prdida de datos.
+
+23
+00:01:37,630 --> 00:01:39,630
+Ahora, la prdida de datos no siempre ocurre.
+
+24
+00:01:39,690 --> 00:01:46,590
+Solo ocurre si el valor que se almacenar en el entero est ms all de la capacidad de un byte.
+
+25
+00:01:46,620 --> 00:01:51,840
+En este ejemplo, uno puede almacenarse en un byte, por lo que no se perdern datos.
+
+26
+00:01:51,840 --> 00:01:57,240
+Pero si dijramos 300 aqu, no podemos almacenar 300 en un byte.
+
+27
+00:01:57,240 --> 00:02:02,730
+Entonces, como resultado de esa conversin, nos dijeron que perdimos cuando el compilador sabe que hay una posibilidad de
+
+28
+00:02:02,730 --> 00:02:03,760
+prdida de datos.
+
+29
+00:02:03,780 --> 00:02:10,260
+No permite la conversin de tipo implcito y debe indicar explcitamente al compilador que es consciente de la
+
+30
+00:02:10,260 --> 00:02:13,960
+prdida de datos y an desea continuar con la conversin.
+
+31
+00:02:14,070 --> 00:02:20,010
+En situaciones como esa, lo que hacemos es prefijar esa variable con el tipo de objetivo.
+
+32
+00:02:20,010 --> 00:02:23,640
+As que aqu estoy tratando de convertir I a un byte.
+
+33
+00:02:24,030 --> 00:02:26,880
+Esto es lo que llamamos casting.
+
+34
+00:02:27,990 --> 00:02:29,400
+Aqu hay otro ejemplo.
+
+35
+00:02:29,400 --> 00:02:32,100
+Entonces tenemos un flotador establecido en 1. 0.
+
+36
+00:02:32,460 --> 00:02:35,920
+Y si tratamos de convertir eso en un entero, el compilador se quejara.
+
+37
+00:02:36,060 --> 00:02:38,540
+Estaba seguro de eso ms adelante en la demostracin de codificacin.
+
+38
+00:02:39,180 --> 00:02:45,060
+Entonces, debemos decirle al compilador que somos conscientes de la prdida de datos y an queremos convertir F, que es
+
+39
+00:02:45,060 --> 00:02:46,680
+un flotante en un entero.
+
+40
+00:02:46,800 --> 00:02:49,680
+Entonces lo lanzamos como aqu.
+
+41
+00:02:50,310 --> 00:02:55,010
+A veces estamos trabajando con tipos que no son compatibles, pero an necesita convertirlos.
+
+42
+00:02:55,020 --> 00:03:00,480
+Por ejemplo, podramos tener un nmero representado como una cadena como se ve aqu y tenemos que convertirlo
+
+43
+00:03:00,480 --> 00:03:01,710
+a un nmero entero.
+
+44
+00:03:01,890 --> 00:03:08,520
+En situaciones como esa porque la cadena y el final no son compatibles, no puedes usar el casting explcito.
+
+45
+00:03:09,240 --> 00:03:12,890
+Entonces, necesitamos un mecanismo diferente para convertir una cadena en un nmero.
+
+46
+00:03:13,350 --> 00:03:19,170
+En situaciones como esa, necesitamos usar la clase convert o usar el mtodo Parse para convertir clases en
+
+47
+00:03:19,200 --> 00:03:23,900
+parte del framework de datos y est definido en el espacio de nombres del sistema.
+
+48
+00:03:24,090 --> 00:03:29,780
+Tiene un montn de mtodos para convertir varios tipos a otros tipos y todos comienzan con dos.
+
+49
+00:03:29,940 --> 00:03:35,640
+En este caso, estamos tratando de convertir tanto como una cadena en int 32 y 32.
+
+50
+00:03:35,730 --> 00:03:40,400
+Como saben, se trata de un tipo de Net Framework de puntos que se asigna a un tipo de entero C-sharp.
+
+51
+00:03:40,530 --> 00:03:48,270
+Recuerde que un byte es un byte, ya que el short tiene dos bytes y el entero tiene cuatro bytes y ocho bytes.
+
+52
+00:03:48,270 --> 00:03:51,470
+Probablemente sepa que cada byte tiene ocho bits.
+
+53
+00:03:51,510 --> 00:03:58,350
+Entonces un entero que tiene 4 bytes por ocho tiempos termina siendo 32 bits.
+
+54
+00:03:58,380 --> 00:04:06,240
+Es por eso que se llama dos en 32 y en 16, que representa 16 bits, es decir, dos cortos, que son dos bytes.
+
+55
+00:04:07,440 --> 00:04:12,990
+Tambin tenemos este mtodo de anlisis aqu todos los tipos primitivos que expliqu en la
+
+56
+00:04:13,050 --> 00:04:15,870
+ltima conferencia como entero largo flotante booleano.
+
+57
+00:04:15,990 --> 00:04:21,870
+Todos tienen este mtodo de anlisis y el mtodo Parse toma una cadena e intenta convertir eso al tipo
+
+58
+00:04:21,870 --> 00:04:22,440
+de destino.
+
+59
+00:04:22,440 --> 00:04:25,410
+En este caso un entero.
+
+60
+00:04:25,470 --> 00:04:30,600
+Estos son algunos de los mtodos que puede encontrar en la clase convertida a byte que
+
+61
+00:04:30,600 --> 00:04:38,430
+convierte el valor dado a un byte en 16 para convertir el valor dado a un corto en 32 para convertir el valor dado
+
+62
+00:04:38,430 --> 00:04:43,200
+a un entero y 2 en 64 para convertir el valor dado demasiado tiempo.
+
+63
+00:04:43,640 --> 00:04:44,670
+OK suficiente teora.
+
+64
+00:04:44,670 --> 00:04:47,760
+Vamos a saltar al cdigo y ver todo este concepto en accin.
+

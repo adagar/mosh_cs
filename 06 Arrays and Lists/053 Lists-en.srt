@@ -1,0 +1,120 @@
+1
+00:00:02,780 --> 00:00:09,360
+And the last lecture you learn about a race you learn that in C-sharp arrays have a fixed size which
+
+2
+00:00:09,360 --> 00:00:12,410
+means once you create them the size cannot be changed.
+
+3
+00:00:12,780 --> 00:00:18,060
+But there are situations where you need to work with a number of objects but you're not sure ahead of
+
+4
+00:00:18,060 --> 00:00:21,950
+time how many of those objects you're going to work with.
+
+5
+00:00:21,990 --> 00:00:29,250
+That's where we use a list elist in C-sharp is similar to an array in a sense that it's a data structure
+
+6
+00:00:29,520 --> 00:00:32,580
+for storing a number of objects of the same type.
+
+7
+00:00:32,910 --> 00:00:37,620
+But we use a list when we don't know ahead of time how many objects we're going to store in that list
+
+8
+00:00:39,390 --> 00:00:40,340
+to create a list.
+
+9
+00:00:40,350 --> 00:00:43,830
+We use the list type list is a generic type.
+
+10
+00:00:44,160 --> 00:00:46,490
+And that's indicated by the angle brackets.
+
+11
+00:00:46,530 --> 00:00:53,490
+As you see in this example inside the angle brackets we specify a generic prompter and that parameter
+
+12
+00:00:53,550 --> 00:00:55,620
+specifies the type of the list.
+
+13
+00:00:55,620 --> 00:00:58,560
+So in this case I'm creating a list of integers.
+
+14
+00:00:58,830 --> 00:01:04,500
+We can create a list of anything you can create a list of strings or a list of characters or a list
+
+15
+00:01:04,500 --> 00:01:06,450
+of any non primitive types.
+
+16
+00:01:06,630 --> 00:01:11,180
+You can create a class called product and create a list of products.
+
+17
+00:01:11,250 --> 00:01:15,630
+Generics is an advanced topic and for now that's you know for you to know that when you are working
+
+18
+00:01:15,630 --> 00:01:21,120
+with a generic type you need to specify generic parameters inside the angle brackets.
+
+19
+00:01:21,270 --> 00:01:23,830
+And the third part of this course C-Sharp advanced.
+
+20
+00:01:23,940 --> 00:01:29,490
+I'm going to cover generics in more detail if you know ahead of time the objects you would like to store
+
+21
+00:01:29,490 --> 00:01:30,250
+in the list.
+
+22
+00:01:30,390 --> 00:01:35,800
+You can initialize your list using the object initialization syntax as you see here.
+
+23
+00:01:35,880 --> 00:01:41,440
+So you put the objects between curly braces during initialization of your list.
+
+24
+00:01:41,910 --> 00:01:45,710
+And here are some useful methods that are available in the list class.
+
+25
+00:01:45,790 --> 00:01:52,830
+I had to add an object to the list add range to either list of objects that can be another list or an
+
+26
+00:01:52,830 --> 00:02:00,180
+array remove to remove one object from the list remove at which removes the object and the given index
+
+27
+00:02:00,870 --> 00:02:05,980
+index of which returns the index of the given object contains.
+
+28
+00:02:06,000 --> 00:02:12,210
+Which tells us if the list contains the given object or not and count which returns the number of objects
+
+29
+00:02:12,210 --> 00:02:13,830
+in the list.
+
+30
+00:02:13,830 --> 00:02:17,990
+Let's really go over to Visual Studio and see all these methods in action.
+

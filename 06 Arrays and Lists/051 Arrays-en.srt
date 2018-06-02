@@ -1,0 +1,272 @@
+1
+00:00:04,200 --> 00:00:08,140
+Earlier in this course we learn a little bit about race in this lecture.
+
+2
+00:00:08,160 --> 00:00:10,730
+We're going to take a deeper look at race.
+
+3
+00:00:10,740 --> 00:00:15,900
+So first I'm going to have a quick review of arrays then I'm going to talk about different types of
+
+4
+00:00:15,900 --> 00:00:17,540
+arrays we have in C-sharp.
+
+5
+00:00:17,610 --> 00:00:23,120
+And finally I'm going to introduce some useful methods to work with arrays.
+
+6
+00:00:23,130 --> 00:00:30,410
+So just to refresh our mind an array represents a fixed number of variables of a particular type in
+
+7
+00:00:30,420 --> 00:00:32,550
+C-sharp we have two types of arrays.
+
+8
+00:00:32,730 --> 00:00:37,760
+Single dimension arrays and multi dimensional race like a matrix.
+
+9
+00:00:38,310 --> 00:00:42,440
+So single dimension arrays is what you have seen before in this example.
+
+10
+00:00:42,480 --> 00:00:47,610
+We have an array of integers called numbers and the length of this array is five.
+
+11
+00:00:47,850 --> 00:00:53,130
+If we know ahead of time the values we would like to store in an array we can use the object initialization
+
+12
+00:00:53,130 --> 00:00:55,230
+syntax to initialize that array.
+
+13
+00:00:55,230 --> 00:00:57,090
+Upon declaration.
+
+14
+00:00:57,090 --> 00:00:58,860
+So nothing new so far.
+
+15
+00:00:58,860 --> 00:01:03,310
+Now let's take a look at the types of multi dimensional race.
+
+16
+00:01:03,780 --> 00:01:09,200
+We have two types of multi dimensional arrays in C Sharp rectangular and jagged race.
+
+17
+00:01:09,600 --> 00:01:14,710
+So with a rectangular array each row has the exact same number of columns.
+
+18
+00:01:14,790 --> 00:01:19,890
+So in the example you see in the slides we have an array of three rows and each row has five columns
+
+19
+00:01:20,760 --> 00:01:21,640
+with a jagged array.
+
+20
+00:01:21,640 --> 00:01:28,050
+However the number of columns in each row can be different a different way to look at Jack array is
+
+21
+00:01:28,050 --> 00:01:30,260
+an array of arrays.
+
+22
+00:01:31,050 --> 00:01:36,240
+So you can think of the Jack the array we have in this slide as a single dimensional array with three
+
+23
+00:01:36,240 --> 00:01:41,040
+elements and each element is another single dimension array.
+
+24
+00:01:41,040 --> 00:01:42,210
+Now what's the difference.
+
+25
+00:01:42,270 --> 00:01:49,530
+When do we use a rectangular array or a jagged array in dot net CLR is optimized around single dimension
+
+26
+00:01:49,530 --> 00:01:50,340
+arrays.
+
+27
+00:01:50,490 --> 00:01:57,450
+So let's say you want to model a matrix is faster to implement it using a jack array than a rectangular
+
+28
+00:01:57,450 --> 00:01:58,370
+Arri.
+
+29
+00:01:58,390 --> 00:02:01,100
+I mean you said that the difference might be really tiny.
+
+30
+00:02:01,140 --> 00:02:03,700
+Specially with the computers we have these days.
+
+31
+00:02:03,720 --> 00:02:08,670
+So my pragmatic advice to you is don't get stuck about the difference between rectangular and jaggery
+
+32
+00:02:08,670 --> 00:02:09,390
+too much.
+
+33
+00:02:09,390 --> 00:02:13,800
+Just be aware that in the future we have two types of multi-dimensional race.
+
+34
+00:02:13,830 --> 00:02:16,790
+Now let's see how we can declare a rectangular array.
+
+35
+00:02:17,280 --> 00:02:22,870
+So here is the syntax for declaring a two dimensional rectangular array.
+
+36
+00:02:22,950 --> 00:02:28,500
+So the only new thing you see here is that in the square brackets we need to specify the dimensions
+
+37
+00:02:28,500 --> 00:02:29,480
+of the tree.
+
+38
+00:02:29,490 --> 00:02:35,680
+So in this case this array has three rows and each row has five columns.
+
+39
+00:02:35,940 --> 00:02:40,980
+If in know the values we will like to stirring this array ahead of time we can initialize this array
+
+40
+00:02:41,160 --> 00:02:44,550
+using object initialization syntax.
+
+41
+00:02:45,800 --> 00:02:50,370
+And if you want to access an element in disarray just like before we use the square brackets.
+
+42
+00:02:50,460 --> 00:02:57,060
+But we need to supply the index of the row and the column if we want to declare a three dimensional
+
+43
+00:02:57,060 --> 00:02:57,740
+array.
+
+44
+00:02:57,750 --> 00:03:03,500
+We can extend the previous example and supply three dimensions while declaring the array.
+
+45
+00:03:03,510 --> 00:03:08,090
+So in this example our colors array has three dimensions.
+
+46
+00:03:09,150 --> 00:03:11,160
+Now let's take a look at the jaggery.
+
+47
+00:03:11,160 --> 00:03:14,580
+So imagine we want to model an array that looks like this.
+
+48
+00:03:14,580 --> 00:03:19,000
+So as I explained earlier you can think of this array as an array of arrays.
+
+49
+00:03:19,380 --> 00:03:25,000
+So at a top level have a single dimension array of three elements in each element.
+
+50
+00:03:25,020 --> 00:03:27,530
+We have another single dimensional re.
+
+51
+00:03:27,630 --> 00:03:32,760
+So in our first element we have an array of four elements in the second element.
+
+52
+00:03:32,760 --> 00:03:34,760
+We have an array of five elements.
+
+53
+00:03:34,830 --> 00:03:36,480
+So how do we implement this.
+
+54
+00:03:36,480 --> 00:03:42,430
+Well first we need to declare a top level array not the syntax here.
+
+55
+00:03:42,510 --> 00:03:49,980
+We use two square brackets to represent it jaggery in the first square brackets you specify the number
+
+56
+00:03:49,980 --> 00:03:52,260
+of elements in your toplevel array.
+
+57
+00:03:52,800 --> 00:03:59,290
+Now we need to initialize each element of this array to a different array.
+
+58
+00:03:59,580 --> 00:04:07,080
+So we're supposed to find that the first element of this array is another integer array of size 4 and
+
+59
+00:04:07,080 --> 00:04:08,850
+to access an element in this array.
+
+60
+00:04:08,850 --> 00:04:11,380
+Again we need to add square brackets.
+
+61
+00:04:11,670 --> 00:04:16,530
+So the difference between the Jagd array and rectangular array from the same tactical point of view
+
+62
+00:04:16,890 --> 00:04:23,670
+is that we jaggery we have two square brackets whereas with rectangular array we have one square brackets
+
+63
+00:04:23,670 --> 00:04:23,850
+.
+
+64
+00:04:23,850 --> 00:04:28,820
+But we separate the dimensions using a comma in C-sharp.
+
+65
+00:04:28,890 --> 00:04:35,150
+All arrays map to the array type that is defined in the system namespace of Doc net framework.
+
+66
+00:04:35,460 --> 00:04:41,500
+So the array type is a class it has a bunch of properties and methods as you see in this slide.
+
+67
+00:04:42,090 --> 00:04:42,300
+OK.
+
+68
+00:04:42,300 --> 00:04:46,620
+Now let's flip over to Visual Studio and see all these concepts in action.
+

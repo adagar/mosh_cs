@@ -1,0 +1,584 @@
+1
+00:00:01,140 --> 00:00:09,060
+OK, comencemos declarando una variable de tipo byte y llammosle nmero.
+
+2
+00:00:09,060 --> 00:00:11,160
+Ahora queremos mostrarlo en la consola.
+
+3
+00:00:11,160 --> 00:00:19,610
+As que, como recordarn en The Last Lecture, escribimos la consola Daut escribe la lnea, ingrese la variable aqu.
+
+4
+00:00:19,620 --> 00:00:25,200
+Tenga en cuenta que cuando estaba escribiendo console dot dot WriteLine, mi complemento de resharper se agrega mgicamente, esta declaracin de
+
+5
+00:00:25,200 --> 00:00:32,130
+uso en el sistema superior es un espacio de nombres y Konsole es una clase que se define en el espacio de nombres del sistema.
+
+6
+00:00:32,790 --> 00:00:37,650
+Entonces, para usar la clase de consola, necesitamos esa declaracin aqu en la parte superior.
+
+7
+00:00:37,650 --> 00:00:45,000
+Si no est utilizando reafilado, tiene que ir aqu y escribir manualmente con el punto y coma del sistema.
+
+8
+00:00:45,120 --> 00:00:47,430
+Bien, ahora mira este nmero aqu.
+
+9
+00:00:47,520 --> 00:00:49,160
+Tiene un subrayado rojo.
+
+10
+00:00:49,500 --> 00:00:55,380
+Y si ponemos el cursor del mouse aqu, dice que el nmero de variable local podra no inicializarse antes de acceder.
+
+11
+00:00:56,730 --> 00:01:02,280
+Si recuerda de las diapositivas que le dije en C-sharp antes de que pueda acceder a
+
+12
+00:01:02,280 --> 00:01:04,160
+una variable, debe configurarla para inicializarla.
+
+13
+00:01:04,590 --> 00:01:09,210
+Y esa es la razn por la que aqu tenemos el subrayado rojo, no podemos mostrar el nmero en
+
+14
+00:01:09,210 --> 00:01:10,640
+la consola antes de inicializar eso.
+
+15
+00:01:10,650 --> 00:01:15,810
+Entonces, si trato de compilar la aplicacin vamos a obtener un error
+
+16
+00:01:15,810 --> 00:01:19,530
+para compilar una aplicacin, presione control shift y B.
+
+17
+00:01:19,880 --> 00:01:24,600
+Y aqu est el uso del aerialista del nmero de variable local no asignado.
+
+18
+00:01:24,990 --> 00:01:30,630
+Podemos resolver este problema inicializando un nmero como establecerlo en 2, por ejemplo.
+
+19
+00:01:30,630 --> 00:01:33,740
+Y ves que el subrayado rojo se ha ido.
+
+20
+00:01:34,390 --> 00:01:35,340
+Podemos compilar de nuevo.
+
+21
+00:01:35,340 --> 00:01:38,300
+El cambio de control B tendr xito.
+
+22
+00:01:38,310 --> 00:01:40,040
+Echa un vistazo aqu.
+
+23
+00:01:40,160 --> 00:01:40,710
+DE ACUERDO.
+
+24
+00:01:40,830 --> 00:01:46,040
+Ahora podemos ejecutar la aplicacin presionando y controlando y F 5.
+
+25
+00:01:46,950 --> 00:01:47,300
+DE ACUERDO.
+
+26
+00:01:47,310 --> 00:01:50,550
+As que tenemos dos en la consola.
+
+27
+00:01:50,550 --> 00:01:58,620
+Ahora vamos a extender este ejemplo y declarar que algunas variables ms pueden definir un nmero entero
+
+28
+00:01:58,620 --> 00:02:02,760
+integer igual a 10 y un flotante flotante.
+
+29
+00:02:02,820 --> 00:02:08,520
+Entonces un precio total equivale a veinte noventa y cinco dlares.
+
+30
+00:02:08,520 --> 00:02:10,670
+Ahora nota este subrayado rojo aqu.
+
+31
+00:02:11,280 --> 00:02:12,750
+Veamos qu est pasando aqu.
+
+32
+00:02:12,750 --> 00:02:14,910
+Entonces pongo el cursor del mouse aqu.
+
+33
+00:02:15,810 --> 00:02:17,260
+Dice que no puede convertir.
+
+34
+00:02:17,290 --> 00:02:20,580
+Tipo de fuente double to target type float.
+
+35
+00:02:20,670 --> 00:02:26,640
+Si recuerdas de las diapositivas que te dije por defecto, el compilador de la orilla del mar considera que
+
+36
+00:02:26,640 --> 00:02:31,610
+los nmeros reales como este aqu son el doble, ya que estamos declarando una flotacin.
+
+37
+00:02:31,680 --> 00:02:37,980
+Entonces aqu tenemos que decirle explcitamente al compilador que trate este nmero real como un flotador
+
+38
+00:02:38,010 --> 00:02:41,020
+y podemos hacerlo agregando una F al final.
+
+39
+00:02:41,310 --> 00:02:43,870
+Entonces el error se fue.
+
+40
+00:02:43,920 --> 00:02:50,250
+Personaje de personaje de carcter interno mstico A llama a.
+
+41
+00:02:51,240 --> 00:02:57,110
+No, eso es si encerramos a los personajes con una sola cita como aqu.
+
+42
+00:02:57,120 --> 00:03:03,510
+Tambin podemos declarar que una cadena de cuerda no es uno de los tipos primitivos y la he cubierto en una conferencia
+
+43
+00:03:03,510 --> 00:03:04,850
+por separado en este curso.
+
+44
+00:03:04,860 --> 00:03:09,870
+Pero, por ahora, djame mostrarte cmo declarar una cadena que solo escriba una cadena.
+
+45
+00:03:10,200 --> 00:03:19,850
+Dale un nombre de primer nombre, una causa Marsh sabe que con cadenas de caracteres los cierras en doble cdigo.
+
+46
+00:03:19,950 --> 00:03:23,890
+Esa es una de las diferencias entre cadenas y caracteres.
+
+47
+00:03:24,720 --> 00:03:27,930
+Y finalmente, declaremos un toro.
+
+48
+00:03:28,290 --> 00:03:31,140
+Bull est trabajando en un curso.
+
+49
+00:03:31,170 --> 00:03:32,030
+Cierto.
+
+50
+00:03:32,670 --> 00:03:39,770
+As que con boules podemos establecerlos en True o en falso, tanto verdadero como falso son Keyworth, ya que puedes ver
+
+51
+00:03:39,780 --> 00:03:43,740
+que estn indicados por el color azul aqu y estn en minscula.
+
+52
+00:03:43,740 --> 00:03:52,590
+De modo que todo lo que ve aqu que es azul es una palabra clave, como un espacio de nombres de clase de cadenas
+
+53
+00:03:52,590 --> 00:03:59,150
+vacas estticas, y todos estos tipos de datos aqu sin sustantivos muestran estas variables en la consola.
+
+54
+00:03:59,190 --> 00:04:04,800
+Djame mostrarte un truco.
+
+55
+00:04:04,800 --> 00:04:06,650
+En lugar de escribir cancelar la lnea de escritura.
+
+56
+00:04:06,660 --> 00:04:08,820
+Podemos hacer un atajo.
+
+57
+00:04:08,820 --> 00:04:11,130
+Esto es lo que llamamos un fragmento de cdigo.
+
+58
+00:04:11,340 --> 00:04:19,180
+Entonces escribimos el CW que es la abreviatura de la lnea derecha de la consola y luego presionamos tabulacin y visual studio
+
+59
+00:04:19,200 --> 00:04:22,070
+lo convierte automticamente para cancelar la lnea derecha.
+
+60
+00:04:22,080 --> 00:04:26,850
+Hay varios fragmentos de cdigo que te ayudan a escribir el cdigo ms rpido y tratar de
+
+61
+00:04:26,850 --> 00:04:28,850
+sealarlos a lo largo de este curso.
+
+62
+00:04:29,220 --> 00:04:31,800
+As que vamos a jugar a contar.
+
+63
+00:04:32,580 --> 00:04:34,400
+Ahora otro.
+
+64
+00:04:35,280 --> 00:04:36,420
+Precio total.
+
+65
+00:04:36,520 --> 00:04:42,120
+No es que no pueda simplemente escribir T. L. Y esto es lo que llamamos intellisense es Visual Studio.
+
+66
+00:04:42,180 --> 00:04:43,920
+Mecanismo de autocompletado
+
+67
+00:04:44,100 --> 00:04:49,770
+No tiene que escribir el nombre completo de un tipo o una variable, siempre que intellisense lo detecte
+
+68
+00:04:50,040 --> 00:04:52,400
+y se resalte aqu como el precio total.
+
+69
+00:04:52,410 --> 00:04:55,590
+Simplemente puede presionar la pestaa y listo.
+
+70
+00:04:55,590 --> 00:04:58,850
+Visual Studio lo completa automticamente para nosotros.
+
+71
+00:04:59,060 --> 00:05:00,960
+Vamos a mostrar el personaje.
+
+72
+00:05:01,530 --> 00:05:02,340
+Igual que aqu.
+
+73
+00:05:02,370 --> 00:05:06,350
+Solo presiono tab otra vez.
+
+74
+00:05:06,360 --> 00:05:10,730
+Escrib solo algunos caracteres que pueden presionar tab o ingresar.
+
+75
+00:05:11,730 --> 00:05:13,980
+Y finalmente est funcionando.
+
+76
+00:05:14,060 --> 00:05:17,970
+Ejecutamos la aplicacin por control en 5.
+
+77
+00:05:18,870 --> 00:05:20,640
+As que obtuvimos todos estos
+
+78
+00:05:23,500 --> 00:05:26,920
+valores en la consola. Ahora, djame mostrarte otra cosa en C-sharp.
+
+79
+00:05:26,950 --> 00:05:32,010
+Tenemos una palabra clave llamada vore que facilita las declaraciones de variables.
+
+80
+00:05:32,170 --> 00:05:38,260
+Por ejemplo, aqu en lugar de especificar explcitamente el tipo de datos para cada uno
+
+81
+00:05:38,260 --> 00:05:46,970
+de estos aqu, simplemente puedo escribir var y dejo que el compilador C-sharp detecte ese tipo de datos para esta variable aqu.
+
+82
+00:05:47,530 --> 00:05:54,910
+As que djame reemplazar todo esto con var.
+
+83
+00:06:00,160 --> 00:06:06,960
+Ahora bien, si coloca el mouse sobre la palabra clave de palabra, podemos ver el tipo de datos subyacente.
+
+84
+00:06:07,050 --> 00:06:12,890
+Y en este caso, es el sistema que boolean, que es el tipo dominante que se asigna a la palabra clave C-Sharp bool.
+
+85
+00:06:14,700 --> 00:06:18,290
+Yo con este que es una cadena.
+
+86
+00:06:19,360 --> 00:06:27,710
+Y este es un personaje y este es el sistema nico en el que los mapas flotan.
+
+87
+00:06:28,600 --> 00:06:34,860
+Y en el caso del conteo, est en 32, que es un nmero entero y lo mismo para el nmero.
+
+88
+00:06:34,870 --> 00:06:41,210
+Entonces, lo difcil aqu es que C-Sharp crea nmeros enteros como nmeros enteros por defecto.
+
+89
+00:06:41,350 --> 00:06:45,100
+Y cuando usas la palabra clave VAR, asume que es un nmero entero.
+
+90
+00:06:45,100 --> 00:06:49,960
+Si realmente quieres ir a un byte, entonces tienes que decir explcitamente mistificado como byte aqu, pero
+
+91
+00:06:49,960 --> 00:06:52,630
+te digo por experiencia que es seguro usar un entero.
+
+92
+00:06:52,630 --> 00:06:58,960
+En la mayora de los casos, de hecho, si observa las clases en el marco de Dartmouth, en la
+
+93
+00:06:58,960 --> 00:07:03,670
+mayora de los casos, entero es el tipo de datos utilizado para representar nmeros enteros.
+
+94
+00:07:04,410 --> 00:07:06,910
+OK, volv.
+
+95
+00:07:06,930 --> 00:07:08,570
+Ahora te muestro algo ms.
+
+96
+00:07:08,590 --> 00:07:10,610
+As que echemos un vistazo a este aqu.
+
+97
+00:07:10,690 --> 00:07:17,500
+Entonces, es un char que es un personaje. Podemos colocar el cursor del mouse aqu y presionar Control y luego hacer
+
+98
+00:07:21,970 --> 00:07:24,950
+clic para abrir la ventana del navegador de objetos.
+
+99
+00:07:24,970 --> 00:07:30,820
+Mire aqu el Examinador de objetos y es una forma de ver las diferentes clases en su proyecto o en la
+
+100
+00:07:30,820 --> 00:07:32,370
+parte superior de ese marco.
+
+101
+00:07:32,410 --> 00:07:38,060
+En este caso, porque hice un control, haga clic en la palabra clave char o var.
+
+102
+00:07:38,200 --> 00:07:39,940
+Esto es lo que tenemos aqu.
+
+103
+00:07:39,940 --> 00:07:46,690
+Entonces, char se resalta en el navegador ogic en el lado derecho, se ven todos los miembros del tipo de caracteres.
+
+104
+00:07:47,320 --> 00:07:51,210
+Entonces estos morados son funciones o mtodos.
+
+105
+00:07:51,730 --> 00:07:56,810
+Si te desplazas hacia abajo, vers dos campos aqu Valeo principal y valor mximo.
+
+106
+00:07:56,950 --> 00:08:04,210
+Los exploraremos en breve y notamos que aqu est la declaracin de char char es una estructura que trataremos como
+
+107
+00:08:04,210 --> 00:08:06,310
+estructuras ms adelante en este curso.
+
+108
+00:08:06,490 --> 00:08:10,500
+Y tenga en cuenta que es un miembro del espacio de nombres del sistema.
+
+109
+00:08:10,750 --> 00:08:18,280
+Puede hacer clic en sistema y eso muestra el espacio de nombres del sistema, as como todos los tipos definidos en el espacio de
+
+110
+00:08:18,280 --> 00:08:19,340
+nombres del sistema.
+
+111
+00:08:19,420 --> 00:08:23,000
+Entonces estos son parte del marco dominante.
+
+112
+00:08:23,200 --> 00:08:25,550
+OK, vamos a cerrar esto por ahora.
+
+113
+00:08:26,560 --> 00:08:28,520
+Exploremos otro ejemplo.
+
+114
+00:08:28,570 --> 00:08:33,060
+As que voy a deshacerme de todo el cdigo que tenemos aqu porque simplemente presione el control X
+
+115
+00:08:37,780 --> 00:08:40,430
+en cada lnea y eso borra todas estas lneas aqu.
+
+116
+00:08:41,110 --> 00:08:41,740
+Bien, hagmoslo.
+
+117
+00:08:41,740 --> 00:08:42,810
+Cancele la lnea de escritura.
+
+118
+00:08:42,850 --> 00:08:50,770
+As que pestaa CW esta vez paso una cadena aqu y especifica dos
+
+119
+00:08:54,240 --> 00:09:00,530
+marcadores de posicin y finalmente proporciona un par de argumentos.
+
+120
+00:09:03,850 --> 00:09:05,890
+OK, veamos qu est pasando aqu.
+
+121
+00:09:05,920 --> 00:09:10,080
+Entonces aqu lo que tenemos se llama cadena de formato.
+
+122
+00:09:10,390 --> 00:09:13,870
+Es una especie de cadena que puede usarse como algn tipo de plantilla.
+
+123
+00:09:14,010 --> 00:09:21,640
+Entonces, en tiempo de ejecucin, lo que tenemos aqu se indica con llaves y cero, ya que el argumento ser reemplazado
+
+124
+00:09:21,910 --> 00:09:24,110
+por el valor que pasemos aqu.
+
+125
+00:09:24,160 --> 00:09:32,820
+As que 0 representa el primer argumento despus de esta cadena de formato y uno representa el segundo argumento despus de esta
+
+126
+00:09:32,830 --> 00:09:36,730
+cadena de formato, en este caso byte el siguiente valor.
+
+127
+00:09:36,730 --> 00:09:40,770
+Entonces, ejecutemos esta aplicacin.
+
+128
+00:09:41,920 --> 00:09:49,830
+Tenemos 0 y 255 y ese es el rango que puede almacenar en un byte.
+
+129
+00:09:50,560 --> 00:09:52,490
+Podemos hacer lo mismo con el flotador.
+
+130
+00:09:52,690 --> 00:09:58,180
+Entonces, CW toca un valor mximo de flotacin
+
+131
+00:10:01,120 --> 00:10:06,830
+flotante de un valor medio de cadena de formato.
+
+132
+00:10:07,610 --> 00:10:13,640
+Ejecuta la aplicacin.
+
+133
+00:10:13,810 --> 00:10:17,170
+Entonces este es el rango que podemos almacenar con un flotador.
+
+134
+00:10:17,170 --> 00:10:20,290
+Es un gran nmero que se muestra con la notacin cientfica.
+
+135
+00:10:25,300 --> 00:10:28,410
+Bien, ahora echemos un vistazo a las constantes.
+
+136
+00:10:29,050 --> 00:10:30,740
+Entonces me deshago de estas dos lneas aqu.
+
+137
+00:10:30,940 --> 00:10:42,730
+Control X control X definimos una constante con la palabra clave const Konst float P three point 1 4 y tenemos que poner f
+
+138
+00:10:42,730 --> 00:10:45,890
+al final porque es un flotante.
+
+139
+00:10:46,180 --> 00:10:52,780
+Ahora porque declaramos p como una constante aqu, puedo cambiarlo en mi programa, as que puedo
+
+140
+00:10:52,780 --> 00:10:55,550
+ir aqu y decir P enfra uno.
+
+141
+00:10:56,920 --> 00:11:01,150
+El compilador no est contento y es por eso que vemos ese subrayado rojo aqu.
+
+142
+00:11:01,240 --> 00:11:07,990
+Si coloca el mouse aqu, indica que solo el contenido local no se puede usar como destino de la tarea.
+
+143
+00:11:08,140 --> 00:11:13,720
+Es una expresin un poco rara de entender, pero bsicamente la intencin de usar constantes es tener algn
+
+144
+00:11:13,720 --> 00:11:15,700
+tipo de seguridad en su programa.
+
+145
+00:11:15,820 --> 00:11:20,530
+Entonces, si hay valores que no deberan modificarse ms all de su programa, los defini como constantes.
+
+146
+00:11:22,060 --> 00:11:24,980
+Y de esta manera no modificars accidentalmente sus valores
+

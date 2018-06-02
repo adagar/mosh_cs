@@ -1,0 +1,120 @@
+1
+00:00:02,780 --> 00:00:09,360
+Y la ltima conferencia que aprendes sobre una carrera aprende que en arreglos C-sharp tiene un tamao fijo, lo que significa que una
+
+2
+00:00:09,360 --> 00:00:12,410
+vez que los creas, el tamao no se puede cambiar.
+
+3
+00:00:12,780 --> 00:00:18,060
+Pero hay situaciones en las que necesita trabajar con una serie de objetos, pero no
+
+4
+00:00:18,060 --> 00:00:21,950
+est seguro de con cuntos de esos objetos va a trabajar.
+
+5
+00:00:21,990 --> 00:00:29,250
+Ah es donde usamos una lista elist en C-sharp es similar a una matriz en un sentido que es una estructura de datos
+
+6
+00:00:29,520 --> 00:00:32,580
+para almacenar una cantidad de objetos del mismo tipo.
+
+7
+00:00:32,910 --> 00:00:37,620
+Pero usamos una lista cuando no sabemos de antemano cuntos objetos vamos a almacenar en esa lista
+
+8
+00:00:39,390 --> 00:00:40,340
+para crear una lista.
+
+9
+00:00:40,350 --> 00:00:43,830
+Usamos la lista de tipos de lista es un tipo genrico.
+
+10
+00:00:44,160 --> 00:00:46,490
+Y eso est indicado por los corchetes angulares.
+
+11
+00:00:46,530 --> 00:00:53,490
+Como puede ver en este ejemplo dentro de los corchetes angulares, especificamos un apuntador genrico y ese parmetro
+
+12
+00:00:53,550 --> 00:00:55,620
+especifica el tipo de la lista.
+
+13
+00:00:55,620 --> 00:00:58,560
+Entonces, en este caso, estoy creando una lista de enteros.
+
+14
+00:00:58,830 --> 00:01:04,500
+Podemos crear una lista de todo lo que pueda crear una lista de cadenas o una lista de caracteres o
+
+15
+00:01:04,500 --> 00:01:06,450
+una lista de cualquier tipo no primitivo.
+
+16
+00:01:06,630 --> 00:01:11,180
+Puede crear una clase llamada producto y crear una lista de productos.
+
+17
+00:01:11,250 --> 00:01:15,630
+Los genricos son un tema avanzado y, por ahora, usted sabe que debe
+
+18
+00:01:15,630 --> 00:01:21,120
+saber que cuando trabaja con un tipo genrico necesita especificar parmetros genricos dentro de los corchetes angulares.
+
+19
+00:01:21,270 --> 00:01:23,830
+Y la tercera parte de este curso avanz C-Sharp.
+
+20
+00:01:23,940 --> 00:01:29,490
+Voy a tratar los genricos con ms detalle si conoce con anticipacin los objetos que desea almacenar en
+
+21
+00:01:29,490 --> 00:01:30,250
+la lista.
+
+22
+00:01:30,390 --> 00:01:35,800
+Puede inicializar su lista usando la sintaxis de inicializacin de objetos como puede ver aqu.
+
+23
+00:01:35,880 --> 00:01:41,440
+As que pones los objetos entre llaves durante la inicializacin de tu lista.
+
+24
+00:01:41,910 --> 00:01:45,710
+Y aqu hay algunos mtodos tiles que estn disponibles en la clase de lista.
+
+25
+00:01:45,790 --> 00:01:52,830
+Tuve que agregar un objeto a la lista agregar rango a cualquiera de las listas de objetos que pueden ser
+
+26
+00:01:52,830 --> 00:02:00,180
+otra lista o eliminar una matriz para eliminar un objeto de la lista eliminar a la que elimina el objeto y
+
+27
+00:02:00,870 --> 00:02:05,980
+el ndice de ndice dado que devuelve el ndice de la objeto dado contiene.
+
+28
+00:02:06,000 --> 00:02:12,210
+Lo cual nos dice si la lista contiene el objeto dado o no y cuenta que devuelve la cantidad
+
+29
+00:02:12,210 --> 00:02:13,830
+de objetos en la lista.
+
+30
+00:02:13,830 --> 00:02:17,990
+Vayamos realmente a Visual Studio y veamos todos estos mtodos en accin.
+

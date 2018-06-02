@@ -1,0 +1,428 @@
+1
+00:00:02,250 --> 00:00:09,510
+OK, aqu tengo una aplicacin de consola en blanco y quiero crear una clase llamada persona para que podamos crear una clase
+
+2
+00:00:09,510 --> 00:00:13,750
+aqu dentro del mtodo principal porque esa es una funcin o un mtodo.
+
+3
+00:00:14,160 --> 00:00:16,920
+Entonces, necesitamos crear una clase en el nivel del espacio de nombres.
+
+4
+00:00:16,920 --> 00:00:21,140
+As que mira aqu tenemos un espacio de nombres y aqu hay una clase predeterminada.
+
+5
+00:00:21,390 --> 00:00:23,480
+Podemos crear otra clase en este nivel.
+
+6
+00:00:23,850 --> 00:00:30,470
+Entonces bloque de cdigo de persona de clase pblica.
+
+7
+00:00:31,500 --> 00:00:41,440
+Ahora listicle son un par de campos tan pblico nombre de cadena pblica cadena apellido I
+
+8
+00:00:41,460 --> 00:00:50,650
+como declarar un mtodo Pawlick void lo que significa que no devuelve ningn valor introducido.
+
+9
+00:00:50,780 --> 00:00:57,660
+Y aqu simplemente uso la consola en la lnea derecha para mostrar el nombre completo de esta persona en la consola de la consola.
+
+10
+00:00:58,530 --> 00:01:01,930
+Punto escribe lnea.
+
+11
+00:01:02,460 --> 00:01:13,050
+Mi nombre es primer nombre y me gustara agregar un espacio entre ellos y el apellido.
+
+12
+00:01:13,560 --> 00:01:16,000
+Nounless crea un objeto de tipo persona.
+
+13
+00:01:16,020 --> 00:01:18,000
+Entonces vamos al mtodo principal.
+
+14
+00:01:18,450 --> 00:01:28,490
+Podemos comenzar con la persona llammoslo John es igual a nueva persona S que el resaltado verde aqu reafirmando sugiere usar var
+
+15
+00:01:28,560 --> 00:01:33,520
+para hacer este cdigo un poco ms corto y ms limpio.
+
+16
+00:01:33,660 --> 00:01:40,650
+As que coloqu el cursor aqu Altan entrar y entrar.
+
+17
+00:01:40,680 --> 00:01:44,300
+Ahora establezcamos el nombre y apellido de este objeto.
+
+18
+00:01:44,340 --> 00:01:52,000
+As que el primer nombre de Juan llama a John John ese apellido.
+
+19
+00:01:52,110 --> 00:01:54,310
+l llama a Smith.
+
+20
+00:01:55,200 --> 00:01:58,960
+S que podemos llamar al mtodo Introducir.
+
+21
+00:02:01,320 --> 00:02:06,160
+Vamos a ejecutar el control de la aplicacin y F5.
+
+22
+00:02:08,430 --> 00:02:11,750
+Entonces mi nombre es John Smith.
+
+23
+00:02:12,740 --> 00:02:14,700
+OK, ahora djame mostrarte algo.
+
+24
+00:02:14,700 --> 00:02:20,280
+Cuando escribes una aplicacin del mundo real vas a tener decenas cientos o incluso miles de clases.
+
+25
+00:02:20,940 --> 00:02:24,390
+Entonces no vas a poner todas estas clases dentro de este archivo aqu.
+
+26
+00:02:24,390 --> 00:02:26,450
+De lo contrario, el archivo explotar.
+
+27
+00:02:26,460 --> 00:02:29,950
+Entonces queremos tener un perfil de clase.
+
+28
+00:02:29,970 --> 00:02:33,470
+Si tiene el ms ntido Puede mover fcilmente esta clase a un nuevo archivo.
+
+29
+00:02:33,720 --> 00:02:40,520
+Entonces, todo lo que debe hacer es colocar el cursor sobre el nombre de la clase, presione Hultin enter y no la primera opcin.
+
+30
+00:02:40,770 --> 00:02:46,330
+Muvete a la persona que nos ve entrar.
+
+31
+00:02:46,470 --> 00:02:53,400
+Lo que sucedi fue reafilar automticamente cre un nuevo archivo llamado persona que s y mover
+
+32
+00:02:53,400 --> 00:02:59,430
+esta clase del programa que archivo c que estaba aqu dentro del nuevo archivo.
+
+33
+00:02:59,670 --> 00:03:06,300
+As que no tuve que ir a crear manualmente un nuevo archivo y escribir el nombre del clster, pero si
+
+34
+00:03:06,300 --> 00:03:08,780
+no tienes ms ntida, est perfectamente bien.
+
+35
+00:03:08,850 --> 00:03:16,750
+Entonces, para agregar un nuevo grupo de proyectos vaya al explorador de soluciones, haga clic derecho en su proyecto y luego vaya a agregar.
+
+36
+00:03:17,700 --> 00:03:22,580
+De hecho, puedes ver que aqu djame conducir el explorador de soluciones hacia la izquierda.
+
+37
+00:03:22,740 --> 00:03:23,860
+DE ACUERDO.
+
+38
+00:03:24,360 --> 00:03:31,000
+Haga clic derecho en esa clase o puede usar el cambio de atajo.
+
+39
+00:03:31,050 --> 00:03:32,860
+Y ver.
+
+40
+00:03:33,980 --> 00:03:38,090
+Ahora simplemente no tengo que escribir el nombre de su clase, digamos calculadora.
+
+41
+00:03:38,730 --> 00:03:40,590
+Eso es.
+
+42
+00:03:40,590 --> 00:03:42,430
+Ahora tienes un nuevo archivo aqu calculadora.
+
+43
+00:03:42,500 --> 00:03:42,990
+S.
+
+44
+00:03:42,990 --> 00:03:45,070
+Y aqu hay una clase.
+
+45
+00:03:45,090 --> 00:03:50,010
+Tenga en cuenta que en este ejemplo porque el nombre de mi proyecto es fundamental C-Sharp.
+
+46
+00:03:50,010 --> 00:03:57,210
+Cada vez que creo una clase de forma predeterminada, est dentro del espacio de nombres de fundamentos del litoral y la
+
+47
+00:03:57,210 --> 00:03:58,390
+introduccin de este curso.
+
+48
+00:03:58,410 --> 00:04:05,730
+Explico que queremos un grupo de clases relacionadas dentro de diferentes espacios de nombre, por lo que tal vez el costo de
+
+49
+00:04:05,730 --> 00:04:10,200
+la persona sea diferente de la calculadora. La calculadora se trata ms de matemticas.
+
+50
+00:04:10,250 --> 00:04:14,010
+Donde esta persona podra ser parte de una aplicacin comercial.
+
+51
+00:04:14,250 --> 00:04:22,020
+Entonces, una mejor forma es hacer clic con el botn derecho en el proyecto y agregar una nueva carpeta.
+
+52
+00:04:22,980 --> 00:04:26,260
+Creamos una nueva carpeta como matemtica.
+
+53
+00:04:26,310 --> 00:04:33,100
+Luego movimos esta confirmacin del clster de calculadora.
+
+54
+00:04:33,270 --> 00:04:37,760
+El nico problema es cuando mueves el espacio de nombres no se cambia por defecto.
+
+55
+00:04:37,980 --> 00:04:42,740
+Por lo tanto, debe ir aqu de forma manual y consultar las matemticas aqu.
+
+56
+00:04:42,960 --> 00:04:45,710
+O si has reafilado, ni siquiera tienes que escribir eso.
+
+57
+00:04:45,860 --> 00:04:50,450
+Puede colocar el cursor sobre el espacio de nombre y presionar alternar enter e intro.
+
+58
+00:04:50,850 --> 00:04:56,560
+Y eso actualiza automticamente el espacio de nombres, los fundamentos C-sharp que matemticamente.
+
+59
+00:04:56,700 --> 00:04:58,560
+As que aqu est nuestra clase de calculadora.
+
+60
+00:04:58,560 --> 00:05:02,000
+Primero agregamos la palabra clave pblica para que est accesible.
+
+61
+00:05:02,100 --> 00:05:10,470
+No, si no lo hago, me muero y voy a programar que C-s no voy a poder crear una nueva
+
+62
+00:05:10,470 --> 00:05:11,720
+instancia de calculadora.
+
+63
+00:05:11,940 --> 00:05:19,770
+Entonces, si escribo calculadora de calculadora, el intellisense no puede encontrar esa clase porque no es accesible.
+
+64
+00:05:20,640 --> 00:05:25,090
+Ahora vamos a la calculadora en la palabra clave pblica aqu.
+
+65
+00:05:25,950 --> 00:05:26,940
+Volver al programa
+
+66
+00:05:30,150 --> 00:05:36,390
+y reafilar est sugiriendo importar esa clase de calculadora, lo que significa agregar una instruccin de uso en la
+
+67
+00:05:36,390 --> 00:05:37,910
+parte superior de este archivo.
+
+68
+00:05:37,920 --> 00:05:44,970
+Entonces con el reafilado puedo presionar Altan enter y automticamente agregara esta declaracin de uso aqu.
+
+69
+00:05:44,970 --> 00:05:52,910
+Pero si no tienes ms ntida Tienes que ir al principio del archivo manualmente, escribe el nombre del espacio de nombres donde
+
+70
+00:05:53,170 --> 00:05:54,690
+se declara esa clase.
+
+71
+00:05:54,930 --> 00:05:59,920
+Entonces, usar los fundamentos de C-Sharp es matemtico.
+
+72
+00:05:59,940 --> 00:06:02,280
+As que ves que reafilar hace que la codificacin sea mucho ms fcil.
+
+73
+00:06:02,280 --> 00:06:04,630
+Tendr que preocuparse por estos espacios de nombre.
+
+74
+00:06:04,900 --> 00:06:06,900
+Que clase es en que espacio de nombres.
+
+75
+00:06:06,900 --> 00:06:10,970
+Y no tiene que escribirlos; simplemente escriba el nombre de su clase y Lady Sharper.
+
+76
+00:06:10,980 --> 00:06:12,900
+Haz todas las caeras para ti.
+
+77
+00:06:13,500 --> 00:06:13,970
+DE ACUERDO.
+
+78
+00:06:14,010 --> 00:06:17,820
+Ahora tenemos una clase de calculadora, vamos a crear un objeto
+
+79
+00:06:20,550 --> 00:06:24,540
+y usamos el nuevo operador para asignar memoria a ese objeto.
+
+80
+00:06:24,870 --> 00:06:28,080
+Y me di cuenta de que no tenamos ningn mtodo para esta clase.
+
+81
+00:06:28,200 --> 00:06:30,740
+As que volvamos all.
+
+82
+00:06:32,250 --> 00:06:41,010
+Vamos a crear un nuevo mtodo llamado that que devuelve un entero y toma dos emisores principales a y b.
+
+83
+00:06:43,230 --> 00:06:48,540
+Y simplemente los suma y los devuelve.
+
+84
+00:06:48,540 --> 00:06:55,560
+Ahora guardamos el archivo con control y como volver a programar una forma rpida de hacerlo, presionas
+
+85
+00:06:55,560 --> 00:07:00,830
+Control y toca y puedes alternar entre las ventanas abiertas en Visual Studio.
+
+86
+00:07:01,620 --> 00:07:06,190
+Por lo tanto, no tiene que agarrar el mouse todas las veces y hacer clic en estas pestaas en la parte superior.
+
+87
+00:07:06,420 --> 00:07:08,200
+Puedes hacer todo con tu teclado.
+
+88
+00:07:08,670 --> 00:07:10,430
+As que de vuelta al programa.
+
+89
+00:07:10,560 --> 00:07:12,480
+S.
+
+90
+00:07:13,560 --> 00:07:16,270
+Y aqu llamamos al mtodo de publicidad.
+
+91
+00:07:16,320 --> 00:07:20,460
+Usted pasa dos argumentos uno y dos.
+
+92
+00:07:20,970 --> 00:07:29,910
+Puede almacenar los resultados en otra variable var result = y podemos generar esa variable en la consola de
+
+93
+00:07:30,740 --> 00:07:31,530
+la consola.
+
+94
+00:07:31,620 --> 00:07:35,880
+Ese gran resultado de lnea.
+
+95
+00:07:35,910 --> 00:07:40,330
+Ahora ejecutemos la aplicacin con control y F5.
+
+96
+00:07:41,580 --> 00:07:44,610
+Entonces el resultado es tres.
+
+97
+00:07:44,990 --> 00:07:49,800
+Ahora, antes de terminar esta conferencia, quiero mostrarte algo interesante aqu.
+
+98
+00:07:49,800 --> 00:07:57,690
+Mire cada vez que usamos la consola en la lnea derecha, accedemos a ese mtodo directamente en la clase de la consola.
+
+99
+00:07:58,560 --> 00:08:00,280
+Qu significa esto.
+
+100
+00:08:00,450 --> 00:08:04,390
+Eso significa que el mtodo de lnea correcto se define como esttico.
+
+101
+00:08:04,470 --> 00:08:10,500
+No tenemos que ir y crear un nuevo objeto de consola para llamar al mtodo de lnea correcto.
+
+102
+00:08:11,190 --> 00:08:15,510
+Entonces todos usan un modificador esttico antes sin darse cuenta de eso.
+
+103
+00:08:15,720 --> 00:08:21,440
+En este caso, todos los mtodos de la clase de la consola se declaran como estudio porque solo
+
+104
+00:08:21,450 --> 00:08:23,670
+tenemos una consola cuando ejecutamos la aplicacin.
+
+105
+00:08:24,120 --> 00:08:25,130
+Eso es todo por esta conferencia.
+
+106
+00:08:25,140 --> 00:08:25,960
+Espero que lo disfruten.
+
+107
+00:08:25,980 --> 00:08:26,960
+Y gracias por mirar
+

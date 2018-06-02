@@ -1,0 +1,128 @@
+1
+00:00:03,960 --> 00:00:09,570
+Otro tipo no permisivo que tenemos en C-sharp es array y esta conferencia voy a dar una
+
+2
+00:00:09,570 --> 00:00:12,270
+breve introduccin de nuestra edad para que comiences.
+
+3
+00:00:12,270 --> 00:00:17,040
+Ms adelante, en el nuevo curso de puntajes, tenemos una seccin separada sobre arreglos y all abordar ms detalles.
+
+4
+00:00:18,030 --> 00:00:21,240
+Entonces, lo que estoy cubriendo esta conferencia es qu es una matriz.
+
+5
+00:00:21,450 --> 00:00:26,960
+Cmo declarar e inicializar matrices y cmo acceder a los elementos de la matriz.
+
+6
+00:00:27,060 --> 00:00:34,230
+Entonces, qu es una matriz una matriz como una estructura de datos que utilizamos para almacenar una coleccin de
+
+7
+00:00:34,230 --> 00:00:35,790
+variables del mismo tipo.
+
+8
+00:00:35,880 --> 00:00:39,030
+Por ejemplo, imagine que le gustara trabajar con tres nmeros.
+
+9
+00:00:39,270 --> 00:00:45,630
+Entonces, en lugar de declarar tres variables enteras como el nmero uno dos tres, puede declarar
+
+10
+00:00:45,630 --> 00:00:47,370
+un conjunto y llamarlo nmeros.
+
+11
+00:00:47,370 --> 00:00:49,260
+No los corchetes aqu.
+
+12
+00:00:49,470 --> 00:00:53,660
+El primero se usa para decirle al compilador que nos gustara declarar una matriz.
+
+13
+00:00:53,910 --> 00:00:57,360
+Y el segundo se usa para establecer el tamao de mothery.
+
+14
+00:00:58,020 --> 00:01:03,980
+Por lo tanto, en C, las matrices Sharp tienen un tamao fijo, lo que significa que debe especificar durante
+
+15
+00:01:03,980 --> 00:01:06,000
+la declaracin y no puede modificarse.
+
+16
+00:01:06,000 --> 00:01:08,170
+Tambin tenga en cuenta el nuevo operador aqu.
+
+17
+00:01:08,550 --> 00:01:11,290
+Al declarar una matriz, debe asignarle memoria.
+
+18
+00:01:11,490 --> 00:01:15,030
+Y es por eso que necesita usar el nuevo operador tambin.
+
+19
+00:01:15,090 --> 00:01:17,510
+Una matriz no es un objeto detrs de la escena.
+
+20
+00:01:17,790 --> 00:01:20,210
+En resumen, tenemos una clase llamada matriz.
+
+21
+00:01:20,430 --> 00:01:26,250
+Y cuando declaras una matriz usando esta sintaxis aqu internamente, el compilador crea una instancia de
+
+22
+00:01:26,250 --> 00:01:27,070
+esa clase.
+
+23
+00:01:27,120 --> 00:01:27,970
+Entonces un objeto.
+
+24
+00:01:28,110 --> 00:01:31,630
+Y es por eso que debemos asignarle memoria.
+
+25
+00:01:31,950 --> 00:01:37,890
+Ahora que tenemos una matriz, podemos acceder a sus elementos utilizando un ndice que proporcionamos entre corchetes.
+
+26
+00:01:38,940 --> 00:01:45,060
+Nadie en las matrices C-sharp tiene un ndice nulo, lo que significa que el primer elemento de una
+
+27
+00:01:45,060 --> 00:01:52,140
+matriz tiene el ndice de 0. Si conoce los valores que desea almacenar en una matriz, puede usar la sintaxis de
+
+28
+00:01:52,140 --> 00:01:56,490
+inicializacin de objetos y hacer que este cdigo sea ms corto. .
+
+29
+00:01:56,490 --> 00:02:01,660
+Entonces, durante la declaracin, usted proporciona los valores en llaves nuevamente.
+
+30
+00:02:01,680 --> 00:02:06,570
+Esta fue una introduccin rpida a las matrices para que pueda comenzar rpidamente y escribir algunos programas simples.
+
+31
+00:02:06,990 --> 00:02:11,190
+Voy a cubrir matrices con ms detalle en una seccin posterior de este curso.
+
+32
+00:02:11,190 --> 00:02:13,980
+Ahora pasemos a Visual Studio y hagamos algo de codificacin
+

@@ -1,0 +1,160 @@
+1
+00:00:03,420 --> 00:00:06,780
+OK hasta ahora hemos hablado sobre varios tipos de datos y C-sharp.
+
+2
+00:00:07,290 --> 00:00:14,130
+Examinamos tipos primitivos como un grupo flotante de caracteres principales y algunos tipos primitivos
+
+3
+00:00:14,130 --> 00:00:17,730
+conocidos, como clases, estructuras, matrices y cadenas.
+
+4
+00:00:18,090 --> 00:00:22,710
+Y te dije antes que ambas cadenas y matrices son clases.
+
+5
+00:00:22,710 --> 00:00:28,770
+As que te mostr durante una de las demostraciones que esta palabra potable domina la clase String y eso y
+
+6
+00:00:28,770 --> 00:00:32,830
+lo mismo vale para la notacin de matriz que se asigna a su A-Class.
+
+7
+00:00:32,890 --> 00:00:35,720
+Ahora eso nos lleva a un tema interesante.
+
+8
+00:00:36,090 --> 00:00:42,240
+Y C-Sharp esencialmente tenemos dos tipos principales a partir de los cuales creamos nuevos tipos.
+
+9
+00:00:42,240 --> 00:00:46,380
+Tenemos clases en un lado y estructuras en el otro lado.
+
+10
+00:00:46,830 --> 00:00:51,440
+Entonces, cada vez que hemos aprendido hasta ahora, es una clase o una estructura.
+
+11
+00:00:51,750 --> 00:00:55,110
+Entonces todos los tipos primitivos son estructuras.
+
+12
+00:00:55,110 --> 00:01:02,370
+Recuerda que te dije que utilizas las estructuras para tipos pequeos como nuestro color G-B y que sealas bien que todos los tipos
+
+13
+00:01:02,370 --> 00:01:04,020
+primitivos son tipos muy pequeos.
+
+14
+00:01:04,110 --> 00:01:06,460
+No toman ms de 8 bytes.
+
+15
+00:01:06,570 --> 00:01:13,650
+Es por eso que estn definidos internamente como una estructura en matrices de punto neto y las cadenas son ambas clases.
+
+16
+00:01:14,850 --> 00:01:19,730
+Tambin podemos crear clases personalizadas como persona o calculadora.
+
+17
+00:01:19,860 --> 00:01:25,980
+Ahora, en C-sharp, estas clases de estructuras se tratan de forma diferente en tiempo de ejecucin en trminos de gestin de memoria.
+
+18
+00:01:26,610 --> 00:01:28,720
+Y eso es lo que voy a tratar en esta conferencia.
+
+19
+00:01:29,070 --> 00:01:32,370
+Quiero que entiendas lo que ocurre debajo del cap en la memoria.
+
+20
+00:01:32,670 --> 00:01:37,690
+Entonces, si su programa no se comporta de la manera que espera, podr solucionarlo.
+
+21
+00:01:38,040 --> 00:01:43,690
+Las estructuras son lo que llamamos tipos de valor mientras que las clases son tipos de referencia.
+
+22
+00:01:43,770 --> 00:01:48,840
+Cuando crea una variable que es un tipo de valor, se asigna una parte de la memoria
+
+23
+00:01:48,840 --> 00:01:50,280
+llamada Stack para esa variable.
+
+24
+00:01:50,330 --> 00:01:54,430
+Esta asignacin de memoria se realiza automticamente para que no tenga que preocuparse por ello.
+
+25
+00:01:55,140 --> 00:02:00,820
+Cuando esta variable se sale del alcance, se eliminar inmediatamente de la pila por tiempo de
+
+26
+00:02:00,820 --> 00:02:07,310
+ejecucin o C-L o con tipos de referencia, sin embargo, el programador debe asignar la memoria usted mismo.
+
+27
+00:02:07,590 --> 00:02:12,340
+Recuerde que el nuevo operador usamos el nuevo operador con clases.
+
+28
+00:02:12,690 --> 00:02:18,210
+Entonces, cuando usamos el nuevo operador le decimos al tiempo de ejecucin que asigne memoria a este objeto.
+
+29
+00:02:18,540 --> 00:02:25,440
+Y esto sucede desde un rea diferente de la memoria llamada memoria de pila en la pila es ms sostenible.
+
+30
+00:02:26,160 --> 00:02:31,770
+Por lo tanto, si crea un objeto y ese objeto queda fuera del alcance, continuar existiendo en el
+
+31
+00:02:31,770 --> 00:02:33,000
+montn durante un tiempo.
+
+32
+00:02:33,180 --> 00:02:35,480
+No ser eliminado de inmediato.
+
+33
+00:02:35,510 --> 00:02:41,580
+Hay un proceso llamado recoleccin de basura que se realiza por tiempo de ejecucin o C-L o que se ocupa de esto.
+
+34
+00:02:42,810 --> 00:02:48,180
+De modo que de vez en cuando se observan los objetos que ya no se usan y
+
+35
+00:02:48,180 --> 00:02:49,590
+se eliminan del montn.
+
+36
+00:02:49,620 --> 00:02:53,550
+Ahora esta era la teora detrs de los tipos de valores y tipos de referencia.
+
+37
+00:02:53,580 --> 00:02:59,910
+Lo que necesita saber en trminos pragmticos es cuando copia un objeto a una nueva variable dependiendo de si ese objeto es
+
+38
+00:02:59,910 --> 00:03:02,680
+un tipo de valor o un tipo de referencia.
+
+39
+00:03:02,910 --> 00:03:07,020
+Habr dos resultados diferentes y es mucho ms fcil mostrar esto en el cdigo.
+
+40
+00:03:07,290 --> 00:03:12,640
+As que pasemos a Visual Studio y veamos cmo los tipos de valores de copia y los diferentes tipos son diferentes
+

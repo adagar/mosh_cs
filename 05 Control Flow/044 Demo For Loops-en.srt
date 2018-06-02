@@ -1,0 +1,88 @@
+1
+00:00:02,820 --> 00:00:07,650
+OK imagine we want to display the list of even numbers from 1 to 10.
+
+2
+00:00:07,650 --> 00:00:13,740
+So we need to loop to go over the list of numbers between 1 to 10 and for each number we need to check
+
+3
+00:00:13,740 --> 00:00:16,660
+the remainder of its division by 2.
+
+4
+00:00:16,770 --> 00:00:19,190
+And if it's zero that means it's an even number.
+
+5
+00:00:19,440 --> 00:00:20,850
+So let's start with a for loop
+
+6
+00:00:25,820 --> 00:00:28,700
+.
+
+7
+00:00:29,490 --> 00:00:31,860
+So with this loop we said I to 1.
+
+8
+00:00:32,040 --> 00:00:38,550
+And as long as it is less than or equal to 10 in each iteration we increment I buy one.
+
+9
+00:00:38,550 --> 00:00:44,910
+Now we need to check the remainder of division of I by 2.
+
+10
+00:00:48,570 --> 00:00:58,110
+So if that's zero we want to display I on the console just like let's run the application.
+
+11
+00:00:59,400 --> 00:01:02,620
+So we got 2 4 6 8 and 10.
+
+12
+00:01:02,640 --> 00:01:06,240
+Now what if we want to reverse this order.
+
+13
+00:01:06,240 --> 00:01:07,880
+Let's try this program again.
+
+14
+00:01:08,040 --> 00:01:08,790
+So this time
+
+15
+00:01:11,940 --> 00:01:16,200
+I'm going to create another for loop but instead of starting from 1 I start from 10
+
+16
+00:01:19,140 --> 00:01:26,970
+and I change the condition to as long as I is greater than or equal to 1 then I am minus minus which
+
+17
+00:01:26,970 --> 00:01:28,020
+means decrement.
+
+18
+00:01:28,020 --> 00:01:31,440
+I buy one.
+
+19
+00:01:31,440 --> 00:01:33,090
+Now we are going to have the same condition
+
+20
+00:01:36,880 --> 00:01:40,360
+cancel the right line.
+
+21
+00:01:41,520 --> 00:01:45,350
+So let's run the application again.
+
+22
+00:01:47,400 --> 00:01:53,180
+OK now you see in the second part we start from 10 and then we have 8 6 4 and 2
+

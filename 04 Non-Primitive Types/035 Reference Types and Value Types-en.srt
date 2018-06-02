@@ -1,0 +1,176 @@
+1
+00:00:03,420 --> 00:00:06,780
+OK so far we have talked about various data types and C-sharp.
+
+2
+00:00:07,290 --> 00:00:14,130
+We looked at primitive types like a major character float pool and a few known primitive types like
+
+3
+00:00:14,130 --> 00:00:17,730
+classes structures arrays and strings.
+
+4
+00:00:18,090 --> 00:00:22,710
+And I told you earlier that both strings and arrays are classes.
+
+5
+00:00:22,710 --> 00:00:28,770
+So I showed you during one of the demos that this drinky word master the String class and that and same
+
+6
+00:00:28,770 --> 00:00:32,830
+goes for the array notation that maps to their A-Class.
+
+7
+00:00:32,890 --> 00:00:35,720
+Now that brings us to an interesting topic.
+
+8
+00:00:36,090 --> 00:00:42,240
+And C-Sharp essentially we have two main types from which we create new types.
+
+9
+00:00:42,240 --> 00:00:46,380
+We have classes on one side and structures on the other side.
+
+10
+00:00:46,830 --> 00:00:51,440
+So every time we have learned so far is either a class or a structure.
+
+11
+00:00:51,750 --> 00:00:55,110
+So all primitive types are structures.
+
+12
+00:00:55,110 --> 00:01:02,370
+Remember I told you use the structures for small types like our G-B color and point well all primitive
+
+13
+00:01:02,370 --> 00:01:04,020
+types are very small types.
+
+14
+00:01:04,110 --> 00:01:06,460
+They take no more than 8 bytes.
+
+15
+00:01:06,570 --> 00:01:13,650
+That's why they are internally defined as a structure in dot net arrays and strings are both classes
+
+16
+00:01:13,650 --> 00:01:14,790
+.
+
+17
+00:01:14,850 --> 00:01:19,730
+We can also create custom classes like person or calculator.
+
+18
+00:01:19,860 --> 00:01:25,980
+Now in C-sharp these classes on structures are treated differently at runtime in terms of memory management
+
+19
+00:01:25,980 --> 00:01:26,610
+.
+
+20
+00:01:26,610 --> 00:01:28,720
+And that's what I'm going to cover in this lecture.
+
+21
+00:01:29,070 --> 00:01:32,370
+I want you to understand what happens under the hood in memory.
+
+22
+00:01:32,670 --> 00:01:37,690
+So if your program does not behave the way you expect you'll be able to troubleshoot it.
+
+23
+00:01:38,040 --> 00:01:43,690
+Structures are what we call value types while classes are reference types.
+
+24
+00:01:43,770 --> 00:01:48,840
+When you create a variable that is a value type a part of memory called Stack is allocated for that
+
+25
+00:01:48,840 --> 00:01:50,280
+variable.
+
+26
+00:01:50,330 --> 00:01:54,430
+This memory allocation is done automatically so you don't have to worry about it.
+
+27
+00:01:55,140 --> 00:02:00,820
+When this variable goes out of scope it will immediately get removed from the stack by runtime or C-L
+
+28
+00:02:00,820 --> 00:02:07,310
+or with reference types however you the programmer need to allocate memory yourself.
+
+29
+00:02:07,590 --> 00:02:12,340
+Remember the new operator we use the new operator with classes.
+
+30
+00:02:12,690 --> 00:02:18,210
+So when we use the new operator we tell the runtime to allocate memory to this object.
+
+31
+00:02:18,540 --> 00:02:25,440
+And this happens from a different area of the memory called heap memory on the stack is more sustainable
+
+32
+00:02:25,440 --> 00:02:26,160
+.
+
+33
+00:02:26,160 --> 00:02:31,770
+So if you create an object and that object goes out of scope it will continue to exist in the heap for
+
+34
+00:02:31,770 --> 00:02:33,000
+a little while.
+
+35
+00:02:33,180 --> 00:02:35,480
+It won't be removed immediately.
+
+36
+00:02:35,510 --> 00:02:41,580
+There is a process called garbage collection which is done by runtime or C-L or that takes care of this
+
+37
+00:02:41,600 --> 00:02:42,230
+.
+
+38
+00:02:42,810 --> 00:02:48,180
+So once in a while still are looks at the objects that are no longer used and removes them from the
+
+39
+00:02:48,180 --> 00:02:49,590
+heap.
+
+40
+00:02:49,620 --> 00:02:53,550
+Now this was the theory behind value types and reference types.
+
+41
+00:02:53,580 --> 00:02:59,910
+What do you need to know in pragmatic terms is when you copy an object to a new variable depending on
+
+42
+00:02:59,910 --> 00:03:02,680
+whether that object is a value type or reference type.
+
+43
+00:03:02,910 --> 00:03:07,020
+There will be two different outcomes and it's much easier to show this in code.
+
+44
+00:03:07,290 --> 00:03:12,640
+So let's flip over to Visual Studio and see how copying value types and different types are different
+

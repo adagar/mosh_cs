@@ -1,0 +1,196 @@
+1
+00:00:02,670 --> 00:00:07,860
+OK let's take a look at another example of reference types and value types in action.
+
+2
+00:00:07,890 --> 00:00:12,820
+So in this code I have defined a class called person with one field called H.
+
+3
+00:00:13,350 --> 00:00:22,260
+And inside our program class I have defined two methods increment and make Allt the return type of both
+
+4
+00:00:22,260 --> 00:00:26,880
+these methods is voit which means they don't return any values.
+
+5
+00:00:27,000 --> 00:00:32,070
+And the reason I have defined both these methods of study is simply to call them without the need to
+
+6
+00:00:32,070 --> 00:00:33,050
+create an object.
+
+7
+00:00:33,270 --> 00:00:35,070
+Just want to keep things simple.
+
+8
+00:00:35,430 --> 00:00:38,730
+So in the main first I'm going to create an integer called number
+
+9
+00:00:42,180 --> 00:00:45,190
+and I set it to 1.
+
+10
+00:00:45,210 --> 00:00:54,650
+Now I'm going to call the increment method and pass my number viable as an argument.
+
+11
+00:00:55,440 --> 00:01:01,890
+So the Inkerman method takes a parameter of type integer called number and adds 10 to it.
+
+12
+00:01:01,890 --> 00:01:07,920
+Note that here I'm using the addition assignment operator to add 10 to the number that is passed to
+
+13
+00:01:07,920 --> 00:01:10,700
+this method.
+
+14
+00:01:10,710 --> 00:01:16,990
+Now at this point what do you think is going to be the value of our number in the main method.
+
+15
+00:01:17,880 --> 00:01:21,200
+It's going to be one because this is a value type.
+
+16
+00:01:21,660 --> 00:01:26,850
+And when we passed these variable as an argument to the increment method a copy of this variable is
+
+17
+00:01:26,850 --> 00:01:29,970
+taken and sent to the Inkerman method.
+
+18
+00:01:29,970 --> 00:01:34,890
+So interestingly even though these two variables have the same name but there in two different locations
+
+19
+00:01:34,890 --> 00:01:39,900
+in memory one is the number with the scope of the main method.
+
+20
+00:01:40,080 --> 00:01:44,090
+So outside the main method this variable does not have a meaning.
+
+21
+00:01:44,220 --> 00:01:47,900
+And here we have another number coincidentally have the same name.
+
+22
+00:01:48,150 --> 00:01:53,880
+Inside the Inkerman method but that's a different place in memory and its scope is limited to the Inkerman
+
+23
+00:01:53,880 --> 00:01:55,740
+method.
+
+24
+00:01:55,740 --> 00:02:00,770
+So when this increment method is called that new location is created called number.
+
+25
+00:02:00,810 --> 00:02:05,580
+Its value is incremented by 10 and then it's immediately destroyed.
+
+26
+00:02:05,580 --> 00:02:06,590
+Now let's verify this.
+
+27
+00:02:06,600 --> 00:02:11,830
+So I want to use console the right line and display number.
+
+28
+00:02:12,540 --> 00:02:15,360
+We run the application.
+
+29
+00:02:15,360 --> 00:02:16,820
+So our number is 1.
+
+30
+00:02:17,160 --> 00:02:20,540
+It's not affected by the increment method.
+
+31
+00:02:21,990 --> 00:02:25,150
+Now let's take a look at an example of a reference type.
+
+32
+00:02:25,710 --> 00:02:29,220
+So this time I'm going to use our personnel class.
+
+33
+00:02:29,220 --> 00:02:30,690
+So I create person object
+
+34
+00:02:34,140 --> 00:02:41,050
+and used the object initialization syntax to set its field.
+
+35
+00:02:41,670 --> 00:02:44,670
+So this person is 20 years old.
+
+36
+00:02:44,670 --> 00:02:53,240
+Now here we have another method called Make old that takes a person object and adds 10 tweets age of
+
+37
+00:02:53,240 --> 00:02:54,540
+field.
+
+38
+00:02:54,690 --> 00:03:00,390
+So note that here because the type of this parameter is a reference type the object that is going to
+
+39
+00:03:00,390 --> 00:03:03,560
+be passed here is not going to be copied.
+
+40
+00:03:03,750 --> 00:03:05,710
+Each reference is going to be copied.
+
+41
+00:03:05,820 --> 00:03:12,570
+Which means both the person object we have the main method and the person object that we have as a parameter
+
+42
+00:03:12,570 --> 00:03:17,510
+to this method will be pointing to the same object on the heap.
+
+43
+00:03:18,680 --> 00:03:29,430
+OK so if we call make old and past this person object upon returning from this method the age of this
+
+44
+00:03:29,430 --> 00:03:34,380
+person is going to be 30 let's verify that.
+
+45
+00:03:34,770 --> 00:03:41,250
+So person the age and just run the application.
+
+46
+00:03:41,430 --> 00:03:43,990
+There you go.
+
+47
+00:03:44,490 --> 00:03:45,410
+That's it for this lecture.
+
+48
+00:03:45,420 --> 00:03:46,040
+I hope you enjoy it.
+
+49
+00:03:46,050 --> 00:03:47,090
+And thank you for watching
+

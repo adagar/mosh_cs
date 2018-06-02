@@ -1,0 +1,44 @@
+1
+00:00:04,680 --> 00:00:10,180
+So in this section you learn that we have two main categories of types in C Sharp on one side we've
+
+2
+00:00:10,200 --> 00:00:17,580
+got crosses on the other side we've got structures examples of class those are strings arrays for any
+
+3
+00:00:17,580 --> 00:00:19,790
+custom classes that you create.
+
+4
+00:00:19,860 --> 00:00:26,910
+Examples of structures are all the primitive types like integer character float and any custom structures
+
+5
+00:00:26,910 --> 00:00:28,050
+that you create.
+
+6
+00:00:28,140 --> 00:00:32,630
+The difference between the two types is purely memory management and you can review that again in the
+
+7
+00:00:32,630 --> 00:00:36,100
+lecture hall reference types versus value types.
+
+8
+00:00:36,120 --> 00:00:42,170
+Now from the next section things start to get really interesting because I'm going to teach you about
+
+9
+00:00:42,180 --> 00:00:48,780
+control flow and you'll be able to write simple C-Sharp programs and then in each section you will learn
+
+10
+00:00:48,780 --> 00:00:53,580
+something new about C-Sharp and you'll be able to write more interesting programs.
+
+11
+00:00:53,580 --> 00:00:54,780
+So I was here the next section
+

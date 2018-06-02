@@ -1,0 +1,20 @@
+1
+00:00:04,630 --> 00:00:08,770
+OK, esta seccin va a ser el primer paso en su viaje para aprender C-sharp.
+
+2
+00:00:09,030 --> 00:00:14,130
+As que les presentar las variables y Konstanz les voy a hablar sobre varios tipos de datos
+
+3
+00:00:14,240 --> 00:00:18,840
+y conversiones de tipo y sobre lo que hablo sobre el alcance y el desbordamiento.
+
+4
+00:00:19,110 --> 00:00:22,760
+Y finalmente voy a hablar sobre varios operadores que tenemos en C-sharp.
+
+5
+00:00:22,920 --> 00:00:24,410
+Entonces vamos.
+

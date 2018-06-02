@@ -1,0 +1,452 @@
+1
+00:00:02,250 --> 00:00:09,510
+OK here I have a blank console application and I want to create a class called person so we can create
+
+2
+00:00:09,510 --> 00:00:13,750
+a class here inside the main method because that's a function or a method.
+
+3
+00:00:14,160 --> 00:00:16,920
+So we need to create a class at the namespace level.
+
+4
+00:00:16,920 --> 00:00:21,140
+So look here we have a namespace and here's one default class.
+
+5
+00:00:21,390 --> 00:00:23,480
+We can create another class at this level.
+
+6
+00:00:23,850 --> 00:00:30,470
+So public class person code block.
+
+7
+00:00:31,500 --> 00:00:41,440
+Now listicle are a couple of fields so public string first name public string last name I as declare
+
+8
+00:00:41,460 --> 00:00:50,650
+a method Pawlick void which means it doesn't return any values introduce.
+
+9
+00:00:50,780 --> 00:00:57,660
+And here I simply use console the right line to output the full name of this person on the console console
+
+10
+00:00:57,690 --> 00:00:58,200
+.
+
+11
+00:00:58,530 --> 00:01:01,930
+Dot writes line.
+
+12
+00:01:02,460 --> 00:01:13,050
+My name is first name plus I would like to add a space between them and last name.
+
+13
+00:01:13,560 --> 00:01:16,000
+Nounless create an object of type person.
+
+14
+00:01:16,020 --> 00:01:18,000
+So we go to the main method.
+
+15
+00:01:18,450 --> 00:01:28,490
+We can start with person let's call this John equals new person I know the green highlight here resharpen
+
+16
+00:01:28,560 --> 00:01:33,520
+is suggesting to use var to make this code a bit shorter and cleaner.
+
+17
+00:01:33,660 --> 00:01:40,650
+So I put the cursor here Altan enter and enter.
+
+18
+00:01:40,680 --> 00:01:44,300
+Now let's set the first name and last name for this object.
+
+19
+00:01:44,340 --> 00:01:52,000
+So John dot first name he calls John John that last name.
+
+20
+00:01:52,110 --> 00:01:54,310
+He calls Smith.
+
+21
+00:01:55,200 --> 00:01:58,960
+I know we can call the Introduce method.
+
+22
+00:02:01,320 --> 00:02:06,160
+Let's run the application control and F5.
+
+23
+00:02:08,430 --> 00:02:11,750
+So my name is John Smith.
+
+24
+00:02:12,740 --> 00:02:14,700
+OK now let me show you something.
+
+25
+00:02:14,700 --> 00:02:20,280
+When you write a real world application you're going to have tens hundreds or even thousands of classes
+
+26
+00:02:20,280 --> 00:02:20,940
+.
+
+27
+00:02:20,940 --> 00:02:24,390
+So you're not going to put all of these classes inside this file here.
+
+28
+00:02:24,390 --> 00:02:26,450
+Otherwise the file will explode.
+
+29
+00:02:26,460 --> 00:02:29,950
+So we want to have one class profile.
+
+30
+00:02:29,970 --> 00:02:33,470
+If you have the sharper You can easily move this class to a new file.
+
+31
+00:02:33,720 --> 00:02:40,520
+So all you do is put the cursor on the class name press Hultin enter and not the first option.
+
+32
+00:02:40,770 --> 00:02:46,330
+Move to person that see us enter.
+
+33
+00:02:46,470 --> 00:02:53,400
+What happened was resharpen automatically created a new file called person that's yes and move this
+
+34
+00:02:53,400 --> 00:02:59,430
+class from program that c file which was here inside the new file.
+
+35
+00:02:59,670 --> 00:03:06,300
+So I didn't have to go manually create a new file and type the name of the cluster but if you don't
+
+36
+00:03:06,300 --> 00:03:08,780
+have sharper it is perfectly fine.
+
+37
+00:03:08,850 --> 00:03:16,750
+So to add a new cluster of project go to solution explorer right click on your project then go to add
+
+38
+00:03:16,750 --> 00:03:17,590
+.
+
+39
+00:03:17,700 --> 00:03:22,580
+Actually you can see that here let me drive the solution explorer to the left.
+
+40
+00:03:22,740 --> 00:03:23,860
+OK.
+
+41
+00:03:24,360 --> 00:03:31,000
+Right click on that class or you can use the shortcut shift.
+
+42
+00:03:31,050 --> 00:03:32,860
+And see.
+
+43
+00:03:33,980 --> 00:03:38,090
+Now I just don't have to type the name of your class let's say calculator.
+
+44
+00:03:38,730 --> 00:03:40,590
+That's it.
+
+45
+00:03:40,590 --> 00:03:42,430
+Now you got a new file here calculator.
+
+46
+00:03:42,500 --> 00:03:42,990
+Yes.
+
+47
+00:03:42,990 --> 00:03:45,070
+And here's a class.
+
+48
+00:03:45,090 --> 00:03:50,010
+Note that in this example because the name of my project is C-Sharp fundamentals.
+
+49
+00:03:50,010 --> 00:03:57,210
+Every time I create a class by default it's either inside the seashore fundamentals namespace and the
+
+50
+00:03:57,210 --> 00:03:58,390
+introduction of this course.
+
+51
+00:03:58,410 --> 00:04:05,730
+I explain that we want a group related classes inside different name spaces so perhaps the cost of the
+
+52
+00:04:05,730 --> 00:04:10,200
+person is different from calculator calculator is more about math.
+
+53
+00:04:10,250 --> 00:04:14,010
+Whereis person could be part of a commerce application.
+
+54
+00:04:14,250 --> 00:04:22,020
+So a better way is to Right-Click the project go to add new folder.
+
+55
+00:04:22,980 --> 00:04:26,260
+We create a new folder like math.
+
+56
+00:04:26,310 --> 00:04:33,100
+Then we moved this calculator cluster confirm.
+
+57
+00:04:33,270 --> 00:04:37,760
+The only problem is when you move the namespace is not changed by default.
+
+58
+00:04:37,980 --> 00:04:42,740
+So you need to go here manually and Daut math here.
+
+59
+00:04:42,960 --> 00:04:45,710
+Or if you have resharpening you don't have to even type that.
+
+60
+00:04:45,860 --> 00:04:50,450
+You can put the cursor on the name space and press alternate enter and enter.
+
+61
+00:04:50,850 --> 00:04:56,560
+And that automatically updates namespace the C-sharp fundamentals that math.
+
+62
+00:04:56,700 --> 00:04:58,560
+So here's our calculator class.
+
+63
+00:04:58,560 --> 00:05:02,000
+First we add the public key word so that it's accessible.
+
+64
+00:05:02,100 --> 00:05:10,470
+No that if I don't I die and I go to program that C-s I'm not going to be able to create a new instance
+
+65
+00:05:10,470 --> 00:05:11,720
+of calculator.
+
+66
+00:05:11,940 --> 00:05:19,770
+So if I type calculator calculator the intellisense cannot find that class because it's not accessible
+
+67
+00:05:19,770 --> 00:05:20,610
+.
+
+68
+00:05:20,640 --> 00:05:25,090
+Now we go to the calculator at the public key word here.
+
+69
+00:05:25,950 --> 00:05:26,940
+Back to the program
+
+70
+00:05:30,150 --> 00:05:36,390
+and resharpen is suggesting to import that calculator class which means adding a using statement on
+
+71
+00:05:36,390 --> 00:05:37,910
+top of this file.
+
+72
+00:05:37,920 --> 00:05:44,970
+So with resharpen I can press Altan enter and I would automatically add this using statement here.
+
+73
+00:05:44,970 --> 00:05:52,910
+But if you don't have sharper You have to go on top of the file manually type the name of the namespace
+
+74
+00:05:53,170 --> 00:05:54,690
+where that class is declared.
+
+75
+00:05:54,930 --> 00:05:59,920
+So using C-Sharp fundamentals that math.
+
+76
+00:05:59,940 --> 00:06:02,280
+So you see resharpen makes coding a lot easier.
+
+77
+00:06:02,280 --> 00:06:04,630
+You're going to have to worry about these name spaces.
+
+78
+00:06:04,900 --> 00:06:06,900
+What class is in what namespace.
+
+79
+00:06:06,900 --> 00:06:10,970
+And you don't have to type them you just type the name of your class and Lady sharper.
+
+80
+00:06:10,980 --> 00:06:12,900
+Do all the plumbing for you.
+
+81
+00:06:13,500 --> 00:06:13,970
+OK.
+
+82
+00:06:14,010 --> 00:06:17,820
+Now we have a calculator class let's create an object
+
+83
+00:06:20,550 --> 00:06:24,540
+and we use the new operator to allocate memory to that object.
+
+84
+00:06:24,870 --> 00:06:28,080
+And I just realized that we didn't have any method to this class.
+
+85
+00:06:28,200 --> 00:06:30,740
+So let's get back there.
+
+86
+00:06:32,250 --> 00:06:41,010
+Let's create a new method called that which returns an integer and takes two prime emitters a and b
+
+87
+00:06:41,340 --> 00:06:42,760
+.
+
+88
+00:06:43,230 --> 00:06:48,540
+And it simply adds them together and returns them.
+
+89
+00:06:48,540 --> 00:06:55,560
+Now we save the file with control and as get back to program a quick way of doing that is you press
+
+90
+00:06:55,560 --> 00:07:00,830
+control and tap and you can switch between the open windows in Visual Studio.
+
+91
+00:07:01,620 --> 00:07:06,190
+So you don't have to grab the mouse every time and click these tabs on the top.
+
+92
+00:07:06,420 --> 00:07:08,200
+You can do everything with your keyboard.
+
+93
+00:07:08,670 --> 00:07:10,430
+So back to program.
+
+94
+00:07:10,560 --> 00:07:12,480
+Yes.
+
+95
+00:07:13,560 --> 00:07:16,270
+And here we call the ad method.
+
+96
+00:07:16,320 --> 00:07:20,460
+You pass two arguments one and two.
+
+97
+00:07:20,970 --> 00:07:29,910
+You can store the results in another variable var result = and we can output that variable on the console
+
+98
+00:07:30,740 --> 00:07:31,530
+console.
+
+99
+00:07:31,620 --> 00:07:35,880
+That great line result.
+
+100
+00:07:35,910 --> 00:07:40,330
+Now let's run the application with control and F5.
+
+101
+00:07:41,580 --> 00:07:44,610
+So the result is three.
+
+102
+00:07:44,990 --> 00:07:49,800
+Now before we finish this lecture I want to show you something interesting here.
+
+103
+00:07:49,800 --> 00:07:57,690
+Look every time we use console died right line we access that method directly on the console class itself
+
+104
+00:07:57,710 --> 00:07:58,140
+.
+
+105
+00:07:58,560 --> 00:08:00,280
+What does this mean.
+
+106
+00:08:00,450 --> 00:08:04,390
+That means the right line method is defined as the static.
+
+107
+00:08:04,470 --> 00:08:10,500
+We don't have to go and create a new console object in order to call the right line method.
+
+108
+00:08:11,190 --> 00:08:15,510
+So you all use a static modifier before without being aware of that.
+
+109
+00:08:15,720 --> 00:08:21,440
+In this case all method of the console class are declared as study because we only have one console
+
+110
+00:08:21,450 --> 00:08:23,670
+when we run the application.
+
+111
+00:08:24,120 --> 00:08:25,130
+That's it for this lecture.
+
+112
+00:08:25,140 --> 00:08:25,960
+I hope you enjoy it.
+
+113
+00:08:25,980 --> 00:08:26,960
+And thank you for watching
+

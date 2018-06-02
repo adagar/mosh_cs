@@ -1,0 +1,520 @@
+1
+00:00:01,560 --> 00:00:06,540
+Bien digamos conversin de tipo implcito en accin primero declaro un byte.
+
+2
+00:00:06,570 --> 00:00:07,300
+Llmalo B.
+
+3
+00:00:07,310 --> 00:00:09,330
+Responde eso.
+
+4
+00:00:10,110 --> 00:00:15,100
+Y declaro un entero y lo configuro para ser.
+
+5
+00:00:15,480 --> 00:00:21,030
+Nuevamente, para recapitular un byte hay solo un byte y un entero de cuatro bytes.
+
+6
+00:00:21,030 --> 00:00:26,940
+As que podemos copiarme a I sin prdida de datos y como ve no hay error de tiempo de compilacin aqu.
+
+7
+00:00:27,840 --> 00:00:35,460
+Echemos el ojo a la consola, as que cancele esa lnea derecha y la transmitiremos aqu.
+
+8
+00:00:35,460 --> 00:00:38,010
+Tenga en cuenta que cuando escrib consola la lnea derecha.
+
+9
+00:00:38,100 --> 00:00:39,810
+Mi reafile se enchufa automticamente.
+
+10
+00:00:39,810 --> 00:00:43,690
+Lo hice usando la declaracin del sistema en la parte superior de nuevo.
+
+11
+00:00:43,710 --> 00:00:49,770
+Si no tiene el ms ntido Debe ir manualmente agregue esta declaracin aqu, ejecute
+
+12
+00:00:49,770 --> 00:00:52,670
+la aplicacin con el control en F5.
+
+13
+00:00:54,300 --> 00:00:58,110
+As que llegamos a la consola.
+
+14
+00:00:58,110 --> 00:01:01,150
+Ahora inviertamos esto y veamos qu pasa.
+
+15
+00:01:01,170 --> 00:01:03,110
+As que voy a deshacerme de este cdigo aqu.
+
+16
+00:01:03,330 --> 00:01:06,640
+Control X control X control x.
+
+17
+00:01:06,960 --> 00:01:09,720
+Primero declaro un entero.
+
+18
+00:01:09,720 --> 00:01:17,560
+Establzcalo en 1, luego declare un byte e intente copiar I para que sea.
+
+19
+00:01:18,000 --> 00:01:20,560
+Inmediatamente tenemos este subrayado rojo aqu.
+
+20
+00:01:20,910 --> 00:01:27,090
+Si coloca el mouse aqu, la informacin sobre herramientas indica que no se puede convertir el tipo de fuente en los bytes de tipo de destino.
+
+21
+00:01:27,840 --> 00:01:32,160
+A veces este error puede estar en un archivo diferente que no est abierto en Visual Studio aqu.
+
+22
+00:01:32,460 --> 00:01:35,160
+Por lo tanto, es posible que vea el error al compilar la aplicacin.
+
+23
+00:01:35,160 --> 00:01:36,240
+Simulemos eso.
+
+24
+00:01:36,480 --> 00:01:43,070
+As que compilo esta aplicacin mediante Control shift y B que significa compilacin.
+
+25
+00:01:44,730 --> 00:01:52,920
+As que aqu est el error no puede convertir implcitamente el tipo en dos bytes, existe una conversin explcita.
+
+26
+00:01:52,920 --> 00:01:55,530
+Te falta un elenco?
+
+27
+00:01:55,710 --> 00:02:00,840
+Entonces ahora entiendes el concepto de conversin de tipo implcito versus explcito.
+
+28
+00:02:00,870 --> 00:02:04,350
+Entonces, lo que tenemos que hacer aqu es hacer un yeso.
+
+29
+00:02:04,650 --> 00:02:08,480
+Entonces lanzamos un nmero entero a un bocado.
+
+30
+00:02:08,670 --> 00:02:14,810
+En este caso, no se perdern datos porque el valor es lo suficientemente pequeo para almacenarse en un byte.
+
+31
+00:02:15,420 --> 00:02:24,910
+Vamos a ponerme en la consola de la consola la lnea derecha para ejecutar la aplicacin.
+
+32
+00:02:26,100 --> 00:02:27,040
+Entonces todo est bien.
+
+33
+00:02:27,350 --> 00:02:35,430
+Pero veamos qu sucede si dijramos que, para decir miles, no podemos almacenar el nmero de miles en
+
+34
+00:02:35,550 --> 00:02:36,520
+un byte.
+
+35
+00:02:36,630 --> 00:02:39,380
+El mximo que podemos almacenar en un byte es 255.
+
+36
+00:02:39,840 --> 00:02:50,070
+Entonces, si ejecuta la aplicacin ahora llegamos a 32 porque algunos de los bits se perdieron y esta es la razn por la que el
+
+37
+00:02:50,460 --> 00:02:57,420
+compilador de C-Sharp sabe que hay una posibilidad de prdida de datos y le obliga a especificar
+
+38
+00:02:57,420 --> 00:02:58,580
+explcitamente el reparto.
+
+39
+00:02:58,770 --> 00:03:04,200
+A veces, usted sabe que a pesar de las diferencias en los tipos de datos, no hay posibilidad de prdida de datos, como
+
+40
+00:03:04,200 --> 00:03:06,670
+en el ltimo ejemplo en el que estaba configurado en 1.
+
+41
+00:03:06,810 --> 00:03:10,320
+En esos casos, podemos aplicar un yeso de forma segura.
+
+42
+00:03:10,320 --> 00:03:13,420
+Bien, echemos un vistazo a los tipos no compatibles.
+
+43
+00:03:13,650 --> 00:03:15,890
+As que vamos a limpiar este cdigo.
+
+44
+00:03:16,950 --> 00:03:23,860
+Empiezo declarando que una cuerda se llama un nmero y lo configuro en 1 2 3 4.
+
+45
+00:03:24,240 --> 00:03:30,290
+Recordando de la nota de The Last Lecture que aqu podra declarar esto con las mismas palabras clave y el
+
+46
+00:03:30,420 --> 00:03:33,720
+compilador C # detecta automticamente que se trata de una cadena.
+
+47
+00:03:33,720 --> 00:03:36,290
+Entonces un nmero se definir como una cadena.
+
+48
+00:03:36,720 --> 00:03:41,210
+Y podemos ver que al pasar el mouse aqu dice "system that string".
+
+49
+00:03:42,100 --> 00:03:44,850
+Ahora digamos que queremos convertir eso en un nmero.
+
+50
+00:03:45,150 --> 00:03:52,380
+Si declaro un entero como I, no puedo convertir ese nmero a un nmero entero porque no son compatibles.
+
+51
+00:03:52,860 --> 00:03:58,540
+Echemos un vistazo al error no se puede emitir la expresin de tipo cadena para escribir int.
+
+52
+00:03:58,560 --> 00:04:03,320
+Entonces, si ve ese error, ese es el momento en que necesita usar la clase de converse.
+
+53
+00:04:04,170 --> 00:04:06,310
+Entonces tecleamos convertir punto.
+
+54
+00:04:06,330 --> 00:04:15,600
+Echa un vistazo a este mtodo aqu para morder a char en 16 en 32 y muchos otros mtodos aqu.
+
+55
+00:04:15,660 --> 00:04:24,530
+As que vamos a convertir eso a un nmero entero que es 32 y el nmero pasado como un argumento aqu.
+
+56
+00:04:24,530 --> 00:04:26,390
+Ahora imprimimos el ojo a la estafa.
+
+57
+00:04:32,910 --> 00:04:34,810
+Ejecuta la aplicacin.
+
+58
+00:04:35,550 --> 00:04:37,140
+Entonces es uno dos tres cuatro.
+
+59
+00:04:37,140 --> 00:04:38,260
+Todo bien.
+
+60
+00:04:38,600 --> 00:04:44,030
+Pero veamos qu sucede si, en cambio, lo declaro como un byte.
+
+61
+00:04:45,210 --> 00:04:50,850
+Y aqu tenemos que usar convertir punto para morder.
+
+62
+00:04:51,090 --> 00:04:58,530
+Y aqu con la pantalla en la consola, un byte no tiene suficiente almacenamiento para
+
+63
+00:04:58,790 --> 00:05:01,210
+almacenar el valor de 1234.
+
+64
+00:05:01,620 --> 00:05:03,300
+Entonces, cuando ejecutemos
+
+65
+00:05:07,970 --> 00:05:12,680
+la aplicacin ahora, la aplicacin se cuelga, puede venderla aqu.
+
+66
+00:05:12,930 --> 00:05:18,630
+Y aqu est la excepcin de excepcin es el mecanismo de informe de errores de marcos de Dartmouth.
+
+67
+00:05:18,620 --> 00:05:22,970
+Es un tema avanzado y lo he cubierto en detalle en mi curso avanzado de C-Sharp.
+
+68
+00:05:23,270 --> 00:05:26,920
+Pero en este video, le mostrar brevemente cmo manejar excepciones.
+
+69
+00:05:27,530 --> 00:05:34,370
+Entonces aqu dice excepcin no controlada el tipo de excepcin es la excepcin de desbordamiento del sistema, lo que significa
+
+70
+00:05:34,380 --> 00:05:39,750
+que intentamos almacenar un valor que sea demasiado grande o demasiado pequeo para un byte.
+
+71
+00:05:39,890 --> 00:05:46,740
+Por lo tanto, cada excepcin o error como tipo en este caso la excepcin de desbordamiento y tiene un
+
+72
+00:05:46,760 --> 00:05:51,670
+valor de mensaje era demasiado grande o demasiado pequeo para un byte sin signo.
+
+73
+00:05:51,830 --> 00:05:55,680
+A veces, los mensajes de excepcin son lo suficientemente amigables y fciles de entender.
+
+74
+00:05:55,910 --> 00:05:57,400
+A veces son un poco difciles.
+
+75
+00:05:57,410 --> 00:06:02,180
+Y la mejor manera de descubrir qu est yendo mal es saltar a Google y buscar el error.
+
+76
+00:06:02,210 --> 00:06:07,420
+Y casi siempre hay una pgina de desbordamiento de pila que lo explica.
+
+77
+00:06:07,440 --> 00:06:10,370
+Ahora descartamos eso.
+
+78
+00:06:10,380 --> 00:06:13,080
+Veamos cmo manejar la excepcin aqu.
+
+79
+00:06:13,070 --> 00:06:20,480
+Entonces, la excepcin ocurrida durante la conversin de esa cadena para morder lo que tenemos que hacer aqu es envolver
+
+80
+00:06:20,690 --> 00:06:23,660
+estas pocas declaraciones con un bloque try catch.
+
+81
+00:06:23,730 --> 00:06:27,650
+Vamos a ver cmo funciona.
+
+82
+00:06:27,750 --> 00:06:33,380
+As que escrib try y presion Enter y Visual Studio automticamente gener este bloque para m.
+
+83
+00:06:33,770 --> 00:06:36,520
+De nuevo, esto es lo que llamamos un fragmento de cdigo.
+
+84
+00:06:36,740 --> 00:06:38,950
+Djame hacer esto, te lo muestro una vez ms.
+
+85
+00:06:39,060 --> 00:06:46,250
+As que intente un intento serio aqu y ellos Intellisense y este cono representa un fragmento de cdigo.
+
+86
+00:06:46,280 --> 00:06:51,460
+Entonces, si presiono enter o tab, automticamente obtiene este bloque de cdigo.
+
+87
+00:06:51,500 --> 00:07:00,380
+Entonces, lo que voy a hacer ahora es mover este cdigo a un bloque de prueba y el bloque de captura recibe una excepcin por
+
+88
+00:07:01,110 --> 00:07:03,610
+defecto visual studio como este lanzamiento aqu.
+
+89
+00:07:03,620 --> 00:07:05,410
+No te preocupes, solo elimnalo de nuevo.
+
+90
+00:07:05,410 --> 00:07:09,280
+Lo explicar en detalle en mi curso avanzado de C-Sharp.
+
+91
+00:07:09,380 --> 00:07:11,340
+Por ahora veamos qu est pasando aqu.
+
+92
+00:07:11,370 --> 00:07:18,020
+Entonces, el cdigo que colocas dentro del bloque try ser monitoreado de alguna manera y si ocurre una
+
+93
+00:07:19,190 --> 00:07:21,240
+excepcin, este bloque se ejecutar.
+
+94
+00:07:21,920 --> 00:07:24,520
+Esto evita que su aplicacin se cuelgue.
+
+95
+00:07:24,530 --> 00:07:29,720
+El motivo por el que nuestra aplicacin se bloque anteriormente fue porque no manejamos la excepcin.
+
+96
+00:07:29,810 --> 00:07:35,930
+Por lo tanto, si no maneja una excepcin, la excepcin se propagar al tiempo de ejecucin de Dartmouth y el
+
+97
+00:07:36,000 --> 00:07:40,160
+mecanismo de tiempo de ejecucin deber detener su aplicacin y mostrar el error.
+
+98
+00:07:40,230 --> 00:07:45,710
+Aqu podemos manejar la excepcin y eso evitara que la excepcin se propague al tiempo de ejecucin.
+
+99
+00:07:46,460 --> 00:07:52,910
+Por lo tanto, en su lugar, podemos mostrar un mensaje amigable al usuario diciendo, por ejemplo, la consola en la lnea derecha.
+
+100
+00:07:55,200 --> 00:08:03,440
+El nmero no se pudo convertir a un byte.
+
+101
+00:08:03,440 --> 00:08:07,120
+Ahora ejecutemos la aplicacin nuevamente.
+
+102
+00:08:08,390 --> 00:08:14,280
+Mira, obtuvimos ese mensaje amigable y la aplicacin no se bloque.
+
+103
+00:08:14,270 --> 00:08:18,860
+Entonces, lo que quiero que retires de esta conferencia es esta clase de Convery.
+
+104
+00:08:18,870 --> 00:08:24,770
+Funciona bastante bien en la mayora de los casos, pero en los casos en que el tipo de fuente no se puede convertir al
+
+105
+00:08:24,770 --> 00:08:26,730
+tipo de destino existe la posibilidad de excepcin.
+
+106
+00:08:26,780 --> 00:08:32,000
+Y debe ser consciente de eso y lo que debe hacer es ajustar este bloque de cdigo con try catch.
+
+107
+00:08:32,850 --> 00:08:36,480
+Echemos un vistazo a un ejemplo ms antes de terminar esta conferencia.
+
+108
+00:08:36,480 --> 00:08:43,100
+Vamos a eliminar esto y definir una cadena.
+
+109
+00:08:43,250 --> 00:08:45,880
+Llmalo como eres y configralo como verdadero.
+
+110
+00:08:46,400 --> 00:08:53,220
+Podemos usar la clase converse para convertir ese valor en booleano, por lo que ser una conversin de
+
+111
+00:08:53,450 --> 00:08:54,710
+Cool que booleana.
+
+112
+00:08:55,130 --> 00:08:56,340
+Y pasamos ese SDR.
+
+113
+00:08:56,350 --> 00:09:05,070
+Aqu nuevamente, en este ejemplo, la cadena y el bool no son compatibles y es por eso que no podemos usar
+
+114
+00:09:05,070 --> 00:09:06,390
+el casting explcito.
+
+115
+00:09:06,380 --> 00:09:10,070
+Entonces aqu estamos usando la clase de converse.
+
+116
+00:09:10,170 --> 00:09:14,620
+Puede mostrarse en la consola.
+
+117
+00:09:15,740 --> 00:09:18,910
+Vamos a ejecutar la aplicacin.
+
+118
+00:09:18,920 --> 00:09:23,530
+Entonces, la cadena de verdad se convirti con xito en un valor booleano.
+
+119
+00:09:24,720 --> 00:09:26,700
+OK, eso es ms o menos para esta conferencia.
+
+120
+00:09:26,880 --> 00:09:32,830
+Antes de terminar, solo tengo que enfatizar algo aqu que a lo largo de este curso durante las
+
+121
+00:09:33,120 --> 00:09:38,220
+primeras lecturas me pueden ver usando algunos nombres cortos de variables como B o SD.
+
+122
+00:09:38,270 --> 00:09:44,130
+Eso es puramente para demostrar y mantener las cosas simples y en la construccin de aplicaciones del mundo real.
+
+123
+00:09:44,120 --> 00:09:48,280
+Realmente deberamos evitar nombrar nuestras variables a b c SDR.
+
+124
+00:09:48,300 --> 00:09:50,690
+No es realmente una buena prctica.
+
+125
+00:09:50,690 --> 00:09:56,970
+La nica excepcin es cuando obtenemos dos bucles que ver ms adelante en este curso en cuatro bucles.
+
+126
+00:09:57,020 --> 00:09:59,850
+Usamos variables de contador y las llamamos I o J.
+
+127
+00:09:59,850 --> 00:10:01,840
+Es una convencin comn.
+
+128
+00:10:01,860 --> 00:10:07,140
+Ahora, aqu estamos empezando a aprender C-Sharp y es realmente imposible para m demostrar la construccin
+
+129
+00:10:07,130 --> 00:10:13,050
+de una aplicacin en el mundo real porque solo estamos cubriendo los conceptos bsicos o los alfabetos.
+
+130
+00:10:13,080 --> 00:10:15,130
+Espero que hayan disfrutado esta conferencia y gracias por mirar
+

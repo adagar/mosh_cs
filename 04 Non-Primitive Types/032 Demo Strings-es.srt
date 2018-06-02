@@ -1,0 +1,352 @@
+1
+00:00:04,110 --> 00:00:12,300
+De acuerdo, permtanme comenzar creando una cadena llamada primer nombre, as que el nombre de la cadena es papilla.
+
+2
+00:00:12,420 --> 00:00:18,750
+Ahora, obviamente, aqu podemos usar la palabra clave Varn porque el compilador sabe que hemos asignado este valor a un
+
+3
+00:00:20,040 --> 00:00:25,300
+literal de cadena, por lo que debera ser de tipo cadena para que podamos acortar el cdigo.
+
+4
+00:00:25,470 --> 00:00:28,390
+As que coloqu el cursor aqu.
+
+5
+00:00:28,500 --> 00:00:35,930
+Puedo cambiarlo manualmente a var o sera ms preciso Altan enter e intro.
+
+6
+00:00:36,000 --> 00:00:38,450
+Ahora djame mostrarte algo interesante aqu.
+
+7
+00:00:38,470 --> 00:00:43,060
+Cubra su mouse sobre la marquesina vale la pena.
+
+8
+00:00:43,320 --> 00:00:51,120
+Tenga en cuenta que esta bola de fuego es de tipo cadena, que es una clase que se define en el espacio de nombres del sistema
+
+9
+00:00:51,120 --> 00:00:52,820
+en la conferencia sobre tipos primitivos.
+
+10
+00:00:52,830 --> 00:00:58,510
+Expliqu que todos los tipos primitivos en el mapa C-sharp para escribir en el marco de Dot Net.
+
+11
+00:00:58,890 --> 00:01:04,810
+Por ejemplo, usemos ese extremo y declaremos una variable como nmero.
+
+12
+00:01:05,760 --> 00:01:11,580
+Si tienes el mouse al final, ves que es de tipo en 32.
+
+13
+00:01:11,610 --> 00:01:15,650
+S que esto en 13: 2 es la estructura.
+
+14
+00:01:15,870 --> 00:01:23,070
+Entonces todos estos teclados que usamos en C-sharp no son char string float bulled, todos estn mapeados
+
+15
+00:01:23,070 --> 00:01:31,730
+a un tipo en el marco de puntos dot. Los tipos primitivos son todas estructuras como esta o 32 pero
+
+16
+00:01:31,940 --> 00:01:33,510
+las cadenas son clases.
+
+17
+00:01:33,510 --> 00:01:35,240
+As que djame eliminar esto.
+
+18
+00:01:35,380 --> 00:01:37,210
+Mira esto una vez ms.
+
+19
+00:01:37,290 --> 00:01:42,410
+Entonces tenemos una clase en el espacio de nombres del sistema que se llama cadena.
+
+20
+00:01:42,450 --> 00:01:52,680
+Lo que esto significa es que puede crear una cadena como esta usando la palabra clave string en C-sharp o puede
+
+21
+00:01:52,680 --> 00:01:56,750
+usar la clase de cadena en Dot Net Framework.
+
+22
+00:01:56,760 --> 00:02:01,370
+La diferencia es cuando utilizas esta clase de cadena, necesitas importar ese espacio de nombres.
+
+23
+00:02:01,440 --> 00:02:03,320
+El espacio de nombres del sistema en la lengua.
+
+24
+00:02:03,480 --> 00:02:10,050
+Porque aqu estamos escribiendo cdigo dentro de este espacio de nombres, pero estamos accediendo a una clase que est en un
+
+25
+00:02:10,050 --> 00:02:13,110
+espacio de nombres del sistema de espacio de nombres diferente.
+
+26
+00:02:13,110 --> 00:02:16,470
+Entonces, si ha reafilado, puede importarlo automticamente.
+
+27
+00:02:16,470 --> 00:02:21,760
+De lo contrario, tiene que ir al inicio del archivo y escribir usando el sistema y llamarlo.
+
+28
+00:02:22,620 --> 00:02:28,380
+Entonces, ya sea que use la clase de cadena como este ejemplo o que use la palabra clave string,
+
+29
+00:02:31,470 --> 00:02:32,680
+es exactamente la misma.
+
+30
+00:02:32,690 --> 00:02:33,910
+No hay diferencia.
+
+31
+00:02:34,020 --> 00:02:37,790
+Y esa es una de las cosas que confunde a los principiantes tambin.
+
+32
+00:02:37,800 --> 00:02:43,790
+Del mismo modo, puede crear un 32 usando la estructura int32 en el marco de datos.
+
+33
+00:02:43,950 --> 00:02:47,890
+Llmalo yo o puedes usar la palabra clave int.
+
+34
+00:02:48,340 --> 00:02:50,810
+Son esencialmente lo mismo.
+
+35
+00:02:50,850 --> 00:02:56,720
+Bien, ahora vamos a limpiar todo el ruido extra aqu y volvemos a nuestro ejemplo.
+
+36
+00:02:56,760 --> 00:03:00,580
+Voy a cambiar solo dos var para hacer el cdigo ms limpio.
+
+37
+00:03:01,170 --> 00:03:04,680
+Entonces, una forma de crear una cadena es usar concatenacin.
+
+38
+00:03:04,680 --> 00:03:15,540
+Entonces podemos declarar otra cadena y concatenar tres cadenas juntas.
+
+39
+00:03:16,530 --> 00:03:22,200
+Pero como expliqu algunas veces, es difcil visualizar el resultado y podemos usar el mtodo de formato de cadena.
+
+40
+00:03:23,010 --> 00:03:27,530
+Entonces aqu hay un ejemplo.
+
+41
+00:03:29,880 --> 00:03:37,110
+Entonces, string vuelve a mapear a un sistema esa clase de cadena y esta clase tiene un montn de mtodos estticos
+
+42
+00:03:37,110 --> 00:03:38,500
+como puede ver aqu.
+
+43
+00:03:38,550 --> 00:03:44,060
+Por lo tanto, estos mtodos son accesibles sin la necesidad de crear un objeto al que se pueda acceder directamente
+
+44
+00:03:44,060 --> 00:03:45,600
+en la clase de cadena.
+
+45
+00:03:45,600 --> 00:03:50,360
+Por ejemplo, puede usar el mtodo Comparar para comparar cadenas.
+
+46
+00:03:50,430 --> 00:03:53,160
+En este caso, vamos a usar el mtodo de formato.
+
+47
+00:03:53,940 --> 00:03:56,090
+Entonces este mtodo toma dos argumentos.
+
+48
+00:03:56,280 --> 00:04:03,590
+El primero es una cadena de formato o una plantilla algo as.
+
+49
+00:04:05,490 --> 00:04:08,740
+Y los otros argumentos son valores para aplicar a esta plantilla.
+
+50
+00:04:09,060 --> 00:04:16,180
+As que voy a pasar el nombre y el apellido en tiempo de ejecucin.
+
+51
+00:04:16,440 --> 00:04:19,630
+Lo que tenemos aqu ser reemplazado por el primer nombre.
+
+52
+00:04:19,980 --> 00:04:25,350
+Lo mismo que tenemos aqu ser reemplazado por lo ltimo.
+
+53
+00:04:25,350 --> 00:04:27,690
+Ahora echemos un vistazo a la cadena que une.
+
+54
+00:04:27,690 --> 00:04:29,880
+As que voy a crear una
+
+55
+00:04:46,430 --> 00:04:52,620
+matriz de nombres y voy a crear una cadena combinando todos estos valores usando una coma como separador.
+
+56
+00:04:52,620 --> 00:04:53,130
+Entonces,
+
+57
+00:04:57,190 --> 00:05:03,240
+usamos el mtodo join nuevamente, un mtodo esttico en la clase de cadena.
+
+58
+00:05:03,600 --> 00:05:07,760
+El primer argumento es una cadena que representa un separador.
+
+59
+00:05:07,850 --> 00:05:09,100
+Puedes usar coma.
+
+60
+00:05:10,140 --> 00:05:12,270
+Y el segundo argumento es la matriz.
+
+61
+00:05:12,780 --> 00:05:18,170
+Entonces los nombres vamos a mostrar el resultado en la consola.
+
+62
+00:05:19,740 --> 00:05:25,820
+As que los nombres formateados as son.
+
+63
+00:05:27,300 --> 00:05:29,160
+Entonces ves a John venir a Jack.
+
+64
+00:05:29,160 --> 00:05:30,460
+Vamos Mara.
+
+65
+00:05:30,600 --> 00:05:35,520
+Esta es una tcnica muy til cuando tiene algunos valores y desea
+
+66
+00:05:35,520 --> 00:05:37,440
+combinarlos mediante un separador.
+
+67
+00:05:37,440 --> 00:05:40,030
+Ahora echemos un vistazo a las cadenas verbatim.
+
+68
+00:05:40,680 --> 00:05:45,100
+As que voy a crear una cadena que tiene varias lneas y tiene algunas rutas.
+
+69
+00:05:45,180 --> 00:05:46,440
+Entonces algo como esto.
+
+70
+00:06:16,080 --> 00:06:18,100
+Esta cadena es muy ilegible.
+
+71
+00:06:18,210 --> 00:06:19,700
+Entonces ves el resultado primero.
+
+72
+00:06:19,830 --> 00:06:23,950
+Y luego voy a mostrarte cmo podemos limpiar esto usando una cadena literal.
+
+73
+00:06:24,060 --> 00:06:28,650
+Entonces, en lugar de mostrar nombres formateados, voy a mostrar el ao del texto.
+
+74
+00:06:35,370 --> 00:06:36,770
+Entonces esta es la salida.
+
+75
+00:06:37,200 --> 00:06:37,920
+Hola John.
+
+76
+00:06:37,920 --> 00:06:42,140
+Luego, en una nueva lnea mire en los pantalones cados y luego en las nuevas lneas.
+
+77
+00:06:42,210 --> 00:06:44,810
+Tenemos dos caminos aqu.
+
+78
+00:06:45,480 --> 00:06:50,590
+Como ves usando una cadena normal, es muy difcil formatear algo as.
+
+79
+00:06:50,940 --> 00:06:52,720
+Entonces puedes usar una cadena literal.
+
+80
+00:06:52,830 --> 00:07:00,030
+Todo lo que hacemos es que lo prefijsemos y est bien, entonces no necesitamos la barra invertida n podemos simplemente
+
+81
+00:07:00,030 --> 00:07:01,860
+poner en una nueva lnea.
+
+82
+00:07:01,860 --> 00:07:03,330
+Igual que aqu.
+
+83
+00:07:03,330 --> 00:07:09,450
+Elimina Max Leshin en una nueva lnea y podemos eliminar todas estas barras invertidas dobles.
+
+84
+00:07:18,210 --> 00:07:22,040
+Entonces ves que es mucho ms fcil leer y comprender la historia.
+
+85
+00:07:22,110 --> 00:07:28,380
+Por lo tanto, siempre que necesite usar una barra invertida, nueva lnea o pestaa, use una cadena literal para una cadena con el formato correcto.
+
+86
+00:07:29,820 --> 00:07:34,350
+Esa fue una introduccin rpida a las cadenas para que comiences ms adelante en este curso.
+
+87
+00:07:34,350 --> 00:07:39,050
+Tenemos una seccin separada donde cubro ms detalles sobre cmo trabajar con cadenas.
+
+88
+00:07:39,070 --> 00:07:41,920
+Espero que hayan disfrutado esta conferencia y gracias por mirar.
+

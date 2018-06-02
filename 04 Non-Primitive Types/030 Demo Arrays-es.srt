@@ -1,0 +1,196 @@
+1
+00:00:02,490 --> 00:00:08,250
+OK en este video vamos a ver cmo declarar e inicializar una matriz en C #.
+
+2
+00:00:08,490 --> 00:00:11,670
+Entonces, digamos que nos gustara crear una matriz de enteros.
+
+3
+00:00:11,670 --> 00:00:17,400
+As que comenzamos con y usamos los corchetes para indicar que nos gustara crear una matriz
+
+4
+00:00:17,490 --> 00:00:19,410
+no solo un nmero entero.
+
+5
+00:00:19,410 --> 00:00:22,930
+Le damos un identificador o un nombre.
+
+6
+00:00:23,170 --> 00:00:25,230
+S que tenemos que asignarle memoria.
+
+7
+00:00:25,440 --> 00:00:31,330
+Entonces usamos el nuevo operador y lo repetimos en una matriz nuevamente.
+
+8
+00:00:31,350 --> 00:00:34,100
+Por esto, necesitara especificar el tamao de la matriz.
+
+9
+00:00:34,230 --> 00:00:36,010
+As que digamos tres.
+
+10
+00:00:36,660 --> 00:00:42,660
+Ahora podemos hacer que este cdigo sea un poco ms corto al deshacernos de toda esta matriz aqu y simplemente usar var.
+
+11
+00:00:44,520 --> 00:00:50,160
+El compilador sabe que ese nmero se asigna a una matriz de enteros como se ve aqu.
+
+12
+00:00:50,340 --> 00:00:54,830
+Entonces no hay necesidad de repetir eso dos veces.
+
+13
+00:00:54,900 --> 00:01:00,600
+Ahora voy a establecer el primer elemento de este conjunto y, dado que en las matrices de C-sharp no se
+
+14
+00:01:00,870 --> 00:01:03,800
+indexa el primer elemento, comienza con el ndice de 0.
+
+15
+00:01:03,850 --> 00:01:08,570
+Entonces nmeros de 0 porque 1.
+
+16
+00:01:08,580 --> 00:01:10,020
+Ahora djame mostrarte algo.
+
+17
+00:01:10,020 --> 00:01:18,550
+Voy a mostrar todos los elementos en desorden en la consola para que coincidan los nmeros de lnea correctos de 0 y voy
+
+18
+00:01:19,720 --> 00:01:25,710
+a duplicar esta lnea un par de veces con Control D, que es uno de los
+
+19
+00:01:26,700 --> 00:01:30,030
+atajos reafilados y cambio el ndice en cada lnea.
+
+20
+00:01:31,080 --> 00:01:36,690
+As que esta es una forma muy bsica de mostrar elementos en una matriz y formas ms eficientes de usar un bucle.
+
+21
+00:01:36,870 --> 00:01:39,930
+Y eso es algo que veremos en la siguiente seccin.
+
+22
+00:01:39,930 --> 00:01:45,290
+Ahora ejecutemos esta aplicacin y veamos qu sucede.
+
+23
+00:01:45,300 --> 00:01:49,620
+Entonces nuestra matriz tiene tres elementos y la primera se inicializa en 1.
+
+24
+00:01:49,690 --> 00:01:54,520
+Pero qu pasa con los dems ahora que se inicializan a cero por defecto?
+
+25
+00:01:54,720 --> 00:02:01,200
+Entonces eso significa que cuando declaras una matriz, todos los elementos se configuran con el valor predeterminado del tipo de
+
+26
+00:02:01,380 --> 00:02:02,750
+datos para esa matriz.
+
+27
+00:02:02,850 --> 00:02:08,370
+En este caso, porque nuestra matriz es de tipo entero, el valor predeterminado para enteros o cualquier tipo
+
+28
+00:02:08,370 --> 00:02:10,160
+de nmeros en C-sharp es cero.
+
+29
+00:02:10,230 --> 00:02:15,510
+Si tuviramos una matriz de booleanos, todos los elementos de esa matriz se inicializaran en falso.
+
+30
+00:02:15,510 --> 00:02:16,800
+Probemos eso.
+
+31
+00:02:16,830 --> 00:02:19,020
+As que voy a crear otra matriz.
+
+32
+00:02:19,320 --> 00:02:20,990
+Vamos a llamarlo banderas.
+
+33
+00:02:21,690 --> 00:02:25,130
+Y esta vez voy a usar una matriz de matones.
+
+34
+00:02:25,400 --> 00:02:38,670
+Nuevamente el mismo tamao de nuevo De manera similar, dije que el primer elemento de banderas de cero es verdadero y
+
+35
+00:02:38,670 --> 00:02:43,330
+solo muestra todos los elementos en desorden.
+
+36
+00:02:46,170 --> 00:02:49,430
+Vamos a ejecutar la aplicacin.
+
+37
+00:02:50,640 --> 00:02:54,160
+Por lo tanto, tenga en cuenta que el primer elemento de la matriz booleana se establece en verdadero.
+
+38
+00:02:54,270 --> 00:03:00,300
+Pero el segundo y tercer elementos son falsos.
+
+39
+00:03:00,300 --> 00:03:01,400
+Ahora un ejemplo ms.
+
+40
+00:03:01,410 --> 00:03:07,050
+Antes de terminar esta conferencia, esta vez voy a crear una matriz de cadenas y voy
+
+41
+00:03:07,050 --> 00:03:11,760
+a usar la sintaxis de inicializacin de objetos para inicializarla durante la declaracin.
+
+42
+00:03:12,270 --> 00:03:22,260
+As que voy a llamarlo nuevo conjunto de cadenas de tamao 3 y voy a almacenar tres nombres aqu.
+
+43
+00:03:22,290 --> 00:03:29,910
+Entonces Jack John y Mary.
+
+44
+00:03:29,910 --> 00:03:37,260
+Entonces, con la sintaxis de inicializacin de objetos comienza con llaves y sus valores de suministro
+
+45
+00:03:37,260 --> 00:03:39,740
+para cada elemento de la matriz.
+
+46
+00:03:39,810 --> 00:03:41,620
+Eso es ms o menos para esta conferencia.
+
+47
+00:03:41,790 --> 00:03:46,350
+Ms adelante en este curso vamos a tener una seccin completa de matrices y all voy a convertir
+
+48
+00:03:46,380 --> 00:03:47,450
+matrices con ms detalle.
+
+49
+00:03:47,460 --> 00:03:49,470
+Espero que disfrutes esta conferencia y gracias por mirar
+

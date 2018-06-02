@@ -1,0 +1,20 @@
+1
+00:00:04,490 --> 00:00:10,320
+In this section I'm going to talk about non primitive types since the show it's just classes structures
+
+2
+00:00:10,770 --> 00:00:13,460
+arrays strings and genomes.
+
+3
+00:00:13,710 --> 00:00:19,620
+And then I'm going to talk about a very important topic called refaced types versus T-tops which is
+
+4
+00:00:19,620 --> 00:00:22,780
+about memory management of different types.
+
+5
+00:00:22,980 --> 00:00:24,650
+So let's get started.
+

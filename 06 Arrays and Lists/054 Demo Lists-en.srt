@@ -1,0 +1,512 @@
+1
+00:00:01,380 --> 00:00:06,690
+I'll write this for you I'm going to show you how to work with lists or more accurately generic lists
+
+2
+00:00:06,810 --> 00:00:08,160
+and C-sharp.
+
+3
+00:00:08,190 --> 00:00:11,680
+So let's create a list.
+
+4
+00:00:12,130 --> 00:00:18,900
+We use the new operator to initialize an instance of the list class.
+
+5
+00:00:19,440 --> 00:00:26,130
+Note the angle brackets here in the intellisense that indicates that list is a generic type.
+
+6
+00:00:26,400 --> 00:00:32,610
+I also know that it's defined in-system that collections that generic if you don't have RRE sharper
+
+7
+00:00:32,690 --> 00:00:35,510
+than Intellisense you see is going to be different.
+
+8
+00:00:35,640 --> 00:00:42,670
+I don't think you're going to see the namespace which means you have to go on the top of the file and
+
+9
+00:00:42,690 --> 00:00:49,020
+type using system that collections dot generic.
+
+10
+00:00:49,200 --> 00:00:54,930
+Once you import the namespace then you can come here and create a list.
+
+11
+00:00:55,230 --> 00:00:57,230
+You specify a type here.
+
+12
+00:00:57,360 --> 00:01:00,970
+So let's say we would like to create a list of integers.
+
+13
+00:01:01,350 --> 00:01:08,100
+That's it we can initialize this list ahead of time using the object initialization syntax.
+
+14
+00:01:08,100 --> 00:01:14,770
+So I'm going to supply one two three four here.
+
+15
+00:01:14,970 --> 00:01:17,020
+Now we can add something to this list.
+
+16
+00:01:17,240 --> 00:01:19,400
+So numbers start at.
+
+17
+00:01:20,070 --> 00:01:21,930
+I would add another one here.
+
+18
+00:01:22,590 --> 00:01:26,430
+So this is the difference between a list and an array in an array.
+
+19
+00:01:26,430 --> 00:01:32,600
+We don't have an Add method and once we create the array the size of the array cannot be changed but
+
+20
+00:01:32,600 --> 00:01:36,000
+in a list you can add as many objects as you would like.
+
+21
+00:01:36,000 --> 00:01:40,230
+We can also use the Add Range method to add more than one object to the list.
+
+22
+00:01:40,230 --> 00:01:44,520
+So numbers don't add range.
+
+23
+00:01:44,610 --> 00:01:51,130
+And note that in the intellisense here we see it in your Mirable of INT What is I enumerable.
+
+24
+00:01:51,270 --> 00:01:58,860
+Well first of all whenever you see a type that is prefixed with I that is an interface I have covered
+
+25
+00:01:58,860 --> 00:02:02,170
+interfaces in detail in the second part of this course.
+
+26
+00:02:02,580 --> 00:02:05,000
+So for now we want to keep things simple.
+
+27
+00:02:05,130 --> 00:02:06,870
+I want to give you a quick tip here.
+
+28
+00:02:07,170 --> 00:02:14,610
+Whenever you see I enumerable in the intellisense sincerer you can use an array or a list there.
+
+29
+00:02:14,730 --> 00:02:20,610
+Once you understand interfaces in the second part of this course then you'll realize that that interface
+
+30
+00:02:20,670 --> 00:02:26,910
+is implemented by different classes like the array or the list which means whenever you see I enumerable
+
+31
+00:02:27,390 --> 00:02:32,080
+you can supply an instance of a class that implements enumerable.
+
+32
+00:02:32,100 --> 00:02:34,680
+Now if all that sounds too complex Don't worry about it.
+
+33
+00:02:34,800 --> 00:02:36,050
+Again remember my tip.
+
+34
+00:02:36,120 --> 00:02:42,490
+Whenever you see enumerable you can use an array or a list so that we creates an array here.
+
+35
+00:02:42,810 --> 00:02:44,790
+New Interrail.
+
+36
+00:02:45,030 --> 00:02:51,510
+I'm going to specify the size of three and I can use the object initialization syntax to immediately
+
+37
+00:02:51,510 --> 00:02:57,680
+initialize history or 8 5 6 7.
+
+38
+00:02:57,720 --> 00:03:03,510
+Now it's very unlikely that you're going to write code like this in a real world application so don't
+
+39
+00:03:03,510 --> 00:03:07,090
+be intimidated by this weird way of initializing a list.
+
+40
+00:03:07,110 --> 00:03:12,010
+All I want to show you here is the number of possibilities when working with lists.
+
+41
+00:03:12,130 --> 00:03:13,740
+You don't have to memorize anything.
+
+42
+00:03:13,770 --> 00:03:20,250
+All I want you to take away here is an idea of what you can do with a list so you can create a list
+
+43
+00:03:20,550 --> 00:03:21,410
+like here.
+
+44
+00:03:21,600 --> 00:03:26,260
+You can initialize it ahead of time if you know the objects you want to store there.
+
+45
+00:03:26,340 --> 00:03:32,610
+You can call the add method to add one object to a list or you can call add range to add another list
+
+46
+00:03:33,060 --> 00:03:36,030
+or an array to the list.
+
+47
+00:03:36,030 --> 00:03:37,710
+Now once we have a list we can.
+
+48
+00:03:37,710 --> 00:03:49,340
+I tried it using a for each loop so for each bar number in numbers cancel the right line number.
+
+49
+00:03:50,190 --> 00:03:53,510
+Let's run the application.
+
+50
+00:03:55,170 --> 00:04:01,200
+So we got 1 2 3 4 1 5 6 7.
+
+51
+00:04:01,200 --> 00:04:05,040
+Now let's take a look at the index of method.
+
+52
+00:04:06,570 --> 00:04:12,930
+So numbers dot indexOf this method as a few different overloads.
+
+53
+00:04:12,930 --> 00:04:15,450
+The simplest one which is the one that is currently highlighted.
+
+54
+00:04:15,450 --> 00:04:22,200
+Means you can press an item of type integer here and this method returns the index of that object in
+
+55
+00:04:22,200 --> 00:04:27,380
+the list if it exists otherwise it returns minus one.
+
+56
+00:04:27,630 --> 00:04:34,170
+The second overload of this method takes another parameter called index and that's the starting point
+
+57
+00:04:34,170 --> 00:04:34,470
+.
+
+58
+00:04:34,470 --> 00:04:42,600
+So you can say search or search from index 3 and the third overload of this method specifies the number
+
+59
+00:04:42,600 --> 00:04:45,340
+of objects to include in the search.
+
+60
+00:04:45,420 --> 00:04:49,170
+The first overload is what you would be using most of the time.
+
+61
+00:04:49,170 --> 00:04:56,100
+So let's see was the index of one going to display on the console.
+
+62
+00:04:59,120 --> 00:05:01,020
+Let me add a label here.
+
+63
+00:05:01,220 --> 00:05:05,540
+So index of one.
+
+64
+00:05:06,960 --> 00:05:13,450
+And I would like to have a concert the right line here to separate it from our for each loop.
+
+65
+00:05:14,660 --> 00:05:18,160
+So Enochs of one is zero.
+
+66
+00:05:18,650 --> 00:05:21,890
+But interestingly we have two ones here.
+
+67
+00:05:21,890 --> 00:05:23,090
+Here's the first one.
+
+68
+00:05:23,210 --> 00:05:25,490
+And here is the second one.
+
+69
+00:05:25,490 --> 00:05:31,810
+We have another method called last the index of let's take a look at that one.
+
+70
+00:05:32,450 --> 00:05:42,680
+So I'm going to duplicate this line and instead use the last index of one let's run the application
+
+71
+00:05:42,690 --> 00:05:44,040
+.
+
+72
+00:05:45,520 --> 00:05:49,910
+So last the next or one is four.
+
+73
+00:05:50,390 --> 00:05:54,110
+So sometimes you may want to start your search from the beginning of the list.
+
+74
+00:05:54,140 --> 00:05:56,520
+In that case you use index of method.
+
+75
+00:05:56,660 --> 00:06:02,300
+Sometimes you might start your search from the end of the list when in the real world does that happen
+
+76
+00:06:02,300 --> 00:06:02,830
+.
+
+77
+00:06:02,840 --> 00:06:08,450
+I can't really tell you now because it really depends on the algorithm you're designing.
+
+78
+00:06:08,510 --> 00:06:21,340
+Now let's take a look at another useful member of the list class count so count numbers dot count.
+
+79
+00:06:21,380 --> 00:06:25,560
+So this is a property that returns the number of objects in the list.
+
+80
+00:06:25,940 --> 00:06:28,240
+Let's run the application.
+
+81
+00:06:29,540 --> 00:06:34,480
+So currently we have 8 objects in the list.
+
+82
+00:06:34,490 --> 00:06:38,080
+Now let's take a look at the Remove method.
+
+83
+00:06:40,130 --> 00:06:48,220
+So numbers does remove I'm going to remove one from the list.
+
+84
+00:06:48,260 --> 00:06:52,810
+Now let's iterate the list again and look at the result after removing one.
+
+85
+00:06:52,910 --> 00:06:58,300
+So I'm going to copy this for each block and put that here.
+
+86
+00:06:58,310 --> 00:07:01,610
+Now let's run the application.
+
+87
+00:07:03,890 --> 00:07:09,550
+So note that the first one is gone but we still have another one.
+
+88
+00:07:09,560 --> 00:07:13,720
+What if you wanted to remove all the ones in this list.
+
+89
+00:07:13,760 --> 00:07:18,690
+So one way to do that is to use the for ish look.
+
+90
+00:07:20,240 --> 00:07:22,910
+So let's change this example to something like this
+
+91
+00:07:25,620 --> 00:07:29,460
+.
+
+92
+00:07:30,570 --> 00:07:33,520
+I tried to list one object at a time.
+
+93
+00:07:33,860 --> 00:07:36,560
+We'd check if number is 1.
+
+94
+00:07:37,010 --> 00:07:41,070
+Then very move number.
+
+95
+00:07:43,370 --> 00:07:46,790
+Once we do that let's copy this for each loop again
+
+96
+00:07:49,700 --> 00:07:51,040
+and put that here.
+
+97
+00:07:51,890 --> 00:07:53,010
+Let's run the application
+
+98
+00:07:56,270 --> 00:07:57,580
+application crashed.
+
+99
+00:07:57,750 --> 00:08:01,370
+Why be good and unhandled exception.
+
+100
+00:08:01,650 --> 00:08:03,910
+Me here.
+
+101
+00:08:03,980 --> 00:08:09,290
+This is an exception or an error that you may see from time to time when you're removing an object from
+
+102
+00:08:09,290 --> 00:08:12,380
+a list inside a for each block.
+
+103
+00:08:12,380 --> 00:08:14,580
+So look at the exception detail here.
+
+104
+00:08:14,790 --> 00:08:18,330
+It's of type system to an invalid operation exception.
+
+105
+00:08:18,560 --> 00:08:25,340
+And the message says collection was modified enumeration operation may not execute.
+
+106
+00:08:25,340 --> 00:08:33,050
+So what this means is in C-sharp we are not allowed to modify our collection inside a for each loop
+
+107
+00:08:33,050 --> 00:08:33,720
+.
+
+108
+00:08:33,740 --> 00:08:40,030
+So inside this 4 ish block we have these numbers that remove which is modified to collection.
+
+109
+00:08:40,070 --> 00:08:46,220
+So how can we change this program to get the desired result without that exception.
+
+110
+00:08:46,460 --> 00:08:48,470
+We need to use a normal for loop.
+
+111
+00:08:48,680 --> 00:08:55,210
+So something like for var Y is zero.
+
+112
+00:08:55,220 --> 00:09:01,310
+Run this as long as I use less than numbers that count then plus Bloss.
+
+113
+00:09:02,360 --> 00:09:07,720
+And we move this code here.
+
+114
+00:09:08,000 --> 00:09:11,630
+Now here we need to change that to numbers of.
+
+115
+00:09:12,140 --> 00:09:16,780
+Because we don't have a local variable like that for each called number.
+
+116
+00:09:16,990 --> 00:09:17,690
+Right.
+
+117
+00:09:17,750 --> 00:09:23,730
+So we need to access the current element in the list using an index numbers of why.
+
+118
+00:09:24,110 --> 00:09:28,670
+OK let's run an application.
+
+119
+00:09:28,690 --> 00:09:29,070
+There you go.
+
+120
+00:09:29,090 --> 00:09:34,580
+So we removed both ones from the list.
+
+121
+00:09:35,750 --> 00:09:38,330
+And one last method before we finished this lecture.
+
+122
+00:09:38,330 --> 00:09:43,270
+So let's take a look at the clear method numbers that are clear.
+
+123
+00:09:43,340 --> 00:09:47,370
+So this method removes all elements from the list.
+
+124
+00:09:47,840 --> 00:09:51,390
+Now if a display count on the console we're going to get zero.
+
+125
+00:09:51,440 --> 00:09:58,250
+So I'm going to grab this line here and paste that here.
+
+126
+00:09:58,400 --> 00:10:03,040
+So look the last count is 0.
+
+127
+00:10:04,490 --> 00:10:08,500
+So this was an introduction to the kind of things you can do with the list.
+
+128
+00:10:08,570 --> 00:10:11,080
+I hope you enjoyed this lecture and thank you for watching.
+

@@ -1,0 +1,28 @@
+1
+00:00:04,200 --> 00:00:10,500
+En una seccin aprendes que C-Sharp es un lenguaje de tipo esttico, lo que significa que una vez que declaras
+
+2
+00:00:10,650 --> 00:00:16,820
+ser viable necesitas especificar este tipo y ese tipo no puede cambiar durante el tiempo de vida de esa variable.
+
+3
+00:00:16,830 --> 00:00:22,340
+Tambin aprendes acerca de los tipos primitivos y C-Sharp, como el carcter entero booleano, y as sucesivamente.
+
+4
+00:00:22,620 --> 00:00:23,750
+Ahora cuando la prxima seccin.
+
+5
+00:00:23,820 --> 00:00:30,330
+Voy a presentarte tipos no primitivos en las clases sociales C Sharp o una estructura con cadenas
+
+6
+00:00:30,630 --> 00:00:32,000
+de matrices y genomas.
+
+7
+00:00:32,130 --> 00:00:34,370
+Entonces ver la siguiente seccin.
+

@@ -1,0 +1,36 @@
+1
+00:00:04,490 --> 00:00:09,060
+Okay at this point you know a little bit about race in this section.
+
+2
+00:00:09,060 --> 00:00:14,000
+I'm going to expand your knowledge of bag arrays and introduce you to multi dimensional warriors.
+
+3
+00:00:14,280 --> 00:00:18,510
+This is useful if you're working with structures such as a matrix.
+
+4
+00:00:18,510 --> 00:00:23,430
+I'm also going to talk about generic lists which are very useful in building real world applications
+
+5
+00:00:23,430 --> 00:00:23,970
+.
+
+6
+00:00:23,970 --> 00:00:29,660
+Again similar to the last section I have designed some exercises to help you train your programming
+
+7
+00:00:29,670 --> 00:00:30,280
+brain.
+
+8
+00:00:30,540 --> 00:00:35,340
+So be sure to go through the lectures and spend half an hour doing your exercises.
+
+9
+00:00:35,340 --> 00:00:36,310
+Now this started
+

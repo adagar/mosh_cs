@@ -1,0 +1,308 @@
+1
+00:00:01,480 --> 00:00:05,350
+OK in this video I'm going to show you a reference types and value types in action.
+
+2
+00:00:05,430 --> 00:00:09,780
+I'm going to use two different examples so I'm going to start with a simpler one.
+
+3
+00:00:09,780 --> 00:00:11,920
+First I'm going to create an integer variable
+
+4
+00:00:15,140 --> 00:00:17,250
+so I use 10.
+
+5
+00:00:17,280 --> 00:00:25,370
+Now I'm going to create another variable called B and copy A to B.
+
+6
+00:00:26,220 --> 00:00:29,910
+And finally I'm going to increment B by 1.
+
+7
+00:00:30,210 --> 00:00:34,180
+So I'm going to use the increment operator.
+
+8
+00:00:36,030 --> 00:00:37,540
+Now I got a question for you.
+
+9
+00:00:37,770 --> 00:00:41,930
+What do you thing the value of 8 is going to be at this point.
+
+10
+00:00:42,210 --> 00:00:45,140
+Is it going to be 10 or 11.
+
+11
+00:00:45,180 --> 00:00:50,120
+The answer is 10 because integers are value types.
+
+12
+00:00:50,370 --> 00:00:57,870
+So when we copy a value type to another variable a copy of that value is taken and stored in the target
+
+13
+00:00:57,870 --> 00:00:59,690
+location in memory.
+
+14
+00:00:59,760 --> 00:01:01,420
+So let's verify this.
+
+15
+00:01:01,530 --> 00:01:03,920
+I'm going to use cancel the right line.
+
+16
+00:01:05,540 --> 00:01:08,570
+And here I'm going to display a and b on the console.
+
+17
+00:01:08,640 --> 00:01:16,620
+What is a good way to display and B we can use string format remember string format so string not format
+
+18
+00:01:17,610 --> 00:01:24,070
+here resupply a format string.
+
+19
+00:01:26,970 --> 00:01:34,620
+So 0 and 1 here are placeholders and so play arguments to fill these placeholders.
+
+20
+00:01:34,620 --> 00:01:38,040
+So A and B here.
+
+21
+00:01:38,220 --> 00:01:44,120
+Now let's run the application with control and F5.
+
+22
+00:01:44,220 --> 00:01:49,400
+So look at use 10 and 11.
+
+23
+00:01:49,470 --> 00:01:53,910
+So the lesson is when you copy a value type to a different variable.
+
+24
+00:01:54,080 --> 00:01:59,570
+A copy of that value is taken and stored in the target variable.
+
+25
+00:01:59,580 --> 00:02:01,900
+That's why we call them value types.
+
+26
+00:02:01,920 --> 00:02:04,270
+Their values are copied.
+
+27
+00:02:04,350 --> 00:02:06,880
+Let me show you what just happened in memory.
+
+28
+00:02:06,990 --> 00:02:08,670
+So imagine here is the stack.
+
+29
+00:02:08,670 --> 00:02:12,440
+And somewhere in the stack we have a location identified by a.
+
+30
+00:02:12,570 --> 00:02:19,830
+And in that location we have the value 10 when we copy to be a new location in memory and stack is created
+
+31
+00:02:20,400 --> 00:02:25,450
+identified as B and the value we had there in a is copied to be.
+
+32
+00:02:25,740 --> 00:02:31,650
+That's why these two variables are now completely independent and making a change to one does not impact
+
+33
+00:02:31,800 --> 00:02:33,600
+the other.
+
+34
+00:02:33,600 --> 00:02:34,290
+Now let's see.
+
+35
+00:02:34,320 --> 00:02:36,910
+Reference types in action.
+
+36
+00:02:37,140 --> 00:02:39,990
+So this time I'm going to create an integer array.
+
+37
+00:02:40,260 --> 00:02:44,010
+And as you know in C-sharp an array is a class.
+
+38
+00:02:44,010 --> 00:02:45,390
+So it's a reference type.
+
+39
+00:02:45,960 --> 00:02:48,000
+So let's create array one
+
+40
+00:02:51,960 --> 00:02:54,120
+on here.
+
+41
+00:02:54,120 --> 00:03:01,040
+I'm using the object initialization syntax to initialize my array with one two three.
+
+42
+00:03:01,080 --> 00:03:04,890
+Now I copy this array one into another variable called array 2
+
+43
+00:03:10,740 --> 00:03:14,850
+and finally I'm going to make a modification to array 2.
+
+44
+00:03:14,850 --> 00:03:17,460
+So let's say I want to set the first element to zero
+
+45
+00:03:23,460 --> 00:03:28,980
+at this point what do you think is going to be the first element of array 1.
+
+46
+00:03:29,040 --> 00:03:34,550
+Is it going to be 1 or 0 it's going to be 0.
+
+47
+00:03:34,680 --> 00:03:38,940
+Let's go back to the memory visualization again and see what happens when you run this code.
+
+48
+00:03:39,270 --> 00:03:41,670
+So here we've got stack and heap.
+
+49
+00:03:42,090 --> 00:03:48,000
+When we create and initialize array 1 this is what's going to happen first an object is going to be
+
+50
+00:03:48,000 --> 00:03:49,930
+created on the heap.
+
+51
+00:03:50,130 --> 00:03:52,920
+This object is in a memory location with that address.
+
+52
+00:03:52,920 --> 00:03:58,550
+You see here and inside this memory location we have the actual array with three elements.
+
+53
+00:03:58,580 --> 00:04:00,430
+One two three.
+
+54
+00:04:00,750 --> 00:04:09,210
+Next the runtime or ACL are create a viable on the stack identified as array one the value inside this
+
+55
+00:04:09,210 --> 00:04:15,750
+variable or inside this memory location is a memory address and that's the address of the object on
+
+56
+00:04:15,750 --> 00:04:16,330
+the heap.
+
+57
+00:04:16,380 --> 00:04:17,840
+The actual array.
+
+58
+00:04:18,240 --> 00:04:20,850
+So array want points or references.
+
+59
+00:04:20,850 --> 00:04:22,850
+The object on the heap.
+
+60
+00:04:22,920 --> 00:04:27,330
+So this is what happens when we create and initialize array one.
+
+61
+00:04:27,360 --> 00:04:32,160
+Now let's see what happens when we copy array 1 to 2.
+
+62
+00:04:32,460 --> 00:04:39,720
+So the runtime creates another variable on the stack identified as Array 2 and again inside this variable
+
+63
+00:04:39,720 --> 00:04:39,780
+.
+
+64
+00:04:39,780 --> 00:04:42,010
+We're going to have a memory address.
+
+65
+00:04:42,540 --> 00:04:47,770
+And as you see in this picture this address is the address of the object on the heap.
+
+66
+00:04:47,790 --> 00:04:51,630
+That's why both array 1 and array 2 point to the same object.
+
+67
+00:04:51,930 --> 00:04:57,930
+Which means when we make any changes on this object on the heap either through every one reference or
+
+68
+00:04:57,960 --> 00:05:02,850
+array two the changes are visible through the other variable.
+
+69
+00:05:02,910 --> 00:05:05,610
+That's why we call these types reference types.
+
+70
+00:05:05,760 --> 00:05:10,080
+So when we copy them there reference or their memory address is copied.
+
+71
+00:05:10,080 --> 00:05:12,240
+Now the actual value.
+
+72
+00:05:12,330 --> 00:05:13,420
+So back to the code.
+
+73
+00:05:13,440 --> 00:05:14,630
+Let's verify these.
+
+74
+00:05:14,880 --> 00:05:19,860
+Again I'm going to use Konsole the right line on the string the format
+
+75
+00:05:35,680 --> 00:05:41,800
+so I'll display the first element of both are A1 and array two and they both should be 0.
+
+76
+00:05:41,980 --> 00:05:45,510
+That's running application.
+
+77
+00:05:46,020 --> 00:05:47,060
+They both are zero
+

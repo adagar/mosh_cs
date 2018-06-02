@@ -1,0 +1,204 @@
+1
+00:00:02,490 --> 00:00:08,250
+OK in this video we're going to take a look at how to declare and initialize an array in C#.
+
+2
+00:00:08,490 --> 00:00:11,670
+So let's say we would like to create an array of integers.
+
+3
+00:00:11,670 --> 00:00:17,400
+So we started with and we used the square brackets to indicate that we would like to create an array
+
+4
+00:00:17,490 --> 00:00:19,410
+not just an integer.
+
+5
+00:00:19,410 --> 00:00:22,930
+We give it an identifier or a name.
+
+6
+00:00:23,170 --> 00:00:25,230
+I know we need to allocate memory to it.
+
+7
+00:00:25,440 --> 00:00:31,330
+So we use the new operator and repeat into array again.
+
+8
+00:00:31,350 --> 00:00:34,100
+By this I would need to specify the size of the array.
+
+9
+00:00:34,230 --> 00:00:36,010
+So let's say three.
+
+10
+00:00:36,660 --> 00:00:42,660
+Now we can make this code a bit shorter by getting rid of this entire array here and just using var
+
+11
+00:00:42,660 --> 00:00:43,680
+.
+
+12
+00:00:44,520 --> 00:00:50,160
+The compiler knows that number is assigned to an integer array as you see here.
+
+13
+00:00:50,340 --> 00:00:54,830
+So there's no need to repeat that twice.
+
+14
+00:00:54,900 --> 00:01:00,600
+Now I'm going to set the first element of this array and because in C-sharp arrays are zero indexed
+
+15
+00:01:00,870 --> 00:01:03,800
+the first element starts with index of 0.
+
+16
+00:01:03,850 --> 00:01:08,570
+So numbers of 0 because 1.
+
+17
+00:01:08,580 --> 00:01:10,020
+Now let me show you something.
+
+18
+00:01:10,020 --> 00:01:18,550
+I'm going to display all the elements in disarray on the console so kaso the right line numbers of 0
+
+19
+00:01:19,720 --> 00:01:25,710
+and I'm going to duplicate this line a couple of times with Control D which is one of resharpen shortcuts
+
+20
+00:01:26,700 --> 00:01:30,030
+and I change the index on each line.
+
+21
+00:01:31,080 --> 00:01:36,690
+So this is a very basic way of displaying elements in an array and more efficient ways to use a loop
+
+22
+00:01:36,690 --> 00:01:36,800
+.
+
+23
+00:01:36,870 --> 00:01:39,930
+And that's something we're going to look at in the next section.
+
+24
+00:01:39,930 --> 00:01:45,290
+Now let's run this application and see what happens.
+
+25
+00:01:45,300 --> 00:01:49,620
+So our array has three elements and the first one is initialized to 1.
+
+26
+00:01:49,690 --> 00:01:54,520
+But what about the others now that they are initialized to zero by default.
+
+27
+00:01:54,720 --> 00:02:01,200
+So that means when you declare an array all the elements are set to the default value of the data type
+
+28
+00:02:01,380 --> 00:02:02,750
+for that array.
+
+29
+00:02:02,850 --> 00:02:08,370
+In this case because our array is of type Integer the default value for integers or any kind of numbers
+
+30
+00:02:08,370 --> 00:02:10,160
+in C-sharp is zero.
+
+31
+00:02:10,230 --> 00:02:15,510
+If we had an array of booleans all elements in that array would be initialized to false.
+
+32
+00:02:15,510 --> 00:02:16,800
+Let's try that.
+
+33
+00:02:16,830 --> 00:02:19,020
+So I'm going to create another array.
+
+34
+00:02:19,320 --> 00:02:20,990
+Let's call it flags.
+
+35
+00:02:21,690 --> 00:02:25,130
+And this time I'm going to use a bully array.
+
+36
+00:02:25,400 --> 00:02:38,670
+Again the same size again Similarly I said the first element of flags of zero holds true and only display
+
+37
+00:02:38,670 --> 00:02:43,330
+all elements in disarray.
+
+38
+00:02:46,170 --> 00:02:49,430
+Let's run the application.
+
+39
+00:02:50,640 --> 00:02:54,160
+So note that the first element of the boolean array is set to true.
+
+40
+00:02:54,270 --> 00:03:00,300
+But the second and third elements are false.
+
+41
+00:03:00,300 --> 00:03:01,400
+Now one more example.
+
+42
+00:03:01,410 --> 00:03:07,050
+Before we finished this lecture this time I'm going to create an array of strings and I'm going to use
+
+43
+00:03:07,050 --> 00:03:11,760
+the object initialization syntax to initialize it during declaration.
+
+44
+00:03:12,270 --> 00:03:22,260
+So I'm going to call it names new string array of size 3 and I'm going to store three names here.
+
+45
+00:03:22,290 --> 00:03:29,910
+So Jack John and Mary.
+
+46
+00:03:29,910 --> 00:03:37,260
+So with the object initialization syntax you start with curly braces and it's supply values for each
+
+47
+00:03:37,260 --> 00:03:39,740
+element of the array.
+
+48
+00:03:39,810 --> 00:03:41,620
+That's pretty much it for this lecture.
+
+49
+00:03:41,790 --> 00:03:46,350
+Later in this course we're going to have a full section on arrays and there I'm going to convert arrays
+
+50
+00:03:46,380 --> 00:03:47,450
+in more detail.
+
+51
+00:03:47,460 --> 00:03:49,470
+I hope you enjoy this lecture and thank you for watching
+

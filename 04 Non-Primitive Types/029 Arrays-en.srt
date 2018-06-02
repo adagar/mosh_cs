@@ -1,0 +1,140 @@
+1
+00:00:03,960 --> 00:00:09,570
+Another non-permissive type we have in C-sharp is array and this lecture I'm going to give you a brief
+
+2
+00:00:09,570 --> 00:00:12,270
+introduction of our age to get you started.
+
+3
+00:00:12,270 --> 00:00:17,040
+Later new scores course we have a separate section about arrays and there I will cover more details
+
+4
+00:00:17,040 --> 00:00:18,030
+.
+
+5
+00:00:18,030 --> 00:00:21,240
+So what I'm covering this lecture is what is an array.
+
+6
+00:00:21,450 --> 00:00:26,960
+How to declare and initialize arrays and how to access array elements.
+
+7
+00:00:27,060 --> 00:00:34,230
+So what is an array an array as a data structure that we use to store a collection of variables of the
+
+8
+00:00:34,230 --> 00:00:35,790
+same type.
+
+9
+00:00:35,880 --> 00:00:39,030
+For example imagine you would like to work with three numbers.
+
+10
+00:00:39,270 --> 00:00:45,630
+So instead of declaring three integer variables like number one two three you can declare an array and
+
+11
+00:00:45,630 --> 00:00:47,370
+call it numbers.
+
+12
+00:00:47,370 --> 00:00:49,260
+No the square brackets here.
+
+13
+00:00:49,470 --> 00:00:53,660
+The first one is used to tell the compiler that we would like to declare an array.
+
+14
+00:00:53,910 --> 00:00:57,360
+And the second one is used to set the size of mothery.
+
+15
+00:00:58,020 --> 00:01:03,980
+So in C Sharp arrays have a fixed size which means you need to specify during declaration and it can
+
+16
+00:01:03,980 --> 00:01:06,000
+not be changed.
+
+17
+00:01:06,000 --> 00:01:08,170
+Also note the new operator here.
+
+18
+00:01:08,550 --> 00:01:11,290
+When declaring an array you need to allocate memory for it.
+
+19
+00:01:11,490 --> 00:01:15,030
+And that's why you need to use the new operator also.
+
+20
+00:01:15,090 --> 00:01:17,510
+An array isn't an object behind the scene.
+
+21
+00:01:17,790 --> 00:01:20,210
+So in short we have a class called array.
+
+22
+00:01:20,430 --> 00:01:26,250
+And when you declare an array using this syntax here internally the compiler creates an instance of
+
+23
+00:01:26,250 --> 00:01:27,070
+that class.
+
+24
+00:01:27,120 --> 00:01:27,970
+So an object.
+
+25
+00:01:28,110 --> 00:01:31,630
+And that's why we need to allocate memory for it.
+
+26
+00:01:31,950 --> 00:01:37,890
+Now that we have an array we can access its elements using an index that we supply in the square brackets
+
+27
+00:01:37,900 --> 00:01:38,790
+.
+
+28
+00:01:38,940 --> 00:01:45,060
+Nobody in C-sharp arrays are zero indexed which means the first element of an array has the index of
+
+29
+00:01:45,060 --> 00:01:52,140
+0 if you know ahead of time the values you would like to store in an array you can use the object initialization
+
+30
+00:01:52,140 --> 00:01:56,490
+syntax and make this code shorter.
+
+31
+00:01:56,490 --> 00:02:01,660
+So during the declaration you supply the values in curly braces again.
+
+32
+00:02:01,680 --> 00:02:06,570
+This was a quick introduction to arrays so you can get started quickly and write some simple programs
+
+33
+00:02:06,570 --> 00:02:06,960
+.
+
+34
+00:02:06,990 --> 00:02:11,190
+I'm going to cover arrays in more detail in a later section in this course.
+
+35
+00:02:11,190 --> 00:02:13,980
+Now let's flip over to Visual Studio and do some coding
+

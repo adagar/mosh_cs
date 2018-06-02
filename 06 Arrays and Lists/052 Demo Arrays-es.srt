@@ -1,0 +1,488 @@
+1
+00:00:01,860 --> 00:00:06,600
+Entonces en este video vamos a echar un vistazo a algunas de las propiedades y mtodos tiles de nuestra raza.
+
+2
+00:00:07,260 --> 00:00:11,130
+Permtanme comenzar creando una matriz de enteros y llamndolos nmeros.
+
+3
+00:00:11,340 --> 00:00:20,250
+Entonces, en teora, los nmeros equivalen a nuevos en teora y voy a usar la sintaxis de inicializacin
+
+4
+00:00:20,250 --> 00:00:27,220
+de objetos para inicializar inmediatamente Asare, as que algunos nmeros aleatorios aqu, como 3.
+
+5
+00:00:29,610 --> 00:00:31,910
+Ahora observe verde en la lnea aqu.
+
+6
+00:00:31,920 --> 00:00:35,650
+Sharper sugiere usar voire para limpiar el cdigo.
+
+7
+00:00:35,730 --> 00:00:42,600
+As que coloqu el cursor aqu Altan entrar y entrar tambin aqu.
+
+8
+00:00:42,600 --> 00:00:44,300
+Tenga en cuenta que es genial.
+
+9
+00:00:44,310 --> 00:00:46,340
+Lo que significa que no es necesario.
+
+10
+00:00:46,440 --> 00:00:49,000
+Entonces podemos mantener el cdigo an ms corto.
+
+11
+00:00:49,050 --> 00:00:53,340
+As que de nuevo Alt, ingresa e ingresa.
+
+12
+00:00:53,700 --> 00:00:55,830
+Ahora echemos un vistazo a la longitud de longitud
+
+13
+00:00:58,950 --> 00:01:01,550
+de la propiedad que devuelve el tamao de la matriz.
+
+14
+00:01:01,560 --> 00:01:04,030
+Entonces, en este caso, tenemos seis elementos en la matriz.
+
+15
+00:01:04,140 --> 00:01:06,380
+Entonces, el tamao de la matriz es seis.
+
+16
+00:01:06,450 --> 00:01:07,860
+As que cancela la lnea de escritura.
+
+17
+00:01:14,610 --> 00:01:17,330
+Vamos a ejecutar la aplicacin.
+
+18
+00:01:18,750 --> 00:01:23,410
+As que tenemos 6 en la consola.
+
+19
+00:01:23,910 --> 00:01:30,090
+Ahora echemos un vistazo al siguiente mtodo que usamos este mtodo para encontrar la posicin de un elemento en
+
+20
+00:01:30,090 --> 00:01:30,920
+la matriz.
+
+21
+00:01:30,930 --> 00:01:37,850
+Digamos que estamos buscando 9 para que podamos usar este mtodo de esta manera cada ndice ficticio de.
+
+22
+00:01:38,130 --> 00:01:41,950
+Abr el soporte mira la herramienta.
+
+23
+00:01:42,150 --> 00:01:47,410
+Hay diferentes formas de llamar a este mtodo y eso es lo que llamamos sobrecarga de mtodos.
+
+24
+00:01:47,910 --> 00:01:52,860
+Entonces, en este ejemplo, este mtodo tiene cinco sobrecargas o cinco versiones.
+
+25
+00:01:52,860 --> 00:01:55,100
+Voy a usar el primero, que es el ms fcil.
+
+26
+00:01:55,350 --> 00:01:57,300
+As que mira el primer parmetro.
+
+27
+00:01:57,630 --> 00:02:00,130
+Esa es la matriz que vamos a hacer la bsqueda.
+
+28
+00:02:00,540 --> 00:02:03,960
+El segundo parmetro es el objeto real que estamos buscando.
+
+29
+00:02:03,960 --> 00:02:12,470
+As que presiono escape ms all de mi matriz de nmeros aqu y como segundo argumento voy a pasar 9.
+
+30
+00:02:12,600 --> 00:02:14,780
+Este mtodo devuelve un nmero entero.
+
+31
+00:02:15,030 --> 00:02:20,000
+As que voy a almacenar el resultado en una variable llamada ndice.
+
+32
+00:02:20,860 --> 00:02:22,580
+Vamos a mostrar el ndice en la consola.
+
+33
+00:02:30,000 --> 00:02:32,140
+Entonces el ndice de 9 es 2.
+
+34
+00:02:32,370 --> 00:02:38,490
+Lo que significa que es el tercer elemento de la matriz porque en C-sharp el
+
+35
+00:02:38,490 --> 00:02:42,150
+ndice del primer elemento en una matriz es 0.
+
+36
+00:02:42,150 --> 00:02:43,920
+Ahora echemos un vistazo al mtodo claro.
+
+37
+00:02:54,450 --> 00:02:57,210
+Entonces este mtodo tiene tres parmetros.
+
+38
+00:02:57,210 --> 00:02:59,160
+El primer elemento es la matriz.
+
+39
+00:02:59,610 --> 00:03:02,610
+As que paso los nmeros aqu.
+
+40
+00:03:02,610 --> 00:03:08,250
+El segundo parmetro llamado ndice es el ndice inicial del rango de elementos a borrar.
+
+41
+00:03:08,250 --> 00:03:11,760
+Digamos que nos gustara borrar los dos primeros elementos.
+
+42
+00:03:11,970 --> 00:03:15,540
+As que voy a pasar 0 aqu como el ndice inicial.
+
+43
+00:03:15,990 --> 00:03:20,900
+Y el tercer promotor es la longitud que es la cantidad de elementos que deseamos borrar.
+
+44
+00:03:20,910 --> 00:03:24,640
+As que voy a pasar dos aqu.
+
+45
+00:03:25,200 --> 00:03:33,920
+Ahora voy a iterar sobre esta rea usando a para cada bloque y mostrar todos los elementos.
+
+46
+00:03:34,020 --> 00:03:39,310
+As que echemos un vistazo al efecto del mtodo claro.
+
+47
+00:03:39,490 --> 00:03:45,350
+Tenga en cuenta que los primeros dos elementos se establecen en 0 y ese es el significado de borrar.
+
+48
+00:03:45,360 --> 00:03:51,600
+Entonces en este ejemplo, porque nuestra matriz es de tipo entero limpiando estos nmeros significa ponerlos
+
+49
+00:03:51,600 --> 00:03:52,330
+a cero.
+
+50
+00:03:52,530 --> 00:03:58,520
+Si tenemos una matriz de borradores booleanos, eso significa colocar algunos de sus elementos en falso.
+
+51
+00:03:59,040 --> 00:04:04,050
+Y si tenemos una serie de cadenas u otro tipo de objetos limpiando los elementos, hay
+
+52
+00:04:04,110 --> 00:04:05,670
+un medio para decirlos ahora.
+
+53
+00:04:06,240 --> 00:04:08,340
+Ahora bien, echemos un vistazo al mtodo de copia.
+
+54
+00:04:17,580 --> 00:04:19,920
+Entonces este mtodo toma tres parmetros.
+
+55
+00:04:19,920 --> 00:04:22,140
+El primer parmetro es la matriz fuente.
+
+56
+00:04:22,140 --> 00:04:27,630
+El segundo parmetro es el destino y el tercer parmetro es la cantidad de elementos que
+
+57
+00:04:27,630 --> 00:04:28,770
+nos gustara copiar.
+
+58
+00:04:28,770 --> 00:04:31,560
+Entonces, antes de usar este mtodo, necesito declarar otra matriz, por
+
+59
+00:04:42,880 --> 00:04:44,860
+lo que esta es una entrada ms pequea.
+
+60
+00:04:44,920 --> 00:04:46,530
+Tiene solo tres elementos.
+
+61
+00:04:46,660 --> 00:04:53,000
+As que voy a copiar los primeros tres nmeros de nuestros nmeros que estn en ocho son otros tres.
+
+62
+00:04:53,080 --> 00:04:54,110
+Por lo
+
+63
+00:05:02,590 --> 00:05:05,170
+tanto, solo explica el resultado
+
+64
+00:05:10,300 --> 00:05:14,400
+en la consola y ejecuta la aplicacin.
+
+65
+00:05:17,140 --> 00:05:23,650
+As que observe que despus del mtodo de copia, los primeros tres elementos de la
+
+66
+00:05:24,270 --> 00:05:29,470
+matriz de nmeros que estaban aqu se copian en una segunda matriz.
+
+67
+00:05:29,470 --> 00:05:30,940
+Ahora echemos un vistazo al mtodo de clasificacin.
+
+68
+00:05:39,550 --> 00:05:42,230
+Este mtodo nuevamente tiene cinco versiones diferentes.
+
+69
+00:05:42,250 --> 00:05:44,640
+Voy a usar el primero, que es el ms fcil.
+
+70
+00:05:44,980 --> 00:05:48,420
+As que simplemente transfiero otra matriz.
+
+71
+00:05:49,390 --> 00:05:51,210
+Vamos a mostrar el
+
+72
+00:05:54,280 --> 00:05:58,670
+resultado en la consola y / o en la aplicacin.
+
+73
+00:05:58,780 --> 00:06:04,250
+En realidad, este no fue un buen ejemplo porque nuestro secundario ya estaba ordenado.
+
+74
+00:06:04,630 --> 00:06:08,580
+As que voy a aplicar este mtodo de clasificacin en nuestra matriz original.
+
+75
+00:06:09,030 --> 00:06:11,210
+Asi que.
+
+76
+00:06:13,480 --> 00:06:18,850
+Y tenemos que cambiar eso en el para cada bloque.
+
+77
+00:06:19,300 --> 00:06:21,440
+Probemos una aplicacin nuevamente.
+
+78
+00:06:22,780 --> 00:06:24,130
+Eso es mejor.
+
+79
+00:06:24,130 --> 00:06:28,860
+Entonces obtuvimos 0 0 2 6 9 y 14.
+
+80
+00:06:29,830 --> 00:06:33,190
+Y un mtodo ms para explorar en esta conferencia es el mtodo inverso.
+
+81
+00:06:45,570 --> 00:06:49,010
+OK, ejecutemos la aplicacin.
+
+82
+00:06:50,770 --> 00:06:54,320
+Entonces aqu est el efecto del mtodo inverso.
+
+83
+00:06:55,960 --> 00:06:56,140
+DE ACUERDO.
+
+84
+00:06:56,140 --> 00:07:01,510
+Antes de terminar esta conferencia a travs de un par de cosas que necesito sealar aqu, la primera
+
+85
+00:07:01,520 --> 00:07:09,310
+es ver el primer ejemplo donde X es la propiedad de longitud del objeto de nmeros, mientras que en otros ejemplos todos los mtodos que llamamos
+
+86
+00:07:09,520 --> 00:07:15,670
+como ndice de lo que se llama la clase de matriz en s misma no es el objeto de nmeros.
+
+87
+00:07:16,750 --> 00:07:18,570
+Entonces cul es la diferencia.
+
+88
+00:07:18,610 --> 00:07:24,940
+La diferencia es si un mtodo es accesible en la clase en s, como una matriz, lo que
+
+89
+00:07:24,940 --> 00:07:26,950
+significa que es un mtodo esttico.
+
+90
+00:07:27,160 --> 00:07:30,550
+Vamos a echar un vistazo a los miembros estticos ms adelante en este curso.
+
+91
+00:07:30,550 --> 00:07:37,570
+Por ahora solo recuerde cuando un miembro de la clase como un mtodo o campo o propiedad se declara como esttico, lo
+
+92
+00:07:37,870 --> 00:07:44,830
+que significa que es accesible desde la clase en s, pero de lo contrario ese miembro es accesible a travs del objeto.
+
+93
+00:07:46,000 --> 00:07:47,780
+Djame mostrarte un ejemplo aqu.
+
+94
+00:07:47,890 --> 00:07:56,180
+Si escribo array dot Estos son todos los mtodos de inicio definidos en la clase de matriz.
+
+95
+00:07:56,350 --> 00:08:02,480
+Pero si un nmero de tipo es dot Estos son los miembros que no son estticos.
+
+96
+00:08:02,580 --> 00:08:07,080
+Hay miembros de instancia que significa que son accesibles por un objeto.
+
+97
+00:08:07,450 --> 00:08:16,420
+Entonces, si lo escribo en X de aqu, ve que no hay un mtodo llamado index off o si escrib clear, no
+
+98
+00:08:16,420 --> 00:08:18,550
+existe un mtodo llamado clear.
+
+99
+00:08:18,550 --> 00:08:23,000
+Es por eso que solo es accesible desde la clase de matriz.
+
+100
+00:08:23,020 --> 00:08:28,250
+Ahora se estar preguntando cmo s qu miembro es esttico y qu miembro no lo es.
+
+101
+00:08:28,600 --> 00:08:31,060
+Bueno, parte de eso es la experiencia.
+
+102
+00:08:31,420 --> 00:08:38,070
+Pero si intenta acceder a un recuerdo y puede encontrar que su mejor ayuda es Google, simplemente vaya a Google.
+
+103
+00:08:38,120 --> 00:08:41,760
+Ahora digamos que estamos buscando el mtodo de clasificacin de la clase Array.
+
+104
+00:08:41,790 --> 00:08:45,960
+Simplemente escriba C-Sharp o un gnero.
+
+105
+00:08:46,150 --> 00:08:53,710
+Y el primer mtodo prcticamente en cada caso es la documentacin en MSDN Microsoft Developer
+
+106
+00:08:53,710 --> 00:08:54,450
+Network.
+
+107
+00:08:54,700 --> 00:08:56,290
+Entonces, si vamos aqu, esta
+
+108
+00:08:59,230 --> 00:09:04,810
+es la documentacin estndar del mtodo de clasificacin de la clase Array en el marco de la oscuridad.
+
+109
+00:09:05,080 --> 00:09:08,470
+Para que pueda ver todas las formas diferentes de llamar a este mtodo.
+
+110
+00:09:08,530 --> 00:09:11,200
+Eso es lo que llamamos sobrecarga recordar.
+
+111
+00:09:11,330 --> 00:09:16,290
+Entonces, un mtodo puede tener diferentes sobrecargas, lo que significa que tiene diferentes versiones.
+
+112
+00:09:17,200 --> 00:09:21,900
+As que tenga en cuenta que todos estos mtodos tienen un color rojo como frente a ellos.
+
+113
+00:09:22,240 --> 00:09:25,480
+Eso significa que es un mtodo esttico.
+
+114
+00:09:25,480 --> 00:09:27,700
+Ahora djame mostrarte la clase de matriz en s.
+
+115
+00:09:27,700 --> 00:09:30,520
+Entonces, si te desplazas hacia abajo vamos a la
+
+116
+00:09:33,400 --> 00:09:39,490
+clase de aire. S que estas propiedades aqu no tienen esa S roja, lo que significa que no son elementos
+
+117
+00:09:39,490 --> 00:09:41,900
+estticos o de instancia para las propiedades de instancia.
+
+118
+00:09:42,490 --> 00:09:51,840
+Veo que la mayora de estos mtodos, excepto clonar y copiar aqu, son estticos.
+
+119
+00:09:52,090 --> 00:09:57,430
+Entonces, cuando te quedas atascado para saltar a google escribe C-Sharp y luego escribe el nombre de la clase
+
+120
+00:09:57,430 --> 00:09:58,820
+y el nombre del mtodo.
+
+121
+00:09:59,440 --> 00:10:00,450
+Espero que disfrutes esta conferencia.
+
+122
+00:10:00,460 --> 00:10:01,450
+Y gracias por mirar
+

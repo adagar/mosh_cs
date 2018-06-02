@@ -1,0 +1,524 @@
+1
+00:00:01,860 --> 00:00:06,600
+So in this video we're going to take a look at some of the useful properties and methods of our race
+
+2
+00:00:06,600 --> 00:00:07,260
+.
+
+3
+00:00:07,260 --> 00:00:11,130
+Let me start by creating an array of integers and call it numbers.
+
+4
+00:00:11,340 --> 00:00:20,250
+So in theory numbers equals new in theory and I'm going to use the object initialization syntax to immediately
+
+5
+00:00:20,250 --> 00:00:27,220
+initialize Asare So some random numbers here like 3.
+
+6
+00:00:29,610 --> 00:00:31,910
+Now notice green on the line here.
+
+7
+00:00:31,920 --> 00:00:35,650
+Sharper is suggesting to use voire to make the code cleaner.
+
+8
+00:00:35,730 --> 00:00:42,600
+So I put the cursor here Altan enter and enter also here.
+
+9
+00:00:42,600 --> 00:00:44,300
+Note that it is great out.
+
+10
+00:00:44,310 --> 00:00:46,340
+Which means it's not necessary.
+
+11
+00:00:46,440 --> 00:00:49,000
+So we can keep the code even shorter.
+
+12
+00:00:49,050 --> 00:00:53,340
+So again Alt and enter and enter.
+
+13
+00:00:53,700 --> 00:00:55,830
+Now let's take a look at the length property
+
+14
+00:00:58,950 --> 00:01:01,550
+length returns the size of the array.
+
+15
+00:01:01,560 --> 00:01:04,030
+So in this case we have six elements in the array.
+
+16
+00:01:04,140 --> 00:01:06,380
+So the size of the array is six.
+
+17
+00:01:06,450 --> 00:01:07,860
+So cancel the write line
+
+18
+00:01:09,790 --> 00:01:13,010
+.
+
+19
+00:01:14,610 --> 00:01:17,330
+Let's run the application.
+
+20
+00:01:18,750 --> 00:01:23,410
+So we got 6 on the console.
+
+21
+00:01:23,910 --> 00:01:30,090
+Now let's take a look at the next of method we use this method to find the position of an element in
+
+22
+00:01:30,090 --> 00:01:30,920
+the array.
+
+23
+00:01:30,930 --> 00:01:37,850
+Let's say we're looking for 9 so we can use this method like this every dummy index of.
+
+24
+00:01:38,130 --> 00:01:41,950
+I opened the bracket look at the tool.
+
+25
+00:01:42,150 --> 00:01:47,410
+There are different ways to call this method and that's what we call method overloading.
+
+26
+00:01:47,910 --> 00:01:52,860
+So in this example this method has five overloads or five versions.
+
+27
+00:01:52,860 --> 00:01:55,100
+I'm going to use the first one which is the easiest.
+
+28
+00:01:55,350 --> 00:01:57,300
+So look at the first parameter.
+
+29
+00:01:57,630 --> 00:02:00,130
+That's the array that we're going to do searching.
+
+30
+00:02:00,540 --> 00:02:03,960
+The second parameter is the actual object we are looking for.
+
+31
+00:02:03,960 --> 00:02:12,470
+So I press escape past my numbers array here and as the second argument I'm going to pass 9.
+
+32
+00:02:12,600 --> 00:02:14,780
+This method returns an integer.
+
+33
+00:02:15,030 --> 00:02:20,000
+So I'm going to store the result in a variable called index.
+
+34
+00:02:20,860 --> 00:02:22,580
+Let's display index on the console
+
+35
+00:02:25,440 --> 00:02:28,480
+.
+
+36
+00:02:30,000 --> 00:02:32,140
+So the index of 9 is 2.
+
+37
+00:02:32,370 --> 00:02:38,490
+Which means it's the third element in the array because in C-sharp the index of the first element in
+
+38
+00:02:38,490 --> 00:02:42,150
+an array is 0.
+
+39
+00:02:42,150 --> 00:02:43,920
+Now let's take a look at the clear method
+
+40
+00:02:46,130 --> 00:02:51,240
+.
+
+41
+00:02:54,450 --> 00:02:57,210
+So this method has three parameters.
+
+42
+00:02:57,210 --> 00:02:59,160
+The first element is the array.
+
+43
+00:02:59,610 --> 00:03:02,610
+So I pass numbers here.
+
+44
+00:03:02,610 --> 00:03:08,250
+The second parameter called index is the starting index of the range of elements to clear.
+
+45
+00:03:08,250 --> 00:03:11,760
+Let's say we would like to clear the first two items.
+
+46
+00:03:11,970 --> 00:03:15,540
+So I'm going to pass 0 here as the starting index.
+
+47
+00:03:15,990 --> 00:03:20,900
+And the third promotor is the length which is the number of elements we will like to clear.
+
+48
+00:03:20,910 --> 00:03:24,640
+So I'm going to pass two here.
+
+49
+00:03:25,200 --> 00:03:33,920
+Now I'm going to iterate over this area using a for each block and display all the elements.
+
+50
+00:03:34,020 --> 00:03:39,310
+So let's take a look at the effect of clear method.
+
+51
+00:03:39,490 --> 00:03:45,350
+Note that the first two items are set to 0 and that's the meaning of clear.
+
+52
+00:03:45,360 --> 00:03:51,600
+So in this example because our array is of type integer clearing these numbers means setting them to
+
+53
+00:03:51,600 --> 00:03:52,330
+zero.
+
+54
+00:03:52,530 --> 00:03:58,520
+If we have an array of booleans clearing that means sitting some of its items to false.
+
+55
+00:03:59,040 --> 00:04:04,050
+And if we have an array of strings or other kind of objects clearing the items in that there are a means
+
+56
+00:04:04,110 --> 00:04:05,670
+saying them to now.
+
+57
+00:04:06,240 --> 00:04:08,340
+OK now let us take a look at the copy method
+
+58
+00:04:10,120 --> 00:04:14,680
+.
+
+59
+00:04:17,580 --> 00:04:19,920
+So this method takes three parameters.
+
+60
+00:04:19,920 --> 00:04:22,140
+The first parameter is the source array.
+
+61
+00:04:22,140 --> 00:04:27,630
+The second parameter is the destination and the third parameter is the number of elements we would like
+
+62
+00:04:27,630 --> 00:04:28,770
+to copy.
+
+63
+00:04:28,770 --> 00:04:31,560
+So before using this method I need to declare another array
+
+64
+00:04:42,880 --> 00:04:44,860
+so this is a smaller entry.
+
+65
+00:04:44,920 --> 00:04:46,530
+It has only three elements.
+
+66
+00:04:46,660 --> 00:04:53,000
+So I'm going to copy the first three numbers from our numbers are eight in into are another three.
+
+67
+00:04:53,080 --> 00:04:54,110
+So
+
+68
+00:05:02,590 --> 00:05:05,170
+and now just explain the result on the console
+
+69
+00:05:10,300 --> 00:05:14,400
+and run the application.
+
+70
+00:05:17,140 --> 00:05:23,650
+So notice that after we the copy method the first three elements in the numbers array which were here
+
+71
+00:05:24,270 --> 00:05:29,470
+are copied to a second array.
+
+72
+00:05:29,470 --> 00:05:30,940
+Now let's take a look at the sort method
+
+73
+00:05:31,130 --> 00:05:38,460
+.
+
+74
+00:05:39,550 --> 00:05:42,230
+This method again has five different versions.
+
+75
+00:05:42,250 --> 00:05:44,640
+I'm going to use the first one which is the easiest.
+
+76
+00:05:44,980 --> 00:05:48,420
+So I simply pass on another array.
+
+77
+00:05:49,390 --> 00:05:51,210
+Let's display the result on the console
+
+78
+00:05:54,280 --> 00:05:58,670
+and or on the application.
+
+79
+00:05:58,780 --> 00:06:04,250
+Actually this was not a good example because our secondary was already sorted.
+
+80
+00:06:04,630 --> 00:06:08,580
+So I'm going to apply this sort method on our original array.
+
+81
+00:06:09,030 --> 00:06:11,210
+So.
+
+82
+00:06:13,480 --> 00:06:18,850
+And we need to change that in the for each block.
+
+83
+00:06:19,300 --> 00:06:21,440
+Let's try an application again.
+
+84
+00:06:22,780 --> 00:06:24,130
+That's better.
+
+85
+00:06:24,130 --> 00:06:28,860
+So we got 0 0 2 6 9 and 14.
+
+86
+00:06:29,830 --> 00:06:33,190
+And one more method to explore in this lecture is the reverse method
+
+87
+00:06:37,250 --> 00:06:43,430
+.
+
+88
+00:06:45,570 --> 00:06:49,010
+OK let's run the application.
+
+89
+00:06:50,770 --> 00:06:54,320
+So here is the effect of the reverse method.
+
+90
+00:06:55,960 --> 00:06:56,140
+OK.
+
+91
+00:06:56,140 --> 00:07:01,510
+Before we finish this lecture through a couple of things I need to point out here the first one is look
+
+92
+00:07:01,520 --> 00:07:09,310
+at the first example where X is the length property of the numbers object whereas in other examples
+
+93
+00:07:09,520 --> 00:07:15,670
+all the methods we called like Index of what's called on the array class itself not the numbers object
+
+94
+00:07:15,670 --> 00:07:16,660
+.
+
+95
+00:07:16,750 --> 00:07:18,570
+So what is the difference.
+
+96
+00:07:18,610 --> 00:07:24,940
+The difference is if a method is accessible on the class itself like array that means it's a static
+
+97
+00:07:24,940 --> 00:07:26,950
+method.
+
+98
+00:07:27,160 --> 00:07:30,550
+We're going to take a look at the static members later in this course.
+
+99
+00:07:30,550 --> 00:07:37,570
+For now just remember when a class member like a method or field or property is declared as a static
+
+100
+00:07:37,870 --> 00:07:44,830
+that means it's accessible from the class itself but otherwise that member is accessible via the object
+
+101
+00:07:44,830 --> 00:07:45,990
+.
+
+102
+00:07:46,000 --> 00:07:47,780
+So let me show you an example here.
+
+103
+00:07:47,890 --> 00:07:56,180
+If I type array dot These are all the starting methods defined in the array class.
+
+104
+00:07:56,350 --> 00:08:02,480
+But if a type number is dot These are the members that are not static.
+
+105
+00:08:02,580 --> 00:08:07,080
+There are instance members which means they're accessible by an object.
+
+106
+00:08:07,450 --> 00:08:16,420
+So if I type it in X of here you see there is no method called index off or if I typed clear there is
+
+107
+00:08:16,420 --> 00:08:18,550
+no such a method called clear.
+
+108
+00:08:18,550 --> 00:08:23,000
+That's why it's only accessible from the array class.
+
+109
+00:08:23,020 --> 00:08:28,250
+Now you may be wondering how did I know which member is a static and which member is not.
+
+110
+00:08:28,600 --> 00:08:31,060
+Well part of that is experience.
+
+111
+00:08:31,420 --> 00:08:38,070
+But if you try to access a memory and you can find it your best help is Google simply go to Google.
+
+112
+00:08:38,120 --> 00:08:41,760
+Now let's say we are looking for the sort method of the Array class.
+
+113
+00:08:41,790 --> 00:08:45,960
+Simply type C-Sharp or a sort.
+
+114
+00:08:46,150 --> 00:08:53,710
+And the first method pretty much in every single case is the documentation on the MSDN Microsoft Developer
+
+115
+00:08:53,710 --> 00:08:54,450
+Network.
+
+116
+00:08:54,700 --> 00:08:56,290
+So if we go here
+
+117
+00:08:59,230 --> 00:09:04,810
+this is this standard documentation of the sort method of the Array class in darkness framework.
+
+118
+00:09:05,080 --> 00:09:08,470
+So you can see all different ways of calling this method.
+
+119
+00:09:08,530 --> 00:09:11,200
+That's what we call overloading remember.
+
+120
+00:09:11,330 --> 00:09:16,290
+So a method can have different overloads which means it has different versions.
+
+121
+00:09:17,200 --> 00:09:21,900
+So note that all these methods have a red as in front of them.
+
+122
+00:09:22,240 --> 00:09:25,480
+That means it's a static method.
+
+123
+00:09:25,480 --> 00:09:27,700
+Now let me show you the array class itself.
+
+124
+00:09:27,700 --> 00:09:30,520
+So if you scroll down we go to air class
+
+125
+00:09:33,400 --> 00:09:39,490
+I know that these properties here they don't have that red S which means they're not static or instance
+
+126
+00:09:39,490 --> 00:09:41,900
+members for instance properties.
+
+127
+00:09:42,490 --> 00:09:51,840
+I look most of these methods except clone and copy to here are static.
+
+128
+00:09:52,090 --> 00:09:57,430
+So whenever you get stuck to jump on google type C-Sharp and then type the name of the class and the
+
+129
+00:09:57,430 --> 00:09:58,820
+name of the method.
+
+130
+00:09:59,440 --> 00:10:00,450
+I hope you enjoy this lecture.
+
+131
+00:10:00,460 --> 00:10:01,450
+And thank you for watching
+

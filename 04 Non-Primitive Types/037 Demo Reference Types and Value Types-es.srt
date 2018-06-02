@@ -1,0 +1,196 @@
+1
+00:00:02,670 --> 00:00:07,860
+Bien, echemos un vistazo a otro ejemplo de tipos de referencia y tipos de valores en accin.
+
+2
+00:00:07,890 --> 00:00:12,820
+Entonces en este cdigo he definido una clase llamada persona con un campo llamado H.
+
+3
+00:00:13,350 --> 00:00:22,260
+Y dentro de nuestra clase de programa he definido dos mtodos para incrementar y hacer que Allt el tipo de retorno de
+
+4
+00:00:22,260 --> 00:00:26,880
+ambos mtodos sea voit, lo que significa que no devuelven ningn valor.
+
+5
+00:00:27,000 --> 00:00:32,070
+Y la razn por la que he definido ambos mtodos de estudio es simplemente llamarlos sin la necesidad
+
+6
+00:00:32,070 --> 00:00:33,050
+de crear un objeto.
+
+7
+00:00:33,270 --> 00:00:35,070
+Solo quiero mantener las cosas simples.
+
+8
+00:00:35,430 --> 00:00:38,730
+Entonces, en primer lugar, voy a crear un
+
+9
+00:00:42,180 --> 00:00:45,190
+nmero entero llamado y lo configuro en 1.
+
+10
+00:00:45,210 --> 00:00:54,650
+Ahora voy a llamar al mtodo de incremento y pasar mi nmero viable como argumento.
+
+11
+00:00:55,440 --> 00:01:01,890
+Entonces, el mtodo Inkerman toma un parmetro de tipo nmero entero llamado y le agrega 10.
+
+12
+00:01:01,890 --> 00:01:07,920
+Tenga en cuenta que aqu estoy usando el operador de asignacin de suma para agregar 10
+
+13
+00:01:07,920 --> 00:01:10,700
+al nmero que se pasa a este mtodo.
+
+14
+00:01:10,710 --> 00:01:16,990
+Ahora en este punto, cul crees que ser el valor de nuestro nmero en el mtodo principal?
+
+15
+00:01:17,880 --> 00:01:21,200
+Va a ser uno porque este es un tipo de valor.
+
+16
+00:01:21,660 --> 00:01:26,850
+Y cuando aprobamos estas variables como un argumento para el mtodo de incremento, se toma una copia
+
+17
+00:01:26,850 --> 00:01:29,970
+de esta variable y se enva al mtodo de Inkerman.
+
+18
+00:01:29,970 --> 00:01:34,890
+Es muy interesante, aunque estas dos variables tienen el mismo nombre, pero hay dos
+
+19
+00:01:34,890 --> 00:01:39,900
+lugares diferentes en la memoria, uno es el nmero con el alcance del mtodo principal.
+
+20
+00:01:40,080 --> 00:01:44,090
+Entonces, fuera del mtodo principal, esta variable no tiene un significado.
+
+21
+00:01:44,220 --> 00:01:47,900
+Y aqu tenemos otro nmero coincidentemente con el mismo nombre.
+
+22
+00:01:48,150 --> 00:01:53,880
+Dentro del mtodo Inkerman, pero ese es un lugar diferente en la memoria y su alcance
+
+23
+00:01:53,880 --> 00:01:55,740
+est limitado al mtodo Inkerman.
+
+24
+00:01:55,740 --> 00:02:00,770
+Entonces, cuando se llama a este mtodo de incremento, se crea una nueva ubicacin llamada nmero.
+
+25
+00:02:00,810 --> 00:02:05,580
+Su valor se incrementa en 10 y luego se destruye inmediatamente.
+
+26
+00:02:05,580 --> 00:02:06,590
+Ahora verifiquemos esto.
+
+27
+00:02:06,600 --> 00:02:11,830
+Entonces quiero usar la consola en la lnea derecha y el nmero de pantalla.
+
+28
+00:02:12,540 --> 00:02:15,360
+Ejecutamos la aplicacin.
+
+29
+00:02:15,360 --> 00:02:16,820
+Entonces nuestro nmero es 1.
+
+30
+00:02:17,160 --> 00:02:20,540
+No se ve afectado por el mtodo de incremento.
+
+31
+00:02:21,990 --> 00:02:25,150
+Ahora echemos un vistazo a un ejemplo de un tipo de referencia.
+
+32
+00:02:25,710 --> 00:02:29,220
+As que esta vez voy a usar nuestra clase de personal.
+
+33
+00:02:29,220 --> 00:02:30,690
+As que creo
+
+34
+00:02:34,140 --> 00:02:41,050
+un objeto persona y us la sintaxis de inicializacin del objeto para establecer su campo.
+
+35
+00:02:41,670 --> 00:02:44,670
+Entonces esta persona tiene 20 aos.
+
+36
+00:02:44,670 --> 00:02:53,240
+Ahora aqu tenemos otro mtodo llamado Make old that takes a person object y agrega 10 tweets de
+
+37
+00:02:53,240 --> 00:02:54,540
+antigedad de campo.
+
+38
+00:02:54,690 --> 00:03:00,390
+As que tenga en cuenta que aqu porque el tipo de este parmetro es un tipo de referencia, el objeto
+
+39
+00:03:00,390 --> 00:03:03,560
+que se va a pasar aqu no se va a copiar.
+
+40
+00:03:03,750 --> 00:03:05,710
+Cada referencia se va a copiar.
+
+41
+00:03:05,820 --> 00:03:12,570
+Lo que significa que tanto el objeto persona que tenemos el mtodo principal como el objeto persona que
+
+42
+00:03:12,570 --> 00:03:17,510
+tenemos como parmetro para este mtodo apuntarn al mismo objeto en el montn.
+
+43
+00:03:18,680 --> 00:03:29,430
+De acuerdo, entonces si llamamos a hacer viejo y pasado este objeto de persona al regresar de este mtodo, la
+
+44
+00:03:29,430 --> 00:03:34,380
+edad de esta persona ser de 30, verifiquemos eso.
+
+45
+00:03:34,770 --> 00:03:41,250
+As que tenga la edad y simplemente ejecute la aplicacin.
+
+46
+00:03:41,430 --> 00:03:43,990
+Ah tienes.
+
+47
+00:03:44,490 --> 00:03:45,410
+Eso es todo por esta conferencia.
+
+48
+00:03:45,420 --> 00:03:46,040
+Espero que lo disfruten.
+
+49
+00:03:46,050 --> 00:03:47,090
+Y gracias por mirar
+

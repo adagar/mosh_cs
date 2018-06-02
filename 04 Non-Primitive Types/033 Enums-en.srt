@@ -1,0 +1,88 @@
+1
+00:00:02,340 --> 00:00:05,430
+OK and other types are going to cover and the section is enums.
+
+2
+00:00:06,690 --> 00:00:12,510
+An enum is a data type that represents a set of name value pairs or constants.
+
+3
+00:00:12,570 --> 00:00:16,180
+Let me show you where you use nums in the real world.
+
+4
+00:00:16,320 --> 00:00:21,810
+Imagine you're building an application for a Post Company and you want to support a few different shipping
+
+5
+00:00:21,810 --> 00:00:23,150
+methods.
+
+6
+00:00:23,160 --> 00:00:28,650
+So one way is to declare a few constants each representing a shipping method.
+
+7
+00:00:29,070 --> 00:00:34,230
+And in your application based on the shipping method you can make decisions to calculate the shipping
+
+8
+00:00:34,230 --> 00:00:38,640
+costs or the tax or display different messages to the user.
+
+9
+00:00:38,670 --> 00:00:45,130
+So the possibilities are endless Now even though this approach works it's a little bit messy.
+
+10
+00:00:45,240 --> 00:00:50,580
+It's better to define a new type where we can represent different shipping methods.
+
+11
+00:00:50,910 --> 00:00:57,960
+So that's where we use an enim so we can create a new enum called shipping method with these three members
+
+12
+00:00:57,960 --> 00:00:59,150
+.
+
+13
+00:00:59,160 --> 00:01:06,120
+So in simple words use enums where you have a number of related constants and sort of declare multiple
+
+14
+00:01:06,120 --> 00:01:08,350
+constants declare an ino.
+
+15
+00:01:08,790 --> 00:01:13,980
+This will be a new type in your application just like we have classes or structures.
+
+16
+00:01:13,980 --> 00:01:19,950
+OK now that we have any you know we can use it with the dot notation.
+
+17
+00:01:19,950 --> 00:01:26,130
+Now one thing I wanted to know here is that an ether is internally an integer but if you have a reason
+
+18
+00:01:26,370 --> 00:01:33,090
+to change that and use a byte instead perhaps it could be easier for you to map in your database columns
+
+19
+00:01:33,420 --> 00:01:38,060
+then you can specify byte during declaration of your name.
+
+20
+00:01:38,370 --> 00:01:39,710
+So that's the basic idea.
+
+21
+00:01:39,720 --> 00:01:44,880
+But now let's flip it over to Visual Studio and let's see how to work with gnomes and how to convert
+
+22
+00:01:44,880 --> 00:01:47,790
+them to numbers and strings.
+

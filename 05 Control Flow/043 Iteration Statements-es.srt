@@ -1,0 +1,200 @@
+1
+00:00:02,930 --> 00:00:05,740
+OK, tenemos declaraciones de detalles.
+
+2
+00:00:06,240 --> 00:00:11,100
+Si ha realizado la programacin antes, sabr que casi todos los lenguajes de
+
+3
+00:00:11,190 --> 00:00:18,120
+programacin tienen un conjunto de instrucciones de iteracin que se usan para ejecutar repetidamente una secuencia de enunciados
+
+4
+00:00:18,120 --> 00:00:24,040
+en C-sharp, tenemos para nuestras declaraciones de iteracin 4 para cada rato y para hacerlo.
+
+5
+00:00:24,510 --> 00:00:31,800
+Entonces, examinemos la sintaxis de cada una de estas declaraciones de iteracin para bucles de tres partes.
+
+6
+00:00:31,800 --> 00:00:39,390
+Aqu est la primera parte punto y coma de la segunda parte y la tercera parte la primera parte es lo que
+
+7
+00:00:39,390 --> 00:00:45,270
+llamamos la clusula de inicializacin y ah es donde creamos un contador para controlar el nmero de
+
+8
+00:00:45,270 --> 00:00:47,120
+veces que se ejecutar el ciclo.
+
+9
+00:00:47,760 --> 00:00:51,990
+As que aqu he creado un contador llamado I set it to zero.
+
+10
+00:00:52,090 --> 00:00:57,480
+Usted es libre de usar cualquier nombre para sus objetos de valor pero yo como una convencin comn.
+
+11
+00:00:57,720 --> 00:01:00,810
+La segunda parte es lo que llamamos la clusula de condicin.
+
+12
+00:01:00,840 --> 00:01:05,790
+Entonces, el bucle for aqu se ejecutar siempre que esta condicin sea vlida.
+
+13
+00:01:06,690 --> 00:01:10,080
+Y la tercera parte es lo que llamamos la clusula de iteracin.
+
+14
+00:01:10,230 --> 00:01:14,490
+Y aqu normalmente incrementamos o disminuimos la variable contraria.
+
+15
+00:01:14,850 --> 00:01:21,720
+Entonces aqu porque dije I 2 0 aumentara i en cada iteracin hasta que llegue a 10.
+
+16
+00:01:22,170 --> 00:01:27,660
+Y dentro del cuerpo del bloque cuatro tenemos una secuencia de enunciados que se ejecutar repetidamente
+
+17
+00:01:30,150 --> 00:01:35,210
+para que cada uno se use para iterar sobre los elementos de un objeto Enumerable.
+
+18
+00:01:35,220 --> 00:01:37,170
+Qu quiero decir con enumerable.
+
+19
+00:01:37,260 --> 00:01:42,740
+En palabras simples, eso significa cualquier cosa que tenga algn tipo de lista o naturaleza de matriz.
+
+20
+00:01:43,380 --> 00:01:48,660
+Hasta ahora, usted ha aprendido acerca de las matrices y las cadenas y la cadena, como usted sabe, es una secuencia de
+
+21
+00:01:49,150 --> 00:01:51,200
+caracteres, por lo que la cadena es enumerable.
+
+22
+00:01:51,570 --> 00:01:53,760
+El tipo de matriz tambin es enumerable.
+
+23
+00:01:53,970 --> 00:01:59,880
+Entonces cualquier cosa que tenga algn tipo de naturaleza de lista es enumerable y podemos usar 4: 8 para iterar
+
+24
+00:01:59,880 --> 00:02:00,850
+sobre sus elementos.
+
+25
+00:02:01,260 --> 00:02:07,650
+Definitivamente podemos hacer lo mismo con un bucle for, pero hacerlo con 4 h es ms fcil y ms limpio en
+
+26
+00:02:07,650 --> 00:02:08,580
+trminos de sintaxis.
+
+27
+00:02:08,610 --> 00:02:15,030
+Aqu hay uno para cada bloque, parece que tenemos una variable local o temporal en este caso o lo
+
+28
+00:02:15,030 --> 00:02:15,770
+llamamos nmero.
+
+29
+00:02:15,990 --> 00:02:17,940
+Y aqu tenemos la palabra clave.
+
+30
+00:02:18,060 --> 00:02:21,820
+Y aqu est la lista u objeto que estamos iterando.
+
+31
+00:02:21,870 --> 00:02:28,770
+Asumiendo que los nmeros son una matriz de enteros en cada nmero de iteracin, mantendr el valor
+
+32
+00:02:28,770 --> 00:02:31,730
+en el elemento actual de la matriz.
+
+33
+00:02:32,220 --> 00:02:39,280
+Y C-Sharp tambin tenemos bucles y en trminos de sintaxis, un bucle y incluye una condicin aqu en las
+
+34
+00:02:39,930 --> 00:02:43,880
+prcticas, siempre que esta condicin sea vlida, el ciclo se ejecutar.
+
+35
+00:02:43,890 --> 00:02:49,440
+Normalmente tenemos un contador que inicializamos antes de que se ejecute el ciclo while y al
+
+36
+00:02:49,440 --> 00:02:51,620
+final del ciclo while lo incrementamos.
+
+37
+00:02:51,630 --> 00:02:55,930
+Como ve, es similar a un ciclo pero tiene una sintaxis diferente.
+
+38
+00:02:56,370 --> 00:03:01,370
+Ya sea que use para o por qu el bucle depende de usted, es una especie de preferencia personal.
+
+39
+00:03:01,530 --> 00:03:08,490
+Y finalmente tenemos hacer mientras los bucles lo hacen mientras que es ligeramente diferente de mientras lo hacemos
+
+40
+00:03:08,490 --> 00:03:16,090
+mientras que el bucle se ejecuta al menos una vez porque la condicin se evala al final del bucle.
+
+41
+00:03:16,140 --> 00:03:20,030
+Entonces aqu tenemos un bloque de declaraciones que se ejecutar.
+
+42
+00:03:20,160 --> 00:03:26,940
+Tenemos nuestro contador que aumentamos o disminuimos y, finalmente, es la condicin.
+
+43
+00:03:26,970 --> 00:03:30,980
+Ahora no siempre necesitas un contador por un tiempo y haces loops.
+
+44
+00:03:31,230 --> 00:03:33,720
+Puede usar cualquier condicin en esta lnea aqu.
+
+45
+00:03:33,720 --> 00:03:39,900
+Us una contra llamada I para demostrar que lo mismo se puede implementar con a por un tiempo
+
+46
+00:03:39,900 --> 00:03:41,960
+o con un ciclo do while.
+
+47
+00:03:42,060 --> 00:03:46,050
+Y, finalmente, antes de comenzar a codificar, permtame mostrarle dos afirmaciones ms aqu.
+
+48
+00:03:46,260 --> 00:03:48,350
+Tenemos descanso y continuamos.
+
+49
+00:03:48,630 --> 00:03:54,600
+As que en cualquier bucle podemos usar break para saltar fuera del circuito o continuar saltando al prximo tipo en racionar.
+
+50
+00:03:55,350 --> 00:03:59,230
+Ahora comencemos a codificar y veamos qu significa todo esto en accin.
+

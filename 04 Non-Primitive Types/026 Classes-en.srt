@@ -1,0 +1,340 @@
+1
+00:00:03,960 --> 00:00:10,260
+Earlier in this course you'll learn that classes are building blocks of our applications.
+
+2
+00:00:10,260 --> 00:00:15,730
+These classes combine related variables or fields and functions together.
+
+3
+00:00:15,750 --> 00:00:17,480
+So here's an example.
+
+4
+00:00:17,910 --> 00:00:24,300
+In this picture we have a class called person with four fields name age height and weight.
+
+5
+00:00:24,550 --> 00:00:27,380
+And it also has four methods or four functions.
+
+6
+00:00:27,480 --> 00:00:30,940
+Walk talk eat and sleep.
+
+7
+00:00:30,960 --> 00:00:35,690
+This class is a type or a blueprint from which we create objects.
+
+8
+00:00:35,940 --> 00:00:39,380
+So an object is an instance of a class.
+
+9
+00:00:39,540 --> 00:00:46,390
+In this example we can create three instances of this person class like John Murray and Scott.
+
+10
+00:00:46,650 --> 00:00:52,260
+So more accurately when you run your application it's these objects that are talking to each other and
+
+11
+00:00:52,260 --> 00:00:55,320
+collaborating to provide some functionality.
+
+12
+00:00:55,620 --> 00:01:00,270
+But the world class and objects are often used interchangeably.
+
+13
+00:01:00,270 --> 00:01:03,840
+OK now let's see how we can create a class in C-sharp.
+
+14
+00:01:04,050 --> 00:01:11,250
+So to create a class we start with an access modifier and then the class keyword and an identifier an
+
+15
+00:01:11,250 --> 00:01:15,090
+access modifier determines who can access this class.
+
+16
+00:01:15,300 --> 00:01:19,920
+For now don't worry about it because that's something I have covered in my C-Sharp intermediate course
+
+17
+00:01:20,160 --> 00:01:22,320
+which is the second part of this course.
+
+18
+00:01:22,350 --> 00:01:28,290
+Just remember whenever you want to create a class use the public keyword to make the class accessible
+
+19
+00:01:28,350 --> 00:01:30,430
+anywhere in your application.
+
+20
+00:01:30,810 --> 00:01:35,880
+Inside the code block class we can have variables which we call fields.
+
+21
+00:01:35,910 --> 00:01:40,180
+Also note that when we declare a variable we need to specify an access modifier.
+
+22
+00:01:40,410 --> 00:01:42,560
+Again for all examples in this course.
+
+23
+00:01:42,570 --> 00:01:47,990
+We're going to stick to public and in the next course we'll take a look at other access modifiers.
+
+24
+00:01:47,990 --> 00:01:52,300
+Note that in C-sharp anywhere you have a statement like a variable declaration here.
+
+25
+00:01:52,380 --> 00:01:57,360
+You need to terminate that statement with a semi-colon but you don't have to do that when you have a
+
+26
+00:01:57,360 --> 00:01:58,970
+code block.
+
+27
+00:01:59,430 --> 00:02:02,380
+Your classes can also contain methods.
+
+28
+00:02:02,400 --> 00:02:04,830
+So here is an example.
+
+29
+00:02:04,830 --> 00:02:11,160
+In this example void is the return type or to introduce method which means this method does not return
+
+30
+00:02:11,190 --> 00:02:12,830
+any values.
+
+31
+00:02:13,050 --> 00:02:20,520
+And also note that this method does not take any promotors as indicated by empty parenthesis so it simply
+
+32
+00:02:20,520 --> 00:02:24,080
+outputs the name of the person on the console.
+
+33
+00:02:24,720 --> 00:02:26,390
+Here's another example.
+
+34
+00:02:26,700 --> 00:02:32,820
+In this example we have a calculator class with one method which takes two parameters of type integer
+
+35
+00:02:33,030 --> 00:02:35,670
+and returns an integer.
+
+36
+00:02:35,670 --> 00:02:39,410
+Now that we have a class let's see how we can create an object.
+
+37
+00:02:39,420 --> 00:02:46,050
+So earlier you learn that to declare a variable you start with a type and then an identifier creating
+
+38
+00:02:46,050 --> 00:02:49,380
+objects or instances of classes is pretty similar.
+
+39
+00:02:49,380 --> 00:02:51,690
+We start with a type and an identifier.
+
+40
+00:02:51,810 --> 00:02:58,800
+But there is one more step we need to allocate memory for that object and that's when we use the new
+
+41
+00:02:58,800 --> 00:03:00,930
+operator.
+
+42
+00:03:00,930 --> 00:03:05,600
+So in C-sharp classes are treated differently than primitive types.
+
+43
+00:03:05,850 --> 00:03:09,000
+So you need to explicitly allocate memory for them.
+
+44
+00:03:09,450 --> 00:03:16,380
+But the good thing is unlike languages like Objective C or C++ you do not have to worry about the allocating
+
+45
+00:03:16,380 --> 00:03:17,260
+that memory.
+
+46
+00:03:17,940 --> 00:03:22,170
+C-L are our Common Language Runtime will take care of that for you.
+
+47
+00:03:22,230 --> 00:03:27,450
+It has a process called garbage collection which automatically removes all objects that are not used
+
+48
+00:03:27,450 --> 00:03:29,150
+.
+
+49
+00:03:29,220 --> 00:03:35,350
+So to allocate memory to an object use the new operator and then repeat the type of the class and practices
+
+50
+00:03:35,770 --> 00:03:36,940
+.
+
+51
+00:03:37,070 --> 00:03:42,420
+You can make this code a bit shorter by using the Varg keyword that you learned earlier and now that
+
+52
+00:03:42,420 --> 00:03:48,300
+we have a Person object we can access its members like named field or the introduced method using the
+
+53
+00:03:48,300 --> 00:03:50,130
+dot notation.
+
+54
+00:03:50,130 --> 00:03:55,350
+So in this example I set the name of this person and then call the introduced method.
+
+55
+00:03:55,860 --> 00:04:01,110
+Now let's see what is not static modifier that you saw in our first C-Sharp program.
+
+56
+00:04:01,110 --> 00:04:04,380
+So here's the calculator class that you saw earlier.
+
+57
+00:04:04,620 --> 00:04:11,910
+We can modify this method with the static keyword like this and as a result we can access that method
+
+58
+00:04:12,150 --> 00:04:15,640
+directly by the calculator class itself.
+
+59
+00:04:15,660 --> 00:04:20,030
+We do not have to create an object to access a static member.
+
+60
+00:04:20,040 --> 00:04:24,150
+In fact we cannot access static members from objects.
+
+61
+00:04:24,150 --> 00:04:25,350
+So what is this all about.
+
+62
+00:04:25,350 --> 00:04:27,180
+Why do we need this.
+
+63
+00:04:27,180 --> 00:04:30,930
+Well let me show you what's happening behind the scene and then you will have a better understanding
+
+64
+00:04:30,930 --> 00:04:32,310
+of this.
+
+65
+00:04:32,340 --> 00:04:39,090
+So without the static modifier when you create three objects of this calculator class each object in
+
+66
+00:04:39,090 --> 00:04:41,820
+the memory will have the add method.
+
+67
+00:04:42,300 --> 00:04:48,390
+But when you apply the static modifier the add method will be only in one place in memory and that is
+
+68
+00:04:48,570 --> 00:04:50,500
+the calculator class itself.
+
+69
+00:04:51,060 --> 00:04:53,960
+So it's not going to be repeated three times in memory.
+
+70
+00:04:54,440 --> 00:04:56,100
+By the way do we need this.
+
+71
+00:04:56,100 --> 00:05:02,310
+We use the static modifier when we want to present a concept that only a single instance of that should
+
+72
+00:05:02,310 --> 00:05:03,680
+exist in memory.
+
+73
+00:05:04,170 --> 00:05:05,630
+Here's an example.
+
+74
+00:05:05,760 --> 00:05:09,150
+Remember the Program class in our first program.
+
+75
+00:05:09,240 --> 00:05:15,510
+So there we had a main method and Main was modified with the static keyword which means there is only
+
+76
+00:05:15,510 --> 00:05:18,470
+one instance of the main method in memory.
+
+77
+00:05:18,740 --> 00:05:23,180
+There is only one entry point in each C-Sharp application.
+
+78
+00:05:23,280 --> 00:05:25,830
+Current day time is another example.
+
+79
+00:05:25,980 --> 00:05:32,100
+You don't want to have multiple date time objects in memory each representing a current date time.
+
+80
+00:05:32,190 --> 00:05:36,590
+You want only one place in memory where you can look at the current data.
+
+81
+00:05:37,110 --> 00:05:42,630
+So all I want you to know for now is that when you modify any members of a class whether it's a field
+
+82
+00:05:42,660 --> 00:05:49,230
+or a method with a static modifier that member will be accessible from the class itself not an object
+
+83
+00:05:49,250 --> 00:05:49,610
+.
+
+84
+00:05:49,950 --> 00:05:51,560
+Well that's you know three for now.
+
+85
+00:05:51,720 --> 00:05:53,970
+Let's flip over to Visual Studio and do some coding
+
